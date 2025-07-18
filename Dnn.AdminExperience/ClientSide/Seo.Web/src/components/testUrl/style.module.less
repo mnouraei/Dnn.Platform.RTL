@@ -1,78 +1,110 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.testUrl) {
-    margin: 30px 30px;
+    margin: 30px;
+
     .columnTitleOne {
         font-weight: bolder;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid @alto;
+        padding-block-end: 10px;
+        margin-block-end: 20px;
+        border-block-end: 1px solid @alto;
     }
+
     .columnTitleTwo {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         font-weight: bolder;
-        padding: 10px 0;
-        margin: 20px 0;
-        border-bottom: 1px solid @alto;
+        padding-block-start: 10px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
+        margin-block-start: 20px;
+        margin-inline-end: 0;
+        margin-block-end: 20px;
+        margin-inline-start: 0;
+        border-block-end: 1px solid @alto;
     }
+
     .dnn-ui-common-input-group {
-        padding: 0 0 15px 0;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0;
+
         label {
             font-weight: bolder;
-            float: left;
+            float: inline-start
         }
-        .dnn-label.block{
+
+        .dnn-label.block {
             label {
-                max-width: 90%;;
+                max-inline-size: 90%
             }
         }
+
         .dnn-single-line-input-with-error {
-            width: 100%;
+            inline-size: 100%
         }
+
         .dnn-ui-common-multi-line-input {
-            height: 230px;
+            block-size: 230px
         }
+
         .sectionLabel {
-            border-top: 1px solid @alto;
-            padding-top: 20px;
-            margin-top: 20px;
+            border-block-start: 1px solid @alto;
+            padding-block-start: 20px;
+            margin-block-start: 20px;
+
             label {
-                color: #000;
+                color: #000
             }
         }
+
         .dnn-dropdown {
-            width: 681px;
+            inline-size: 681px
         }
+
         .dnn-file-upload {
-            width: 313px;
+            inline-size: 313px
         }
+
         input {
-            width: auto;
+            inline-size: auto
         }
     }
+
     .buttons-box {
-        width: 100%;
+        inline-size: 100%;
         text-align: center;
-        float: left;
+        float: inline-start;
+
         .dnn-ui-common-button {
-            margin: 5px;
+            margin: 5px
         }
     }
+
     .dnn-grid-system {
         border: 1px solid @alto;
         background-color: @alabaster;
-        padding: 20px 20px 0 20px;
+        padding-block-start: 20px;
+        padding-inline-end: 20px;
+        padding-block-end: 0;
+        padding-inline-start: 20px;
+
         &:last-child {
-            margin-bottom: 30px;
+            margin-block-end: 30px
         }
+
         .left-column {
-            padding-right: 20px;
+            padding-inline-end: 20px;
+
             .dnn-dropdown {
-                width: 281px;
+                inline-size: 281px
             }
         }
+
         .right-column {
-            padding-left: 20px;
+            padding-inline-start: 20px
         }
     }
 }

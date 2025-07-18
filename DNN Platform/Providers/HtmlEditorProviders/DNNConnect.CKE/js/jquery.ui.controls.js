@@ -152,7 +152,7 @@ $.widget("ui.form", {
             height: 21
         }).addClass("ui-state-default ui-corner-all");
         $(element).addClass("ui-helper-hidden");
-        parent.append("<span style='float:left;'></span><span style='float:right;display:inline-block' class='ui-icon ui-icon-triangle-1-s' ></span>");
+        parent.append("<span style='float:inline-start;'></span><span style='float:inline-end;display:inline-block' class='ui-icon ui-icon-triangle-1-s' ></span>");
         parent.after("<ul class=' ui-helper-reset ui-widget-content ui-helper-hidden' style='position:absolute;z-index:50;width:140px;' ></ul>");
         $(parent).children('span').first().html($(element).children("option:selected").html());
         $.each($(element).find("option"), function () {

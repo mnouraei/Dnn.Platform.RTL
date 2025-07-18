@@ -1,34 +1,53 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.installExtensionModal) {
     box-sizing: border-box;
+
     .install-extension-box {
-        padding: 25px 45px;
-        .box-title{
+        padding-block-start: 25px;
+        padding-inline-end: 45px;
+        padding-block-end: 25px;
+        padding-inline-start: 45px;
+
+        .box-title {
             font-size: 15px;
             text-transform: uppercase;
-            margin-bottom: 25px;
+            margin-block-end: 25px
         }
+
         .upload-package-box.dnn-grid-cell {
             padding: 0;
-            margin: 15px auto 25px;
+            margin-block-start: 15px;
+            margin-inline-end: auto;
+            margin-block-end: 25px;
+            margin-inline-start: auto
         }
+
         .dnn-checkbox-container {
-            float: left;
-            margin-top: 25px;
-            margin-bottom: 25px;
+            float: inline-start;
+            margin-block-start: 25px;
+            margin-block-end: 25px
         }
+
         .modal-pagination {
-            text-align: center;
+            text-align: center
         }
+
         .package-already-exists {
-            > p {
-                padding: 0 25px;
+            >p {
+                padding-block-start: 0;
+                padding-inline-end: 25px;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+
                 &.package-exists-help-text {
-                    margin-bottom: 15px;
+                    margin-block-end: 15px
                 }
+
                 &.package-exists-error {
-                    margin-bottom: 15px;
+                    margin-block-end: 15px
                 }
+
                 &.package-exists-error-help-text {}
             }
         }

@@ -1,151 +1,212 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 #siteimportexport-container {
     .dnn-persona-bar-page-body {
-        border-bottom: 0;
+        border-block-end: 0;
+
         * {
-            box-sizing: border-box;
+            box-sizing: border-box
         }
+
         .persona-bar-page-body {
             border: 0;
             background: none;
+
             .top-panel {
-                width: 100%;
-                float: left;
+                inline-size: 100%;
+                float: inline-start;
                 border: 1px solid @alto;
-                background: #fff;                
+                background: #fff;
+
                 .site-selection {
                     padding: 20px;
+
                     .dnn-dropdown {
-                        width: 100%;
+                        inline-size: 100%;
+
                         .collapsible-label {
                             text-transform: uppercase;
-                            font-weight: bold;
+                            font-weight: bold
                         }
                     }
                 }
+
                 .last-actions {
-                    width: 50%;
-                    float: left;
-                    padding: 0 20px 20px 20px;
+                    inline-size: 50%;
+                    float: inline-start;
+                    padding-block-start: 0;
+                    padding-inline-end: 20px;
+                    padding-block-end: 20px;
+                    padding-inline-start: 20px;
+
                     .action-labels {
-                        float: left;
-                        width: 50%;
+                        float: inline-start;
+                        inline-size: 50%;
+
                         .dnn-label {
-                            padding: 0 0 10px 0;
+                            padding-block-start: 0;
+                            padding-inline-end: 0;
+                            padding-block-end: 10px;
+                            padding-inline-start: 0;
                             font-weight: 700;
                             color: @thunder;
                         }
                     }
+
                     .action-dates {
-                        float: right;
-                        width: 50%;
+                        float: inline-end;
+                        inline-size: 50%;
+
                         div {
                             color: @thunder;
-                            padding: 0 0 10px 0;
+                            padding-block-start: 0;
+                            padding-inline-end: 0;
+                            padding-block-end: 10px;
+                            padding-inline-start: 0
                         }
                     }
                 }
+
                 .action-buttons {
-                    width: 50%;
-                    float: right;
-                    padding: 0 30px 0 20px;
+                    inline-size: 50%;
+                    float: inline-end;
+                    padding-block-start: 0;
+                    padding-inline-end: 30px;
+                    padding-block-end: 0;
+                    padding-inline-start: 20px;
+
                     .action-button {
-                        margin-left: 20px;
-                        float: right;
+                        margin-inline-start: 20px;
+                        float: inline-end
                     }
                 }
             }
+
             .section-title {
                 text-transform: uppercase;
                 font-weight: bold;
-                float: left;
-                width: 100%;
-                padding: 20px 0 10px 0;
+                float: inline-start;
+                inline-size: 100%;
+                padding-block-start: 20px;
+                padding-inline-end: 0;
+                padding-block-end: 10px;
+                padding-inline-start: 0
             }
+
             .logContainer {
-                float: left;
-                width: 100%;
+                float: inline-start;
+                inline-size: 100%;
                 border: 1px solid @alto;
                 background: #fff;
+
                 .no-jobs {
-                    float: left;
-                    width: 100%;
+                    float: inline-start;
+                    inline-size: 100%;
                     text-align: center;
-                    padding: 10px;
+                    padding: 10px
                 }
+
                 .jobHeader-wrapper {
                     &:not(:last-child) {
-                        border-bottom: 1px solid @alto;
+                        border-block-end: 1px solid @alto;
                     }
+
                     width: 100%;
-                    float: left;
-                    padding: 15px 0 15px 0;
+                    float: inline-start;
+                    padding-block-start: 15px;
+                    padding-inline-end: 0;
+                    padding-block-end: 15px;
+                    padding-inline-start: 0;
                     text-transform: uppercase;
+
                     .jobHeader-Indicator {
-                        width: 5%;
-                        float: left;
+                        inline-size: 5%;
+                        float: inline-start
                     }
+
                     .jobHeader-JobDate {
-                        width: 20%;
-                        float: left;
-                        font-weight: bolder;
+                        inline-size: 20%;
+                        float: inline-start;
+                        font-weight: bolder
                     }
+
                     .jobHeader-JobType {
-                        width: 15%;
-                        float: left;
-                        font-weight: bolder;
+                        inline-size: 15%;
+                        float: inline-start;
+                        font-weight: bolder
                     }
+
                     .jobHeader-JobUser {
-                        width: 20%;
-                        float: left;
-                        font-weight: bolder;
+                        inline-size: 20%;
+                        float: inline-start;
+                        font-weight: bolder
                     }
+
                     .jobHeader-JobPortal {
-                        width: 20%;
-                        float: left;
-                        font-weight: bolder;
+                        inline-size: 20%;
+                        float: inline-start;
+                        font-weight: bolder
                     }
+
                     .jobHeader-JobStatus {
-                        width: 15%;
-                        float: left;
-                        font-weight: bolder;
+                        inline-size: 15%;
+                        float: inline-start;
+                        font-weight: bolder
                     }
+
                     .jobHeader-Arrow {
-                        width: 5%;
-                        float: left;
+                        inline-size: 5%;
+                        float: inline-start
                     }
                 }
             }
+
             .logPager {
-                padding: 20px 0;
-                float: left;
-                width: 100%;
+                padding-block-start: 20px;
+                padding-inline-end: 0;
+                padding-block-end: 20px;
+                padding-inline-start: 0;
+                float: inline-start;
+                inline-size: 100%
             }
+
             .logLegend-wrapper {
-                float: left;
-                border-top: solid 1px @alto;
-                width: 100%;
-                padding: 20px 0;
+                float: inline-start;
+                border-block-start: solid 1px @alto;
+                inline-size: 100%;
+                padding-block-start: 20px;
+                padding-inline-end: 0;
+                padding-block-end: 20px;
+                padding-inline-start: 0;
+
                 .logLegend-item {
-                    float: left;
-                    width: 200px;
+                    float: inline-start;
+                    inline-size: 200px;
+
                     .legend-export {
                         color: #fff;
                         background-color: #ff8a14;
-                        width: 15px;
-                        height: 15px;
+                        inline-size: 15px;
+                        block-size: 15px;
                         display: block;
-                        float: left;
-                        margin: 0 6px 0 0;
+                        float: inline-start;
+                        margin-block-start: 0;
+                        margin-inline-end: 6px;
+                        margin-block-end: 0;
+                        margin-inline-start: 0
                     }
+
                     .legend-import {
                         color: #fff;
                         background-color: #099;
-                        width: 15px;
-                        height: 15px;
+                        inline-size: 15px;
+                        block-size: 15px;
                         display: block;
-                        float: left;
-                        margin: 0 6px 0 0;
+                        float: inline-start;
+                        margin-block-start: 0;
+                        margin-inline-end: 6px;
+                        margin-block-end: 0;
+                        margin-inline-start: 0
                     }
                 }
             }

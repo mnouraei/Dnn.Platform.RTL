@@ -1,112 +1,140 @@
 @import "../../styles/index";
+
 .dnn-editable-field {
     display: block;
-    width: 100%;
-    float: left;
-    padding: 15px 30px;
+    inline-size: 100%;
+    float: inline-start;
+    padding-block-start: 15px;
+    padding-inline-end: 30px;
+    padding-block-end: 15px;
+    padding-inline-start: 30px;
     box-sizing: border-box;
-    margin-bottom: 25px;
+    margin-block-end: 25px;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     label.editable-label {
         font-weight: bold;
         text-transform: uppercase;
-        float: left;
-        margin-right: 10px;
+        float: inline-start;
+        margin-inline-end: 10px
     }
+
     .edit-button {
         svg {
-            width: 16px;
-            height: 16px;
-            float: left;
-            cursor: pointer;
+            inline-size: 16px;
+            block-size: 16px;
+            float: inline-start;
+            cursor: pointer
         }
     }
+
     span.editable-value {
-        margin-top: 10px;
+        margin-block-start: 10px;
         display: block;
-        height: auto;
-        float: left;
+        block-size: auto;
+        float: inline-start;
         opacity: 1;
-        width: 100%;
+        inline-size: 100%
     }
+
     div.editable-input {
         transition: .5s;
-        height: 0;
+        block-size: 0;
         display: block;
-        float: left;
-        width: 100%;
+        float: inline-start;
+        inline-size: 100%;
         position: relative;
+
         >div {
-            width: 100%;
-            pointer-events: none;
+            inline-size: 100%;
+            pointer-events: none
         }
-        input, textarea {
-            width: 100%;
+
+        input,
+        textarea {
+            inline-size: 100%;
             opacity: 0;
             border-radius: var(--dnn-controls-radius, 0);
-            pointer-events: none;
+            pointer-events: none
         }
+
         textarea {
-            height: 100%;
-            padding: 8px 16px 20px;
+            block-size: 100%;
+            padding-block-start: 8px;
+            padding-inline-end: 16px;
+            padding-block-end: 20px;
+            padding-inline-start: 16px
         }
+
         .help-text {
             position: absolute;
-            bottom: 10px;
-            right: 5px;
+            inset-block-end: 10px;
+            inset-inline-end: 5px;
             font-size: 13px;
             font-weight: bold;
             color: var(--dnn-color-primary, @curiousBlue);
             opacity: 0;
             transition: .2s;
             transition-delay: 0s;
-            height: 0px;
+            block-size: 0px
         }
+
         .dnn-ui-common-tooltip {
-            display: none;
+            display: none
         }
     }
+
     &.in-edit {
         background-color: @alabaster;
+
         &.textArea {
             div.editable-input {
-                height: 150px;
+                block-size: 150px
             }
         }
+
         &.singleLine {
             div.editable-input {
-                height: 35px;
+                block-size: 35px
             }
         }
+
         div.editable-input {
             >div {
-                width: 100%;
-                pointer-events: all;
+                inline-size: 100%;
+                pointer-events: all
             }
-            input, textarea {
+
+            input,
+            textarea {
                 opacity: 1;
-                pointer-events: all;
+                pointer-events: all
             }
+
             .help-text {
                 opacity: 1;
                 transition: 0s;
                 transition-delay: .2s;
-                height: auto;
+                block-size: auto
             }
         }
+
         span.editable-value {
             opacity: 0;
-            height: 0;
+            block-size: 0
         }
+
         .edit-button {
             svg {
-                fill: @curiousBlue;
+                fill: @curiousBlue
             }
         }
+
         .dnn-ui-common-tooltip {
-            display: block !important;
+            display: block !important
         }
     }
 }

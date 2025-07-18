@@ -442,7 +442,7 @@
             });
             var helpSelector = $this.find(opts.helpSelector);
             $this.parent().css({ position: 'relative' });
-            $this.css({ position: 'absolute', right: '-29%' });
+            $this.css({ position: 'absolute', 'inset-inline-end': '-29%' });
             var hoverOnToolTip = false, hoverOnPd = false;
 
             dnnFormHelp.hoverIntent({

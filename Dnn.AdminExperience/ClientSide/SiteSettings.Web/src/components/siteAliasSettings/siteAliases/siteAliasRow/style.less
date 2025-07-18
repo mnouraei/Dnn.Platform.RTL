@@ -1,100 +1,128 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .collapsible-component-alias {
     display: block;
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%;
     cursor: auto;
+
     &:not(:last-child) {
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
+
     div.collapsible-alias {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 10px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
         box-sizing: border-box;
         cursor: auto;
+
         .row {
-            float: left;
-            width: 100%;
+            float: inline-start;
+            inline-size: 100%;
+
             .item-row-alias {
-                width: 35%;
-                float: left;
-                padding-left: 15px;
-                word-break: break-all;
+                inline-size: 35%;
+                float: inline-start;
+                padding-inline-start: 15px;
+                word-break: break-all
             }
+
             .item-row-browser {
-                width: 12%;
-                float: left;
+                inline-size: 12%;
+                float: inline-start
             }
+
             .item-row-theme {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start;
                 word-break: break-all;
-                padding-right: 5px;
-                box-sizing: border-box;
+                padding-inline-end: 5px;
+                box-sizing: border-box
             }
+
             .item-row-language {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .item-row-primary {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start;
                 text-align: center;
+
                 .checkMarkIcon {
-                    width: 16px;
-                    height: 16px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    > svg {
-                        fill: @thunder;
+                    inline-size: 16px;
+                    block-size: 16px;
+                    margin-inline-start: auto;
+                    margin-inline-end: auto;
+
+                    >svg {
+                        fill: @thunder
                     }
                 }
             }
+
             .item-row-actionButtons {
-                width: 8%;
-                margin-right: 15px;
-                float: right;
+                inline-size: 8%;
+                margin-inline-end: 15px;
+                float: inline-end;
+
                 &:not(:last-child) {
-                    float: left;
-                    margin-right: 0px;
+                    float: inline-start;
+                    margin-inline-end: 0px
                 }
-                .delete-icon, .edit-icon {
-                    margin-left: 5px;
-                    float: right;
+
+                .delete-icon,
+                .edit-icon {
+                    margin-inline-start: 5px;
+                    float: inline-end;
                     display: block;
                     cursor: pointer;
-                    > svg {
-                        width: 16px;
-                        float: left;
-                        height: 16px;
+
+                    >svg {
+                        inline-size: 16px;
+                        float: inline-start;
+                        block-size: 16px;
+
                         &:hover {
-                            fill: @thunder;
+                            fill: @thunder
                         }
-                        fill: @alto;
+
+                        fill: @alto
                     }
                 }
+
                 .delete-icon-hidden {
-                    display: none;
+                    display: none
                 }
+
                 .edit-icon-active {
-                    > svg {
-                        width: 16px;
-                        float: right;
-                        height: 16px;
-                        fill: @curiousBlue;
+                    >svg {
+                        inline-size: 16px;
+                        float: inline-end;
+                        block-size: 16px;
+                        fill: @curiousBlue
                     }
                 }
             }
+
             .item-row-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px
             }
         }
     }
+
     .collapsible-alias-body {
-        float: left;
-        width: 100%;
-        overflow: inherit;
+        float: inline-start;
+        inline-size: 100%;
+        overflow: inherit
     }
 }

@@ -1,93 +1,121 @@
 ﻿.dnnSearchBoxPanel {
-    width: 100%;
-    padding: 10px 5px;
-    background-color: #ddd;
+    inline-size: 100%;
+    padding-block-start: 10px;
+    padding-inline-end: 5px;
+    padding-block-end: 10px;
+    padding-inline-start: 5px;
+    background-color: #ddd
 }
 
     .dnnSearchBoxPanel .dnnSearchBox {
-        margin-left: 0;
-        margin-right: 105px;
+        margin-inline-start: 0;
+        margin-inline-end: 105px;
         display: block;
-        padding-right: 10px;
+        padding-inline-end: 10px
     }
 
     .dnnSearchBoxPanel > div {
-        margin-left: 10px;
+        margin-inline-start: 10px
     }
 
 .dnnSearchResultAdvancedTip {
-    float: right;
+    float: inline-end;
     display: block;
-    margin: 10px 0 0 0;
-    width: 90px;
+    margin-block-start: 10px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    inline-size: 90px
 }
 
 .dnnSearchResultPanel {
-    width: 100%;
-    margin: 10px 0 0 0;
-    padding: 10px 0 7px 0;
-    background-color: #ddd;
+    inline-size: 100%;
+    margin-block-start: 10px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    padding-block-start: 10px;
+    padding-inline-end: 0;
+    padding-block-end: 7px;
+    padding-inline-start: 0;
+    background-color: #ddd
 }
 
     .dnnSearchResultPanel .selectize-control {
-        width: 100px;
+        inline-size: 100px
     }
 
     .dnnSearchResultPanel .dnnRight {
-        margin-right: 10px;
+        margin-inline-end: 10px
     }
 
     .dnnSearchResultPanel .dnnSearchResultSortOptions {
-        margin: 0 0 0 0;
-        padding: 0 5px 0 0;
+        margin: 0;
+        padding-block-start: 0;
+        padding-inline-end: 5px;
+        padding-block-end: 0;
+        padding-inline-start: 0;
         list-style-type: none;
         border-radius: 3px;
-        border: 1px solid #ccc;
+        border: 1px solid #ccc
     }
 
         .dnnSearchResultPanel .dnnSearchResultSortOptions > li {
             list-style: none;
             display: inline-block;
-            margin: 0 -5px 0 0;
+            margin-block-start: 0;
+            margin-inline-end: -5px;
+            margin-block-end: 0;
+            margin-inline-start: 0;
             padding: 0;
-            border-left: 1px solid #ccc;
+            border-inline-start: 1px solid #ccc
         }
 
             .dnnSearchResultPanel .dnnSearchResultSortOptions > li:first-child {
-                border-left: none;
+                border-inline-start: none
             }
 
             .dnnSearchResultPanel .dnnSearchResultSortOptions > li > a {
                 display: block;
-                padding: 7px 15px 7px 15px;
+                padding-block-start: 7px;
+                padding-inline-end: 15px;
+                padding-block-end: 7px;
+                padding-inline-start: 15px;
                 margin: 0;
                 color: #666;
                 background: #fff;
-                background: -moz-linear-gradient(top, #fff 0%, #f0f2f1 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#f0f2f1)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top, #fff 0%,#f0f2f1 100%); /* Chrome10+,Safari5.1+ */
-                background: linear-gradient(to bottom, #fff 0%,#f0f2f1 100%); /* W3C */
+                background: -moz-linear-gradient(top, #fff 0%, #f0f2f1 100%);
+                /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(100%,#f0f2f1));
+                /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #fff 0%,#f0f2f1 100%);
+                /* Chrome10+,Safari5.1+ */ background: linear-gradient(to bottom, #fff 0%,#f0f2f1 100%);
+                /* W3C */
             }
 
             .dnnSearchResultPanel .dnnSearchResultSortOptions > li.active > a,
             .dnnSearchResultPanel .dnnSearchResultSortOptions > li.active > a:hover {
                 background-color: #e8f1fa;
-                background: -moz-linear-gradient(top, #ccc 0%, #fff 100%); /* FF3.6+ */
-                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ccc), color-stop(100%,#fff)); /* Chrome,Safari4+ */
-                background: -webkit-linear-gradient(top, #ccc 0%,#fff 100%); /* Chrome10+,Safari5.1+ */
-                background: linear-gradient(to bottom, #ccc 0%,#fff 100%); /* W3C */
-                color: #333;
+                background: -moz-linear-gradient(top, #ccc 0%, #fff 100%);
+                /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ccc), color-stop(100%,#fff));
+                /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #ccc 0%,#fff 100%);
+                /* Chrome10+,Safari5.1+ */ background: linear-gradient(to bottom, #ccc 0%,#fff 100%);
+                /* W3C */ color: #333
             }
 
     .dnnSearchResultPanel > .dnnRight > span.dnnSearchResultCountPerPage, .dnnSearchResultPanel > .dnnLeft > span.dnnSearchResultCountPerPage {
         display: inline-block;
-        margin: 10px 5px 0 10px;
+        margin-block-start: 10px;
+        margin-inline-end: 5px;
+        margin-block-end: 0;
+        margin-inline-start: 10px;
         color: #666;
-        vertical-align: top;
+        vertical-align: top
     }
 
 .dnnSearchResultContainer {
-    margin: 30px 0 0 0;
+    margin-block-start: 30px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0
 }
 
 .dnnSearchLoading {
@@ -97,124 +125,166 @@
     background-image: url(../../../images/loading.gif);
     background-repeat: no-repeat;
     background-position: center center;
-    margin: 30px 0 0 0;
+    margin-block-start: 30px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0
 }
 
 
 .dnnSearchResultContainer > .dnnSearchResultItem {
-    width: 100%;
-    margin: 0 0 30px 0;
+    inline-size: 100%;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-block-end: 30px;
+    margin-inline-start: 0
 }
 
     .dnnSearchResultContainer > .dnnSearchResultItem > .dnnSearchResultItem-Title {
         font-size: 17px;
         font-weight: bold;
-        margin: 0 0 6px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 6px;
+        margin-inline-start: 0
     }
 
         .dnnSearchResultContainer > .dnnSearchResultItem > .dnnSearchResultItem-Title b {
-            font-style: italic;
+            font-style: italic
         }
 
     .dnnSearchResultContainer > .dnnSearchResultItem > .dnnSearchResultItem-Description {
         color: #666;
-        margin: 0 0 6px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 6px;
+        margin-inline-start: 0
     }
 
         .dnnSearchResultContainer > .dnnSearchResultItem > .dnnSearchResultItem-Description b {
-            color: #000;
+            color: #000
         }
 
     .dnnSearchResultContainer > .dnnSearchResultItem > .dnnSearchResultItem-Others span {
         font-weight: bold;
-        color: #777;
+        color: #777
     }
 
         .dnnSearchResultContainer > .dnnSearchResultItem > .dnnSearchResultItem-Others span + label {
-            font-weight: normal;
+            font-weight: normal
         }
 
     .dnnSearchResultContainer > .dnnSearchResultItem > .dnnSearchResultItem-Others a {
         display: inline-block;
-        margin: 0 2px 0 0;
-        vertical-align: top;
+        margin-block-start: 0;
+        margin-inline-end: 2px;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        vertical-align: top
     }
 
 .dnnSearchResultContainer > .dnnSearchResultItem-Subset {
-    margin: -10px 10px 30px 30px;
+    margin-block-start: -10px;
+    margin-inline-end: 10px;
+    margin-block-end: 30px;
+    margin-inline-start: 30px
 }
 
     .dnnSearchResultContainer > .dnnSearchResultItem-Subset > .dnnSearchResultItem-Title {
         font-weight: bold;
-        margin: 0 0 3px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 3px;
+        margin-inline-start: 0
     }
 
     .dnnSearchResultContainer > .dnnSearchResultItem-Subset > .dnnSearchResultItem-Description {
         color: #666;
-        margin: 0 0 6px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 6px;
+        margin-inline-start: 0
     }
 
         .dnnSearchResultContainer > .dnnSearchResultItem-Subset > .dnnSearchResultItem-Description b {
-            color: #000;
+            color: #000
         }
 
     .dnnSearchResultContainer > .dnnSearchResultItem-Subset > .dnnSearchResultItem-Others span {
         font-weight: bold;
-        color: #777;
+        color: #777
     }
 
         .dnnSearchResultContainer > .dnnSearchResultItem-Subset > .dnnSearchResultItem-Others span + label {
-            font-weight: normal;
+            font-weight: normal
         }
 
     .dnnSearchResultContainer > .dnnSearchResultItem-Subset > .dnnSearchResultItem-Others a {
         display: inline-block;
-        margin: 0 2px 0 0;
-        vertical-align: top;
+        margin-block-start: 0;
+        margin-inline-end: 2px;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        vertical-align: top
     }
 
 
 .dnnSearchResultPager {
-    margin: 30px 0 0 0;
-    padding: 15px 0 15px 0;
-    border-top: 1px solid #ccc;
+    margin-block-start: 30px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    padding-block-start: 15px;
+    padding-inline-end: 0;
+    padding-block-end: 15px;
+    padding-inline-start: 0;
+    border-block-start: 1px solid #ccc
 }
 
     .dnnSearchResultPager.dnnSearchResultPagerTop {
-        border-top: none;
-        border-bottom: 1px solid #ccc;
-        margin: 10px 0 30px 0;
+        border-block-start: none;
+        border-block-end: 1px solid #ccc;
+        margin-block-start: 10px;
+        margin-inline-end: 0;
+        margin-block-end: 30px;
+        margin-inline-start: 0
     }
 
     .dnnSearchResultPager span {
         display: inline-block;
         color: #666;
-        margin: 6px 3px 0 0;
-        vertical-align: top;
+        margin-block-start: 6px;
+        margin-inline-end: 3px;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+        vertical-align: top
     }
 
         .dnnSearchResultPager span.dnnPager-current {
-            margin: 6px 20px 0 0;
+            margin-block-start: 6px;
+            margin-inline-end: 20px;
+            margin-block-end: 0;
+            margin-inline-start: 0
         }
 
     .dnnSearchResultPager a {
         -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4), inset 0 1px 0 0 rgba(255, 255, 255, 1);
-        background: #fff; /* Old browsers */
-        background: -moz-linear-gradient(top, #fff 0%, #eee6e5 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #eee6e5)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top, #fff 0%, #eee6e5 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top, #fff 0%, #eee6e5 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top, #fff 0%,#eee6e5 100%); /* IE10+ */
-        background: linear-gradient(to bottom, #fff 0%,#eee6e5 100%); /* W3C */
-        border: 1px solid #dddddd;
+        background: #fff;
+        /* Old browsers */ background: -moz-linear-gradient(top, #fff 0%, #eee6e5 100%);
+        /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #eee6e5));
+        /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #fff 0%, #eee6e5 100%);
+        /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #fff 0%, #eee6e5 100%);
+        /* Opera 11.10+ */ background: -ms-linear-gradient(top, #fff 0%,#eee6e5 100%);
+        /* IE10+ */ background: linear-gradient(to bottom, #fff 0%,#eee6e5 100%);
+        /* W3C */ border: 1px solid #dddddd;
         box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.4), inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
         color: #555;
         display: inline-block;
-        height: 32px;
-        margin-top: -6px;
+        block-size: 32px;
+        margin-block-start: -6px;
         text-shadow: 0 1px 0 #ffffff;
-        width: 25px;
-        vertical-align: top;
+        inline-size: 25px;
+        vertical-align: top
     }
 
         .dnnSearchResultPager a.dnnPager-next {
@@ -223,8 +293,8 @@
             background-image: url("../../../icons/sigma/right.png");
             background-position: center;
             background-repeat: no-repeat;
-            border-bottom-right-radius: 3px;
-            border-top-right-radius: 3px;
+            border-end-end-radius: 3px;
+            border-start-end-radius: 3px
         }
 
         .dnnSearchResultPager a.dnnPager-prev {
@@ -233,103 +303,111 @@
             background-image: url("../../../icons/sigma/left.png");
             background-position: center;
             background-repeat: no-repeat;
-            border-bottom-left-radius: 3px;
-            border-right: none;
-            border-top-left-radius: 3px;
+            border-end-start-radius: 3px;
+            border-inline-end: none;
+            border-start-start-radius: 3px
         }
 
         .dnnSearchResultPager a.dnnPager-disable {
-            opacity: 0.65;
+            opacity: 0.65
         }
 
 #dnnSearchResultAdvancedForm {
-    margin: 20px 0 0 0;
-    width: 450px;
+    margin-block-start: 20px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    inline-size: 450px
 }
 
     #dnnSearchResultAdvancedForm .dnnFormItem {
-        margin-bottom: 5px;
+        margin-block-end: 5px
     }
 
     #dnnSearchResultAdvancedForm.dnnForm .dnnFormItem > .selectize-control {
-        width: 235px;
-        margin-bottom: 0;
+        inline-size: 235px;
+        margin-block-end: 0
     }
 
     #dnnSearchResultAdvancedForm .dnnActions {
-        margin: 10px 0 5px 20px;
-        padding: 0;
+        margin-block-start: 10px;
+        margin-inline-end: 0;
+        margin-block-end: 5px;
+        margin-inline-start: 20px;
+        padding: 0
     }
 
 #dnnSearchResult-advancedTipContainer {
-    margin-right: 10px;
-    display: none;
+    margin-inline-end: 10px;
+    display: none
 }
 
 .dnnSearchResult-hint-tbl {
-    margin: 20px 0 10px 0;
-    width: 100%;
+    margin-block-start: 20px;
+    margin-inline-end: 0;
+    margin-block-end: 10px;
+    margin-inline-start: 0;
+    inline-size: 100%;
     background-color: #fff;
-    border-collapse: collapse;
+    border-collapse: collapse
 }
 
 @media only screen and (max-width: 715px) {
     .dnnSearchBox_advanced_dropdown {
-        width: 420px;
-        left: -254px;
+        inline-size: 420px;
+        inset-inline-start: -254px
     }
 }
 
 @media only screen and (max-width: 580px) {
-
     #dnnSearchResultAdvancedForm {
-        width: 250px;
+        inline-size: 250px
     }
 
     .dnnSearchBox_advanced_dropdown {
-        left: -150px !important;
-        width: 250px;
+        inset-inline-start: -150px !important;
+        inline-size: 250px
     }
 
     #dnnSearchResultAdvancedForm .dnnLabel {
         white-space: nowrap;
-        margin-right: 1em;
-        text-align: left;
+        margin-inline-end: 1em;
+        text-align: start;
         float: none;
         display: block;
-        width: 100%;
+        inline-size: 100%
     }
 
         #dnnSearchResultAdvancedForm .dnnLabel label {
-            margin-right: .3em;
+            margin-inline-end: .3em
         }
 
     #dnnSearchResultAdvancedForm .dnnFormHelp {
         position: relative !important;
-        width: 20px;
+        inline-size: 20px
     }
 
     #dnnSearchResultAdvancedForm .dnnTooltip {
-        left: 30% !important;
-        white-space: normal;
+        inset-inline-start: 30% !important;
+        white-space: normal
     }
 
     #dnnSearchResultAdvancedForm .dnnCheckbox {
         position: absolute;
-        top: -8px;
-        left: 135px;
+        inset-block-start: -8px;
+        inset-inline-start: 135px
     }
 }
 
 @media only screen and (max-width: 475px) {
     .dnnSearchBox_advanced_dropdown {
-        left: -48px !important;
+        inset-inline-start: -48px !important
     }
 }
 
 
 @media only screen and (max-width: 390px) {
     .dnnSearchBox_advanced_dropdown {
-        left: -5px !important;
+        inset-inline-start: -5px !important
     }
 }

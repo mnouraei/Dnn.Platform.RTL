@@ -1,61 +1,73 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.moduleContainer) {
     .module-title {
-        text-align: right;
-        width: 100%;
-        float: right;
-        margin: 0 0 15px 0;
+        text-align: end;
+        inline-size: 100%;
+        float: inline-end;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 15px;
+        margin-inline-start: 0;
         font-weight: bolder;
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
         overflow: hidden;
-        height: 32px;    
+        block-size: 32px;
+
         .sectionTitle {
             font-weight: bolder;
-            float: left;
-            line-height: 25px;
+            float: inline-start;
+            line-height: 25px
         }
 
         .module-icon svg {
-            width: 24px;
-            height: 24px;
-            float: left;
+            inline-size: 24px;
+            block-size: 24px;
+            float: inline-start;
             fill: @thunder;
-            margin-right: 5px;
-        }        
+            margin-inline-end: 5px;
+        }
     }
 
     .module-table {
-        float: left;
-        width: 100%;
-        margin-bottom: 20px;
-        border-left: 1px solid @alto;
-        border-right: 1px solid @alto;
+        float: inline-start;
+        inline-size: 100%;
+        margin-block-end: 20px;
+        border-inline-start: 1px solid @alto;
+        border-inline-end: 1px solid @alto;
     }
 
     .no-modules {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         text-align: center;
         font-weight: bold;
-        padding: 13px 20px;
+        padding-block-start: 13px;
+        padding-inline-end: 20px;
+        padding-block-end: 13px;
+        padding-inline-start: 20px;
         box-sizing: border-box;
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
 
     .header-row {
         display: table;
-        width: 100%;
-        border-bottom: 1px solid @alto;
-        border-top: 1px solid @alto;
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        border-block-end: 1px solid @alto;
+        border-block-start: 1px solid @alto;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 20px;
+        padding-block-start: 15px;
+        padding-inline-end: 20px;
+        padding-block-end: 15px;
+        padding-inline-start: 20px;
         box-sizing: border-box;
         text-transform: uppercase;
     }
+
     .add-setting-editor {
         //border-bottom: 1px solid @alto;
-        float: left;
+        float: inline-start
     }
 }

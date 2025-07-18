@@ -1,157 +1,208 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .collapsible-component-language {
     display: block;
-    width: 100%;
+    inline-size: 100%;
     cursor: auto;
+
     &:not(:last-child) {
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
+
     .language-permission-grid {
-        width: 100%;
-        > div {
-            float: left;
-            width: 100%;
+        inline-size: 100%;
+
+        >div {
+            float: inline-start;
+            inline-size: 100%
         }
     }
+
     div.collapsible-header-language {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 10px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
         box-sizing: border-box;
         cursor: auto;
+
         .row {
-            float: left;
-            width: 100%;
+            float: inline-start;
+            inline-size: 100%;
+
             .item-row-name {
-                width: 73%;
-                float: left;
-                padding-left: 15px;
+                inline-size: 73%;
+                float: inline-start;
+                padding-inline-start: 15px;
+
                 .language-flag {
-                    float: left;
+                    float: inline-start
                 }
+
                 .language-name {
-                    float: left;
-                    margin-left: 10px;
-                    width: 80%;
+                    float: inline-start;
+                    margin-inline-start: 10px;
+                    inline-size: 80%
                 }
             }
+
             .item-row-enabled {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start;
                 text-align: center;
+
                 .checkMarkIcon {
-                    width: 16px;
-                    height: 16px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    > svg {
-                        fill: @thunder;
+                    inline-size: 16px;
+                    block-size: 16px;
+                    margin-inline-start: auto;
+                    margin-inline-end: auto;
+
+                    >svg {
+                        fill: @thunder
                     }
                 }
             }
+
             .item-row-name-adv {
-                width: 35%;
-                float: left;
-                padding-left: 15px;
+                inline-size: 35%;
+                float: inline-start;
+                padding-inline-start: 15px;
+
                 .language-flag {
-                    float: left;
+                    float: inline-start
                 }
+
                 .language-name {
-                    float: left;
-                    margin-left: 10px;
-                    width: 80%;
+                    float: inline-start;
+                    margin-inline-start: 10px;
+                    inline-size: 80%
                 }
             }
-            .item-row-pages, .item-row-translated {
-                width: 13%;
-                float: left;
+
+            .item-row-pages,
+            .item-row-translated {
+                inline-size: 13%;
+                float: inline-start;
+
                 .pages-number-status {
-                    width: auto;
-                    margin-left: auto;
-                    margin-right: auto;
-                    float: left;
+                    inline-size: auto;
+                    margin-inline-start: auto;
+                    margin-inline-end: auto;
+                    float: inline-start;
+
                     .pages-number {
-                        float: left;
+                        float: inline-start
                     }
+
                     .pages-status {
-                        float: left;
-                        margin-left: 3px;
+                        float: inline-start;
+                        margin-inline-start: 3px;
                         font-size: 10px;
-                        margin-top: 3px;
+                        margin-block-start: 3px
                     }
                 }
             }
-            .item-row-active, .item-row-enabled-adv {
-                width: 9%;
-                float: left;
+
+            .item-row-active,
+            .item-row-enabled-adv {
+                inline-size: 9%;
+                float: inline-start;
                 text-align: center;
+
                 .checkMarkIcon {
-                    width: 22px;
-                    height: 22px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    > svg {
-                        fill: @thunder;
+                    inline-size: 22px;
+                    block-size: 22px;
+                    margin-inline-start: auto;
+                    margin-inline-end: auto;
+
+                    >svg {
+                        fill: @thunder
                     }
                 }
             }
+
             .item-row-actionButtons-adv {
-                width: 16% !important;
+                inline-size: 16% !important
             }
+
             .item-row-actionButtons {
-                width: 12%;
-                margin-right: 15px;
-                float: right;
-                .edit-icon, .editor-icon, .translator-icon, .page-editor-icon {
-                    margin-left: 5px;
-                    float: right;
+                inline-size: 12%;
+                margin-inline-end: 15px;
+                float: inline-end;
+
+                .edit-icon,
+                .editor-icon,
+                .translator-icon,
+                .page-editor-icon {
+                    margin-inline-start: 5px;
+                    float: inline-end;
                     display: block;
                     cursor: pointer;
-                    > svg {
-                        width: 22px;
-                        float: right;
-                        height: 22px;
-                        margin-top: -2px;
+
+                    >svg {
+                        inline-size: 22px;
+                        float: inline-end;
+                        block-size: 22px;
+                        margin-block-start: -2px;
+
                         &:hover {
-                            fill: @thunder;
+                            fill: @thunder
                         }
-                        fill: @alto;
+
+                        fill: @alto
                     }
                 }
+
                 .edit-icon-active, .editor-icon-active, .translator-icon-active, .editor-icon-active {
-                    > svg {
-                        width: 22px;
-                        float: right;
-                        height: 22px;
-                        margin-left: 5px;
+                    >svg {
+                        inline-size: 22px;
+                        float: inline-end;
+                        block-size: 22px;
+                        margin-inline-start: 5px;
                         fill: @curiousBlue;
-                        margin-top: -2px;
+                        margin-block-start: -2px
                     }
                 }
-                .translator-icon-disable, .editor-icon-disable, .edit-icon-disable, .page-editor-icon-disable {
-                    margin-left: 5px;
-                    float: right;
+
+                .translator-icon-disable,
+                .editor-icon-disable,
+                .edit-icon-disable,
+                .page-editor-icon-disable {
+                    margin-inline-start: 5px;
+                    float: inline-end;
                     display: block;
-                    > svg {
-                        width: 22px;
-                        float: right;
-                        height: 22px;
+
+                    >svg {
+                        inline-size: 22px;
+                        float: inline-end;
+                        block-size: 22px;
                         fill: @alto;
-                        margin-top: -2px;
+                        margin-block-start: -2px
                     }
                 }
-                .edit-icon-hidden, .editor-icon-hidden, .translator-icon-hidden, .page-editor-icon-hidden {
-                    display: none;
+
+                .edit-icon-hidden,
+                .editor-icon-hidden,
+                .translator-icon-hidden,
+                .page-editor-icon-hidden {
+                    display: none
                 }
             }
+
             .item-row-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px
             }
         }
     }
+
     .collapsible-body-language {
-        width: 100%;
-        overflow: visible;
+        inline-size: 100%;
+        overflow: visible
     }
 }

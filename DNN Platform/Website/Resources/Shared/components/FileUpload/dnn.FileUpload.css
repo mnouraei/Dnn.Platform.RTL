@@ -1,118 +1,139 @@
 ﻿.fu-container {
-    width: 100%;
+    inline-size: 100%;
     background: #fff;
-    margin: 20px 0 0;
+    margin-block-start: 20px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0
 }
 
 .fu-container .fu-dialog-header {
     margin: 0;
-    font-weight: normal;
+    font-weight: normal
 }
 
 .fu-container .dnnFileUploadFooter span.dnnInputFileWrapper {
-    display: block;
+    display: block
 }
 
 .fu-container .fu-dialog-content {
     background: #eaeaea;
     padding: 10px;
-    margin: 15px 0 0 0;
+    margin-block-start: 15px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0
 }
 
 .fu-container .dnnDropDownList .dt-container {
-    right: 0;
+    inset-inline-end: 0
 }
 
 .fu-container .fu-dialog-content-header {
-    margin: 0 0 10px 0;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-block-end: 10px;
+    margin-inline-start: 0
 }
 
 .fu-container .fu-dialog-content-header:after {
     content: ".";
     display: block;
-    height: 0;
+    block-size: 0;
     clear: both;
-    visibility: hidden;
+    visibility: hidden
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li:first-child {
-    border-left: none;
+    border-inline-start: none
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li:first-child>a {
-    border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li:last-child>a {
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li>a.upload-file {
-    background-image: url('../../../../images/icon-upload-file.png');
+    background-image: url('../../../../images/icon-upload-file.png')
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li>a.upload-file:hover {
-    background-image: url('../../../../images/icon-upload-file_hover.png');
+    background-image: url('../../../../images/icon-upload-file_hover.png')
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li>a.from-url {
-    background-image: url('../../../../images/icon-from-url.png');
+    background-image: url('../../../../images/icon-from-url.png')
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li>a.from-url:hover {
-    background-image: url('../../../../images/icon-from-url_hover.png');
+    background-image: url('../../../../images/icon-from-url_hover.png')
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup {
-    float: left;
+    float: inline-start
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li a.active {
-    background-color: #f3f3f3;
+    background-color: #f3f3f3
 }
 
 .fu-container .fu-dialog-content-header ul.dnnButtonGroup>li>a {
-    padding: 7px 16px 6px 44px;
+    padding-block-start: 7px;
+    padding-inline-end: 16px;
+    padding-block-end: 6px;
+    padding-inline-start: 44px;
     background-repeat: no-repeat;
-    background-position: 12px 7px;
+    background-position: 12px 7px
 }
 
 .fu-container .dnnDropDownList .selected-item {
     background: none repeat scroll 0 0 #fff;
-    box-shadow: none;
+    box-shadow: none
 }
 
 .fu-container .fu-dialog-content-header>.dnnLeft>span {
-    float: left;
-    margin: 0 0 0 10px;
-    line-height: 36px;
+    float: inline-start;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 10px;
+    line-height: 36px
 }
 
 .fu-container .fu-dialog-content-header>.dnnLeft>span>input[type="checkbox"] {
-    vertical-align: -2px;
+    vertical-align: -2px
 }
 
 .fu-container .fu-dialog-content-header>.dnnLeft>span>.fu-decompress-label {
     font-weight: bold;
-    margin: 0 0 0 6px;
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 6px
 }
 
 .fu-container .fu-dialog-content-header>.dnnRight>label {
     font-weight: bold;
     line-height: 36px;
-    float: left;
-    margin: 0 6px 0 0;
+    float: inline-start;
+    margin-block-start: 0;
+    margin-inline-end: 6px;
+    margin-block-end: 0;
+    margin-inline-start: 0
 }
 
 .fu-container .fu-dialog-content-header>.dnnRight>span {
     line-height: 36px;
-    float: left;
-    width: 200px;
+    float: inline-start;
+    inline-size: 200px
 }
 
 .fu-container .fu-dialog-content-header>.dnnRight>.dnnDropDownList {
-    width: 200px;
-    float: left;
+    inline-size: 200px;
+    float: inline-start
 }
 
 .fu-container .fu-dialog-content-fileupload-local {
@@ -121,7 +142,7 @@
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
-    padding: 20px;
+    padding: 20px
 }
 
 .fu-container .fu-dialog-content-fileupload-local .fu-dialog-drag-and-drop-area {
@@ -132,34 +153,34 @@
     border-style: dashed;
     border-width: 2px;
     color: #333;
-    height: 65px;
+    block-size: 65px;
     position: relative;
     transition: box-shadow 200ms ease-in-out 0s;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .fu-container .fu-dialog-content-fileupload-local .fu-dialog-drag-and-drop-area.dragover {
-    box-shadow: 0 0 13px 8px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 0 13px 8px rgba(0, 0, 0, 0.1) inset
 }
 
 .fu-container .fu-dialog-content-fileupload-local .fu-dialog-drag-and-drop-area-message {
     font-size: 11px;
     text-align: center;
-    width: 100%;
+    inline-size: 100%;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    inset-block-start: 0;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    margin: auto
 }
 
 .fu-container .fu-dialog-content-fileupload-local .fu-dialog-drag-and-drop-area-message span.dnnInputFileWrapper {
     float: none !important;
     text-transform: uppercase;
     margin: 0;
-    padding-top: 39px;
-    padding-bottom: 10px;
+    padding-block-start: 39px;
+    padding-block-end: 10px
 }
 
 .fu-container .fu-dialog-content-fileupload-web {
@@ -168,64 +189,70 @@
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
-    padding: 0 10px;
+    padding-block-start: 0;
+    padding-inline-end: 10px;
+    padding-block-end: 0;
+    padding-inline-start: 10px
 }
 
 .fu-container .fu-dialog-content-fileupload-web .fu-dialog-url-upload-area {
-    width: 100%;
+    inline-size: 100%
 }
 
 .fu-container .fu-dialog-content-fileupload-web .fu-dialog-url-upload-area {
-    width: 100%;
-    height: 109px;
+    inline-size: 100%;
+    block-size: 109px
 }
 
 .fu-container .fu-dialog-content-fileupload-web .fu-dialog-url-upload-area td:first-child {
-    width: 100%;
+    inline-size: 100%
 }
 
 .fu-container .fu-dialog-content-fileupload-web .fu-dialog-url-upload-area div {
     overflow: hidden;
-    width: 100%;
+    inline-size: 100%
 }
 
 .fu-container .fu-dialog-content-fileupload-web .fu-dialog-url-upload-area div input {
-    width: 95%;
+    inline-size: 95%;
     margin: 0;
-    border-radius: 4px;
+    border-radius: 4px
 }
 
 .fu-container .fu-dialog-content-fileupload-web .fu-dialog-url-upload-area div input.fu-dialog-url-error {
     border: 1px solid #b97575;
-    background-color: #f2c9c9;
+    background-color: #f2c9c9
 }
 
 .fu-container .fu-dialog-content-fileupload-web a.dnnSecondaryAction {
     display: block;
-    margin: 0;
+    margin: 0
 }
 
 .fu-container .fu-fileupload-statuses-container {
-    margin-top: 20px;
-    height: 240px;
+    margin-block-start: 20px;
+    block-size: 240px;
     overflow: hidden;
     position: relative;
-    width: 100%;
+    inline-size: 100%
 }
 
 .fu-container ul.fu-fileupload-statuses,
 .fu-container ul.fu-fileupload-statuses li {
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none
 }
 
 .fu-container ul.fu-fileupload-statuses {
-    margin: 0 30px 0 2px;
+    margin-block-start: 0;
+    margin-inline-end: 30px;
+    margin-block-end: 0;
+    margin-inline-start: 2px
 }
 
 .fu-container ul.fu-fileupload-statuses li {
-    overflow: hidden;
+    overflow: hidden
 }
 
 .fu-container ul.fu-fileupload-statuses li .fu-fileupload-filename {
@@ -234,53 +261,62 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
-    max-width: 400px;
+    max-inline-size: 400px
 }
 
 .fu-container ul.fu-fileupload-statuses li {
-    padding: 6px 0;
-    border-bottom: #fff solid 1px;
+    padding-block-start: 6px;
+    padding-inline-end: 0;
+    padding-block-end: 6px;
+    padding-inline-start: 0;
+    border-block-end: #fff solid 1px
 }
 
 .fu-container .fu-fileupload-statuses .fu-fileupload-progressbar-container {
-    float: right;
+    float: inline-end;
     border: 1px solid #B6BAC2;
     border-radius: 5px;
     padding: 2px;
-    margin: 3px 0;
+    margin-block-start: 3px;
+    margin-inline-end: 0;
+    margin-block-end: 3px;
+    margin-inline-start: 0;
     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.1)), color-stop(1, transparent));
     background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
-    width: 200px;
-    height: 24px;
-    box-shadow: 0 1px white;
+    inline-size: 200px;
+    block-size: 24px;
+    box-shadow: 0 1px white
 }
 
 .fu-container .fu-fileupload-statuses .fu-fileupload-filename-container {
     display: block;
-    float: left;
+    float: inline-start;
     color: #777;
     padding: 0;
-    margin: 0 0 0 10px
+    margin-block-start: 0;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 10px
 }
 
 .fu-file-already-exists-prompt {
     overflow: hidden;
-    font-style: italic;
+    font-style: italic
 }
 
 .fu-file-already-exists-prompt .fu-status-message {
-    float: left;
+    float: inline-start;
     overflow: hidden;
     display: inline-block;
-    max-width: 400px;
-    line-height: 12px;
+    max-inline-size: 400px;
+    line-height: 12px
 }
 
 .fu-status-error .fu-file-already-exists-prompt .fu-status-message {
-    color: #bd522c;
+    color: #bd522c
 }
 
 a.fu-fileupload-thumbnail,
@@ -288,73 +324,73 @@ a.fu-fileupload-thumbnail:link,
 a.fu-fileupload-thumbnail:visited,
 a.fu-fileupload-thumbnail:hover,
 a.fu-fileupload-thumbnail:active {
-    float: left;
+    float: inline-start;
     position: relative;
-    height: 76px;
-    width: 76px;
+    block-size: 76px;
+    inline-size: 76px;
     background: none repeat scroll 0 0 #E8F0FB;
     border: 1px solid #aaa;
-    /*border-color: #ccc #aaa #aaa #ccc;*/
+    /*border-color: #ccc #aaa #aaa #ccc;
+    */
     overflow: hidden;
     border-color: #CED4E0;
     border-radius: 4px;
     opacity: 0.9;
-
     -webkit-transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
     -moz-transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
     -o-transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out
 }
 
 a.fu-fileupload-thumbnail:hover {
     background-color: #fff;
-    opacity: 1;
+    opacity: 1
 }
 
 a.fu-fileupload-thumbnail-inactive:hover {
     background-color: #E8F0FB;
     opacity: 0.9;
-    cursor: default;
+    cursor: default
 }
 
 .fu-status-error a.fu-fileupload-thumbnail:hover {
     background: none repeat scroll 0 0 #E8F0FB;
-    cursor: default;
+    cursor: default
 }
 
 .fu-fileupload-thumbnail div {
     padding: 0;
     position: relative;
     line-height: 76px;
-    text-align: center;
+    text-align: center
 }
 
 .fu-fileupload-thumbnail img {
-    border: none;
+    border: none
 }
 
 .fu-fileupload-thumbnail img.ls {
-    width: 100%;
-    vertical-align: middle;
+    inline-size: 100%;
+    vertical-align: middle
 }
 
 .fu-fileupload-thumbnail img.pt {
-    height: 100%;
+    block-size: 100%
 }
 
 .fu-status-uploaded .fu-file-already-exists-prompt .fu-status-message {
-    color: #2b7fda;
+    color: #2b7fda
 }
 
 .fu-status-cancelled .fu-file-already-exists-prompt .fu-status-message {
-    color: #777;
+    color: #777
 }
 
 .fu-container .fu-status-cancelled .ui-progressbar .ui-progressbar-value {
     background: rgb(188, 188, 188);
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JjYmNiYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: url('data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JjYmNiYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZGVkZWQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
     background: -moz-linear-gradient(left, rgba(188, 188, 188, 1) 0%, rgba(237, 237, 237, 1) 100%);
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(188, 188, 188, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
@@ -375,7 +411,7 @@ a.fu-fileupload-thumbnail-inactive:hover {
     background: rgb(189, 82, 44);
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JkNTIyYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZTdmMjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: url('data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2JkNTIyYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZTdmMjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+');
     background: -moz-linear-gradient(left, rgba(189, 82, 44, 1) 0%, rgba(238, 127, 39, 1) 100%);
     /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(189, 82, 44, 1)), color-stop(100%, rgba(238, 127, 39, 1)));
@@ -394,75 +430,86 @@ a.fu-fileupload-thumbnail-inactive:hover {
 
 .fu-file-already-exists-prompt .fu-file-already-exists-prompt-button-keep,
 .fu-file-already-exists-prompt .fu-file-already-exists-prompt-button-replace {
-    float: right;
-    margin: 0 4px;
+    float: inline-end;
+    margin-block-start: 0;
+    margin-inline-end: 4px;
+    margin-block-end: 0;
+    margin-inline-start: 4px;
     font-weight: bold;
     line-height: 12px;
-
     -webkit-transition: color 0.3s ease-in-out;
     -moz-transition: color 0.3s ease-in-out;
     -o-transition: color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out
 }
 
 .fu-file-already-exists-prompt .fu-file-already-exists-prompt-button-replace {
-    margin-left: 10px;
+    margin-inline-start: 10px
 }
 
 .fu-container .fu-fileupload-statuses .fu-fileupload-progressbar {
     border: 1px solid #B6BAC2;
     border-radius: 4px;
     box-shadow: 0 1px white, 0 2px 3px #999999 inset;
-    margin: 6px 0 0 6px;
-    width: 165px;
-    height: 20px;
-    display: inline-block;
+    margin-block-start: 6px;
+    margin-inline-end: 0;
+    margin-block-end: 0;
+    margin-inline-start: 6px;
+    inline-size: 165px;
+    block-size: 20px;
+    display: inline-block
 }
 
 .fu-container .fu-fileupload-statuses .fu-fileupload-progressbar .indeterminate-progress {
-    background-color: #3FBDFF;
+    background-color: #3FBDFF
 }
 
 .fu-container .fu-fileupload-statuses .fu-fileupload-progressbar .indeterminate-progress>div.ui-progressbar-value {
     background-image: url("images/indeterminate.gif");
-    opacity: 0.15;
+    opacity: 0.15
 }
 
 .fu-fileupload-progressbar-container a {
     display: inline-block;
-    height: 16px;
-    width: 16px;
-    float: right;
-    margin: 4px 6px 0 0;
+    block-size: 16px;
+    inline-size: 16px;
+    float: inline-end;
+    margin-block-start: 4px;
+    margin-inline-end: 6px;
+    margin-block-end: 0;
+    margin-inline-start: 0;
     background-color: transparent;
     cursor: pointer;
-    background-image: url("../../../../icons/sigma/Cancel_16x16_Standard(dark).png");
+    background-image: url("../../../../icons/sigma/Cancel_16x16_Standard(dark).png")
 }
 
 .fu-status-uploaded .fu-fileupload-progressbar-container a {
     background-image: url("../../../../icons/sigma/Checked_16x16_Standard(dark).png");
-    cursor: default;
+    cursor: default
 }
 
 .fu-status-error .fu-fileupload-progressbar-container a,
 .fu-status-cancelled .fu-fileupload-progressbar-container a {
     background-image: url("../../../../icons/sigma/Cancel_16x16_Standard.png");
-    cursor: default;
+    cursor: default
 }
 
 .fu-container .dnnFileUploadFooter {
-    border-top: 1px solid #C0C0C0;
-    margin-top: 15px;
-    padding-top: 15px;
+    border-block-start: 1px solid #C0C0C0;
+    margin-block-start: 15px;
+    padding-block-start: 15px
 }
 
 .fu-container a.dnnSecondaryAction {
     border-radius: 3px;
     border: 1px solid #c9c9c9;
-    padding: 8px 20px;
+    padding-block-start: 8px;
+    padding-inline-end: 20px;
+    padding-block-end: 8px;
+    padding-inline-start: 20px;
     background-color: #fff;
     color: #555;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .fu-container ul.dnnButtonGroup {
@@ -475,133 +522,145 @@ a.fu-fileupload-thumbnail-inactive:hover {
     border: 1px solid #c9c9c9;
     cursor: pointer;
     list-style: none;
-    box-shadow: none;
+    box-shadow: none
 }
 
 .fu-container ul.dnnButtonGroup>li {
     display: block;
-    float: left;
-    border-left: 1px solid #c9c9c9;
-    margin: 0;
+    float: inline-start;
+    border-inline-start: 1px solid #c9c9c9;
+    margin: 0
 }
 
 .fu-container ul.dnnButtonGroup>li:hover {
-    background-color: #e8f1fa;
+    background-color: #e8f1fa
 }
 
 .fu-container ul.dnnButtonGroup>li.dnnButtonGroup-first {
-    display: none;
+    display: none
 }
 
 .fu-container ul.dnnButtonGroup>li.dnnButtonGroup-first+li {
-    border-left: none;
+    border-inline-start: none
 }
 
 .fu-container ul.dnnButtonGroup>li>a {
     display: inline-block;
-    padding: 7px 7px 6px 7px;
+    padding-block-start: 7px;
+    padding-inline-end: 7px;
+    padding-block-end: 6px;
+    padding-inline-start: 7px;
     text-decoration: none;
     color: #555 !important;
-    font-size: 12px !important;
+    font-size: 12px !important
 }
 
 .fu-container ul.dnnButtonGroup span {
-    color: #333;
+    color: #333
 }
 
 span.dnnInputFileWrapper>input[type="file"] {
     /* force file upload style here, cause some module just override */
     position: absolute;
-    top: 0;
-    right: 0;
+    inset-block-start: 0;
+    inset-inline-end: 0;
     margin: 0;
     opacity: 0;
     filter: alpha(opacity=0);
     direction: ltr;
     cursor: pointer;
-    height: 100%;
-    font-size: 200px;
+    block-size: 100%;
+    font-size: 200px
 }
 
 span.dnnInputFileWrapper {
     /* Notes(by Richard): here must set !important */
     overflow: hidden !important;
-    margin: 0px 4px 0 0;
-    width: auto !important;
+    margin-block-start: 0px;
+    margin-inline-end: 4px;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    inline-size: auto !important;
     display: block !important;
-    float: left !important;
-    position: relative;
+    float: inline-start !important;
+    position: relative
 }
 
 span.dnnInputFileWrapper>span.dnnSecondaryAction {
     display: inline-block;
     float: none;
-    width: auto;
+    inline-size: auto
 }
 
 .dnnFileUploadScope {
     display: block;
-    float: left;
+    float: inline-start;
     background-color: #F0F0F0;
-    margin-bottom: 10px;
-    margin-right: 10px;
+    margin-block-end: 10px;
+    margin-inline-end: 10px;
     padding: 0;
-    width: 500px;
+    inline-size: 500px
 }
 
 .dnnFileUploadScope .dnnLeft {
     margin: 0;
-    padding: 15px 10px 15px 10px;
+    padding-block-start: 15px;
+    padding-inline-end: 10px;
+    padding-block-end: 15px;
+    padding-inline-start: 10px
 }
 
 .dnnFileUploadScope .dnnLeft .dnnFormItem {
-    margin-bottom: 10px;
+    margin-block-end: 10px
 }
 
 .dnnFileUploadScope .dnnFormItem span,
 .urlControlTab .dnnFormItem>span {
     display: block;
-    float: left;
-    width: 40px;
-    margin-top: 8px;
-    padding-left: 5px;
-    text-align: left;
+    float: inline-start;
+    inline-size: 40px;
+    margin-block-start: 8px;
+    padding-inline-start: 5px;
+    text-align: start
 }
 
 .dnnFileUploadScope .dnnFormItem .dnnDropDownList span {
     margin: 0;
-    width: auto;
+    inline-size: auto
 }
 
 .dnnFileUploadScope .dnnFormItem .RadComboBox_Default,
 .dnnFileUploadScope .dnnFormItem .dnnDropDownList {
-    width: 180px;
+    inline-size: 180px;
     margin: 0;
-    float: none;
+    float: none
 }
 
 .dnnFileUploadScope .dnnLeft .dnnFileUploadDropZone {
     position: relative;
     margin: 0;
-    width: 180px;
-    height: 150px;
+    inline-size: 180px;
+    block-size: 150px;
     background: #d9eeff;
     border: 1px dashed #bbb;
     box-shadow: 0px 1px 0px #fff;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    color: #4577a2;
+    color: #4577a2
 }
 
 .dnnFileUploadScope .dnnLeft .dnnFileUploadDropZone span {
     display: block;
     position: absolute;
-    left: 38px;
-    top: 60px;
+    inset-inline-start: 38px;
+    inset-block-start: 60px;
     color: #fff;
     font-size: 12px;
     background: rgba(0, 0, 0, 0.5);
-    padding: 5px 7px;
+    padding-block-start: 5px;
+    padding-inline-end: 7px;
+    padding-block-end: 5px;
+    padding-inline-start: 7px;
     border-radius: 3px;
     box-shadow: 0px 1px 0px #fff, inset 1px 1px 0px #555;
     opacity: 0.5;
@@ -610,9 +669,9 @@ span.dnnInputFileWrapper>span.dnnSecondaryAction {
     -moz-transition: all 500ms ease-in-out;
     -ms-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out
 }
 
 .dnnFileUploadScope .dnnLeft .dnnFileUploadDropZone:hover span {
-    opacity: 1;
+    opacity: 1
 }

@@ -1,134 +1,173 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .collapsible-jobdetail {
     display: table;
-    width: 100%;
-    float: left;
+    inline-size: 100%;
+    float: inline-start;
+
     &.false {
-        border-top: 2px solid @curiousBlue !important;
-        border-bottom: 2px solid @curiousBlue !important;
+        border-block-start: 2px solid @curiousBlue !important;
+        border-block-end: 2px solid @curiousBlue !important;
         position: relative;
-        margin-top: -1px;
-        margin-bottom: -1px;
+        margin-block-start: -1px;
+        margin-block-end: -1px
     }
+
     &:not(:last-child) {
-        border-bottom: 1px solid #ddd;
+        border-block-end: 1px solid #ddd
     }
-    .job-collapsible > div {
-        float: left;
-        padding-bottom: 25px;
+
+    .job-collapsible>div {
+        float: inline-start;
+        padding-block-end: 25px
     }
+
     div.collapsible-jobdetail-header {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 15px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0;
         box-sizing: border-box;
+
         .term-header {
             cursor: pointer;
-            float: left;
-            width: 100%;
-            height: 18px;
+            float: inline-start;
+            inline-size: 100%;
+            block-size: 18px;
+
             .term-label-cssclass {
-                width: 5%;
-                float: left;
+                inline-size: 5%;
+                float: inline-start;
+
                 .jobIndicator-export {
                     color: #fff;
                     background-color: #ff8a14;
-                    width: 15px;
-                    height: 15px;
+                    inline-size: 15px;
+                    block-size: 15px;
                     display: block;
-                    float: left;
-                    margin: 0 0 0 12px;
+                    float: inline-start;
+                    margin-block-start: 0;
+                    margin-inline-end: 0;
+                    margin-block-end: 0;
+                    margin-inline-start: 12px
                 }
+
                 .jobIndicator-import {
                     color: #fff;
                     background-color: #099;
-                    width: 15px;
-                    height: 15px;
+                    inline-size: 15px;
+                    block-size: 15px;
                     display: block;
-                    float: left;
-                    margin: 0 0 0 12px;
+                    float: inline-start;
+                    margin-block-start: 0;
+                    margin-inline-end: 0;
+                    margin-block-end: 0;
+                    margin-inline-start: 12px
                 }
             }
+
             .term-label-createdate {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start
             }
+
             .term-label-jobtype {
-                width: 15%;
-                float: left;
+                inline-size: 15%;
+                float: inline-start
             }
+
             .term-label-username {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start
             }
+
             .term-label-portalname {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start
             }
+
             .term-label-jobstatus {
-                width: 15%;
-                float: left;
+                inline-size: 15%;
+                float: inline-start;
+
                 .job-status0 {
                     color: #ff8a14;
-                    float: left;
+                    float: inline-start
                 }
+
                 .job-status1 {
                     color: @mantis;
-                    float: left;
+                    float: inline-start
                 }
+
                 .job-status2 {
                     color: @curiousBlue;
-                    float: left;
+                    float: inline-start
                 }
+
                 .job-status3 {
                     color: @alizarinCrimson;
-                    float: left;
+                    float: inline-start
                 }
+
                 .job-status4 {
                     color: @alto;
-                    float: left;
+                    float: inline-start
                 }
+
                 @-ms-keyframes spin {
                     from {
                         -ms-transform: rotate(360deg);
                     }
+
                     to {
                         -ms-transform: rotate(0deg);
                     }
                 }
+
                 @-moz-keyframes spin {
                     from {
                         -moz-transform: rotate(360deg);
                     }
+
                     to {
                         -moz-transform: rotate(0deg);
                     }
                 }
+
                 @-webkit-keyframes spin {
                     from {
                         -webkit-transform: rotate(360deg);
                     }
+
                     to {
                         -webkit-transform: rotate(0deg);
                     }
                 }
+
                 @keyframes spin {
                     from {
                         transform: rotate(360deg);
                     }
+
                     to {
                         transform: rotate(0deg);
                     }
                 }
+
                 .cycle-icon {
-                    width: 24px;
-                    height: 24px;
-                    float: right;
-                    margin-top: -5px;
-                    > svg {
+                    inline-size: 24px;
+                    block-size: 24px;
+                    float: inline-end;
+                    margin-block-start: -5px;
+
+                    >svg {
                         fill: @mantis;
                     }
+
                     -webkit-animation-name: spin;
                     -webkit-animation-duration: 4000ms;
                     -webkit-animation-iteration-count: infinite;
@@ -147,27 +186,32 @@
                     animation-timing-function: linear;
                 }
             }
+
             .term-label-arrow {
-                width: 5%;
-                float: left;
+                inline-size: 5%;
+                float: inline-start;
+
                 .arrow-icon svg {
-                    width: 16px;
-                    height: 16px;
-                    float: left;
+                    inline-size: 16px;
+                    block-size: 16px;
+                    float: inline-start;
                     fill: @thunder;
-                    margin-right: 5px;
+                    margin-inline-end: 5px;
                 }
             }
+
             .term-label-wrapper {
                 word-wrap: break-word;
             }
         }
     }
+
     .collapsible-jobdetail-body {
         .job-details {
-            height: 480px;
+            block-size: 480px;
         }
-        float: left;
-        width: 100%;
+
+        float: inline-start;
+        inline-size: 100%
     }
 }

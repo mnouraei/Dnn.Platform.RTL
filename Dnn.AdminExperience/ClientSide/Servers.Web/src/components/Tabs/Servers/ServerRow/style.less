@@ -3,97 +3,125 @@
 .dnn-servers-grid-panel {
   .collapsible-component1 {
     display: table;
-    width: 100%;
-    border-bottom: 1px solid @alto;
+    inline-size: 100%;
+    border-block-end: 1px solid @alto;
     cursor: auto;
-    > div {
-      float: left;
-      width: 100%;
-      > div {
-        float: left;
-        width: 100%;
+
+    >div {
+      float: inline-start;
+      inline-size: 100%;
+
+      >div {
+        float: inline-start;
+        inline-size: 100%
       }
     }
+
     &.true {
-      border-top: 2px solid @curiousBlue;
-      border-bottom: 2px solid @curiousBlue;
-      margin-top: -1px;
+      border-block-start: 2px solid @curiousBlue;
+      border-block-end: 2px solid @curiousBlue;
+      margin-block-start: -1px
     }
+
     .role-row-collapsible {
       background-color: @white;
-      > div {
-        padding: 25px;
+
+      >div {
+        padding: 25px
       }
     }
+
     div.collapsible-header1 {
       color: @rollingStone;
-      width: 100%;
-      float: left;
+      inline-size: 100%;
+      float: inline-start;
       position: relative;
-      padding: 15px 18px;
+      padding-block-start: 15px;
+      padding-inline-end: 18px;
+      padding-block-end: 15px;
+      padding-inline-start: 18px;
       box-sizing: border-box;
       cursor: auto;
+
       .ellipsis {
         -ms-text-overflow: ellipsis;
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
+        white-space: nowrap
       }
+
       .edit-icon {
-        margin-left: 5px;
-        float: right;
+        margin-inline-start: 5px;
+        float: inline-end;
         cursor: pointer;
+
         svg {
-          width: 18px;
-          float: left;
-          height: 18px;
+          inline-size: 18px;
+          float: inline-start;
+          block-size: 18px
         }
+
         &.false {
           svg {
-            fill: @curiousBlue;
+            fill: @curiousBlue
           }
+
           svg:hover {
-            fill: @thunder;
+            fill: @thunder
           }
         }
       }
+
       .icon-flat {
         display: inline-block;
-        width: 18px;
-        height: 18px;
+        inline-size: 18px;
+        block-size: 18px;
         vertical-align: middle;
+
         &.active {
           svg {
-            fill: @thunder;
+            fill: @thunder
           }
         }
       }
     }
+
     .dnn-single-line-input-with-error {
-      width: 100%;
+      inline-size: 100%
     }
+
     .buttons-box {
-      width: 100%;
+      inline-size: 100%;
       text-align: center;
-      float: left;
-      margin: 15px 0;
+      float: inline-start;
+      margin-block-start: 15px;
+      margin-inline-end: 0;
+      margin-block-end: 15px;
+      margin-inline-start: 0;
+
       .dnn-ui-common-button {
-        margin: 5px;
+        margin: 5px
       }
+
       .edit-icon {
-        margin: 0px 10px 20px 10px;
-        float: right;
+        margin-block-start: 0px;
+        margin-inline-end: 10px;
+        margin-block-end: 20px;
+        margin-inline-start: 10px;
+        float: inline-end;
+
         svg {
-          width: 16px;
-          float: left;
-          height: 16px;
+          inline-size: 16px;
+          float: inline-start;
+          block-size: 16px
         }
       }
     }
   }
+
   .dnn-grid-cell {
     &.right {
-      text-align: right;
+      text-align: end
     }
   }
 }

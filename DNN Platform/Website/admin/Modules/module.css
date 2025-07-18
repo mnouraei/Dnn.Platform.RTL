@@ -1,134 +1,173 @@
 /* ===========   Module Settings Styling   =========== */
 .dnnModuleSettings {
-    margin: 2em auto;
+    margin-block-start: 2em;
+    margin-inline-end: auto;
+    margin-block-end: 2em;
+    margin-inline-start: auto
 }
-.dnnModuleSettings div.msModuleSettings, .dnnModuleSettings div.msPermissions, .dnnModuleSettings div.msPageSettings, .dnnModuleSettings div.msSpecificSettings {
-    padding: 0;
-}
-.dnnModuleSettings .dnnFormItem input[type="text"], .dnnModuleSettings .dnnFormItem .dnnFormInput, .dnnModuleSettings .dnnFormItem textarea, .dnnExport .dnnFormItem input[type="text"], .dnnExport .dnnFormItem .dnnFormInput, .dnnExport .dnnFormItem textarea {
-    
-}
-.dnnModuleSettings .urlControlLinkType .dnnFormLabel {
-    width: 100px;
-    float: left;
-    display: block;
-    margin-top: 0;
-    font-weight: normal;
-}
-.dnnModuleSettings .urlControlLinkType br, .dnnModuleSettings .dnnFormRadioButtons br {
-    display: none;
-}
-.dnnModuleSettings .urlControlLinkType .ucLinkTypeRadioButtons {
-    float: left;
-    display: block;
-    min-width: 350px;
-}
-.dnnModuleSettings .dnnFormRadioButtons {
-    min-width: 350px;
-    margin-top: 0 !important;
-}
-.dnnModuleSettings .urlControlLinkType label, .urlControlFileRow .dnnFormLabel {
-    margin-top: 0;
-    font-weight: normal;
-}
+
+    .dnnModuleSettings div.msModuleSettings, .dnnModuleSettings div.msPermissions, .dnnModuleSettings div.msPageSettings, .dnnModuleSettings div.msSpecificSettings {
+        padding: 0
+    }
+
+    .dnnModuleSettings .dnnFormItem input[type="text"], .dnnModuleSettings .dnnFormItem .dnnFormInput, .dnnModuleSettings .dnnFormItem textarea, .dnnExport .dnnFormItem input[type="text"], .dnnExport .dnnFormItem .dnnFormInput, .dnnExport .dnnFormItem textarea {
+    }
+
+    .dnnModuleSettings .urlControlLinkType .dnnFormLabel {
+        inline-size: 100px;
+        float: inline-start;
+        display: block;
+        margin-block-start: 0;
+        font-weight: normal
+    }
+
+    .dnnModuleSettings .urlControlLinkType br, .dnnModuleSettings .dnnFormRadioButtons br {
+        display: none
+    }
+
+    .dnnModuleSettings .urlControlLinkType .ucLinkTypeRadioButtons {
+        float: inline-start;
+        display: block;
+        min-inline-size: 350px
+    }
+
+    .dnnModuleSettings .dnnFormRadioButtons {
+        min-inline-size: 350px;
+        margin-block-start: 0 !important
+    }
+
+    .dnnModuleSettings .urlControlLinkType label, .urlControlFileRow .dnnFormLabel {
+        margin-block-start: 0;
+        font-weight: normal
+    }
+
 .urlControl span.dnnFormLabel {
-    width: 100px;
-    text-align: right;
+    inline-size: 100px;
+    text-align: end;
     display: block;
-    float: left;
-    margin: 8px 14px 0 0;
+    float: inline-start;
+    margin-block-start: 8px;
+    margin-inline-end: 14px;
+    margin-block-end: 0;
+    margin-inline-start: 0
 }
+
 .dnnModuleSettings div.dnnmsStat {
-    border-top: 1px #ccc solid;
-    padding: 1em 0 4em;
-    overflow: hidden;
+    border-block-start: 1px #ccc solid;
+    padding-block-start: 1em;
+    padding-inline-end: 0;
+    padding-block-end: 4em;
+    padding-inline-start: 0;
+    overflow: hidden
 }
+
 .dnnmsStat p {
-    float: left;
-    padding-right: 2em;
+    float: inline-start;
+    padding-inline-end: 2em
 }
+
 p.dnnFormRequired span {
-    border-left: 5px #F00 solid;
-    padding-left: 0.5em;
+    border-inline-start: 5px #F00 solid;
+    padding-inline-start: 0.5em
 }
+
 .mspsContent .urlControl {
-    overflow: hidden;
+    overflow: hidden
 }
+
 .mspsContent .urlControlLinkType {
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%
 }
-.mspsContent .urlControlLinkType .dnnFormLabel {
-    float: left;
-    width: auto;
-}
+
+    .mspsContent .urlControlLinkType .dnnFormLabel {
+        float: inline-start;
+        inline-size: auto
+    }
+
 .mspsContent .urlControlFileRow a.dnnSecondaryAction {
-    margin: 10px 10px 0 0;
-    float: left;
+    margin-block-start: 10px;
+    margin-inline-end: 10px;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    float: inline-start
 }
+
 .mspsContent .urlControlLinkType input[type="radio"] {
-    width: auto;
-    margin-right: 5px;
+    inline-size: auto;
+    margin-inline-end: 5px
 }
+
 .dnnModuleSettings .dnnFormItem input[type="text"].msCacheDuration {
-    width: 100px;
-    min-width: 50px;
+    inline-size: 100px;
+    min-inline-size: 50px
 }
 
 /* adjust form item padding/spacing */
-.dnnFormItem label + input{
-    margin-left: 15px;
-}
-.dnnFormItem .dnnLeft{
-    width: 60%;
-    margin: 6px 0 15px 0;
-}
-.dnnFormItem > textarea{
-    margin-top:5px;   
+.dnnFormItem label + input {
+    margin-inline-start: 15px
 }
 
-span.labelCacheInherited{
+.dnnFormItem .dnnLeft {
+    inline-size: 60%;
+    margin-block-start: 6px;
+    margin-inline-end: 0;
+    margin-block-end: 15px;
+    margin-inline-start: 0
+}
+
+.dnnFormItem > textarea {
+    margin-block-start: 5px
+}
+
+span.labelCacheInherited {
     display: block !important;
     background-color: rgba(255, 0, 0, 0.15);
     border-color: rgba(255, 0, 0, 0.2);
     padding: 8px;
-    float: left;
-    width: 100px !important;  
+    float: inline-start;
+    inline-size: 100px !important
 }
+
 .tabVisibilityRow span.dnnFormLabel {
-    width: 20%;
+    inline-size: 20%;
     display: block;
-    float: left;
-    text-align: right;
-    margin:0 12px 0 0 ;
-    font-weight: normal;
+    float: inline-start;
+    text-align: end;
+    margin-block-start: 0;
+    margin-inline-end: 12px;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    font-weight: normal
 }
-.tabVisibilityRowItem{
-    width: 100%;
+
+.tabVisibilityRowItem {
+    inline-size: 100%;
     clear: both;
-    margin-bottom: 8px;
-}
-.dnnContainerPreview .dnnLabel{
-    float: left;
+    margin-block-end: 8px
 }
 
-.dnnContainerPreview .selectize-control{
-    float: left;
-    margin-right: 15px;
+.dnnContainerPreview .dnnLabel {
+    float: inline-start
 }
 
-.dnnContainerPreview .dnnSecondaryAction{
-    float: left;    
+.dnnContainerPreview .selectize-control {
+    float: inline-start;
+    margin-inline-end: 15px
 }
 
-.dnnCacheSettings .dnnLabel{
-    float: left;
+.dnnContainerPreview .dnnSecondaryAction {
+    float: inline-start
 }
 
-.dnnCacheSettings .RadComboBox_Default{
-    width: 200px !important;
-    float: left;
-    margin-right: 15px;
+.dnnCacheSettings .dnnLabel {
+    float: inline-start
+}
+
+.dnnCacheSettings .RadComboBox_Default {
+    inline-size: 200px !important;
+    float: inline-start;
+    margin-inline-end: 15px
 }
 
 /* ===========   End Module Settings Styling   =========== */

@@ -1,46 +1,66 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.extensionUrlProviders) {
-    margin: 30px 30px;
-    float: left;
+    margin: 30px;
+    float: inline-start;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     .columnTitle {
         font-weight: bolder;
-        padding: 0 0 10px 0;
-        margin: 0 0 5px 0;
-        border-bottom: 1px solid @alto;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 5px;
+        margin-inline-start: 0;
+        border-block-end: 1px solid @alto;
     }
+
     .provider-items-grid {
         border: solid 1px @alto;
-        margin: 15px 0;
-        float: left;
-        width: 735px;
+        margin-block-start: 15px;
+        margin-inline-end: 0;
+        margin-block-end: 15px;
+        margin-inline-start: 0;
+        float: inline-start;
+        inline-size: 735px;
+
         .header-row {
-            border-bottom: 1px solid @alto;
-            padding: 10px 0 10px 0;
-            width: 100%;
-            float: left;
+            border-block-end: 1px solid @alto;
+            padding-block-start: 10px;
+            padding-inline-end: 0;
+            padding-block-end: 10px;
+            padding-inline-start: 0;
+            inline-size: 100%;
+            float: inline-start;
             overflow: hidden;
             text-transform: uppercase;
+
             .header-Name {
-                width: 60%;
-                float: left;
+                inline-size: 60%;
+                float: inline-start;
                 font-weight: bolder;
-                padding-left: 15px;
+                padding-inline-start: 15px
             }
+
             .header-Enabled {
-                width: 30%;
-                float: left;
+                inline-size: 30%;
+                float: inline-start;
                 font-weight: bolder;
-                text-align: center;
+                text-align: center
             }
         }
+
         .no-extension-url-providers {
-            float: left;
-            width: 100%;
+            float: inline-start;
+            inline-size: 100%;
             text-align: center;
-            padding: 10px;
+            padding: 10px
         }
     }
 }

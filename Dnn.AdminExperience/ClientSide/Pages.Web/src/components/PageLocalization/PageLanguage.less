@@ -1,130 +1,164 @@
 @import "../../less/globals.less";
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .page-language {
     background: @gallery;
-    float: left;
-    width: 250px;
-    padding-bottom: 40px;
+    float: inline-start;
+    inline-size: 250px;
+    padding-block-end: 40px;
+
     * {
-        float: left;
+        float: inline-start
     }
+
     .page-language-row {
-        width: 100%;
+        inline-size: 100%;
         padding: 10px;
-        border-bottom: 1px solid @alto;
-        border-right: 1px solid @alto;
+        border-block-end: 1px solid @alto;
+        border-inline-end: 1px solid @alto;
+
         span {
-            margin-left: 4px;
+            margin-inline-start: 4px
         }
+
         input {
-            width: 100%;
-            margin-bottom: 10px;
-            border-radius: 0;
+            inline-size: 100%;
+            margin-block-end: 10px;
+            border-radius: 0
         }
+
         textarea {
             border: 1px solid #ddd;
-            width: 100%;
-            height: 100px;
-            padding: 8px 16px;
-            resize: none;
+            inline-size: 100%;
+            block-size: 100px;
+            padding-block-start: 8px;
+            padding-inline-end: 16px;
+            padding-block-end: 8px;
+            padding-inline-start: 16px;
+            resize: none
         }
+
         .icon {
-            float: right;
-            width: 18px;
+            float: inline-end;
+            inline-size: 18px;
             cursor: pointer;
-            margin-left: 2px;
+            margin-inline-start: 2px;
+
             &.float-left {
-                float: left;
+                float: inline-start
             }
-            > svg {
-                width: 18px;
-                height: 18px;
+
+            >svg {
+                inline-size: 18px;
+                block-size: 18px
             }
+
             &.blue {
                 svg {
-                    fill: @curiousBlue;
+                    fill: @curiousBlue
                 }
             }
         }
+
         .page-language-row-header {
-            width: 100%;
-            height: 34px;
-            padding-top: 8px;
-            & > .icon {
+            inline-size: 100%;
+            block-size: 34px;
+            padding-block-start: 8px;
+
+            &>.icon {
                 svg {
-                    fill: black;
+                    fill: black
                 }
             }
+
             .dnn-checkbox-container .checkbox input[type=checkbox]+label {
-                background: white;
+                background: white
             }
+
             .dnn-checkbox-container .checkbox input[type=checkbox]:checked+label {
-                background: @curiousBlue;
+                background: @curiousBlue
             }
+
             .icon {
-                float: left !important;
-                width: 29px;
-                height: 13px;
-                margin-top: -7px;
+                float: inline-start !important;
+                inline-size: 29px;
+                block-size: 13px;
+                margin-block-start: -7px;
+
                 &.blue {
                     svg {
-                        fill: @curiousBlue;
+                        fill: @curiousBlue
                     }
                 }
             }
+
             .icons-container {
-                float: right;
+                float: inline-end;
+
                 .icon {
-                    width: 18px;
-                    margin-top: 0px;
+                    inline-size: 18px;
+                    margin-block-start: 0px
                 }
+
                 .dnn-checkbox-container {
-                    width: 13px;
-                    height: 13px;
-                    margin-right: 2px;
-                    margin-top: 2px;
-                    margin-left: 3px;
+                    inline-size: 13px;
+                    block-size: 13px;
+                    margin-inline-end: 2px;
+                    margin-block-start: 2px;
+                    margin-inline-start: 3px
                 }
             }
         }
+
         .module-row {
-            margin-top: 10px;
-            width: 100%;
-            height: 34px;
+            margin-block-start: 10px;
+            inline-size: 100%;
+            block-size: 34px;
+
             .icons-container {
-                width: 90px;
-                width: 37px;
-                padding-top: 6px;
+                inline-size: 90px;
+                inline-size: 37px;
+                padding-block-start: 6px;
+
                 .dnn-checkbox-container {
-                    width: 13px;
-                    height: 13px;
-                    margin-left: 2px;
-                    margin-top: 2px;
+                    inline-size: 13px;
+                    block-size: 13px;
+                    margin-inline-start: 2px;
+                    margin-block-start: 2px
                 }
             }
+
             &.copy {
-                padding: 8px 4px;
+                padding-block-start: 8px;
+                padding-inline-end: 4px;
+                padding-block-end: 8px;
+                padding-inline-start: 4px
             }
+
             .dnn-ui-common-tooltip {
-                float: left;
+                float: inline-start;
                 position: static;
-                margin-top: 7px;
-                margin-right: 10px;
+                margin-block-start: 7px;
+                margin-inline-end: 10px
             }
+
             input {
-                width: ~"calc(100% - 67px)";
-                margin: 0px;
+                inline-size: ~"calc(100% - 67px)";
+                margin: 0px
             }
+
             &.footer {
-                height: 10px;
-                margin-bottom: 6px;
-                & > div {
-                    float: right;
+                block-size: 10px;
+                margin-block-end: 6px;
+
+                &>div {
+                    float: inline-end
                 }
+
                 .checkbox {
-                    margin-left: 6px;
-                    margin-right: 2px;
-                    margin-top: 1px;
+                    margin-inline-start: 6px;
+                    margin-inline-end: 2px;
+                    margin-block-start: 1px
                 }
             }
         }

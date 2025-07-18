@@ -4,106 +4,136 @@
 /*-------------------------------------*/
 
 .dnnTableDisplay {
-    margin-bottom: 1.125rem;
+    margin-block-end: 1.125rem;
     border: 1px solid var(--dnn-color-neutral, #d1d1d1);
-    border-left: 0;
-    border-bottom: 0;
+    border-inline-start: 0;
+    border-block-end: 0;
+
     td,
     th {
-        padding: 5px 9px;
-        border-bottom: 1px solid var(--dnn-color-neutral, #d1d1d1);
+        padding-block-start: 5px;
+        padding-inline-end: 9px;
+        padding-block-end: 5px;
+        padding-inline-start: 9px;
+        border-block-end: 1px solid var(--dnn-color-neutral, #d1d1d1)
     }
+
     th {
         padding: 0;
-        border-left: 1px solid var(--dnn-color-neutral, #d1d1d1);
+        border-inline-start: 1px solid var(--dnn-color-neutral, #d1d1d1)
     }
+
     th>span,
     th>a {
         display: block;
-        padding: 5px 9px;
+        padding-block-start: 5px;
+        padding-inline-end: 9px;
+        padding-block-end: 5px;
+        padding-inline-start: 9px
     }
+
     td:first-child {
-        border-left: 1px solid var(--dnn-color-neutral, #d1d1d1);
+        border-inline-start: 1px solid var(--dnn-color-neutral, #d1d1d1)
     }
+
     label {
         display: inline;
-        padding-left: 0.3125rem;
+        padding-inline-start: 0.3125rem
     }
+
     th {
         background: var(--dnn-color-background, #d1d1d1);
-        text-align: left;
-        color: var(--dnn-color-foreground, #333);
+        text-align: start;
+        color: var(--dnn-color-foreground, #333)
     }
+
     th a,
     th label {
         font-weight: normal;
         color: var(--dnn-color-foreground, #333);
-        text-decoration: none;
+        text-decoration: none
     }
+
     th a {
-        padding: 0.5rem 0.5625rem;
-        &:hover, &:active {
-            color: var(--dnn-color-foreground-dark, #333);
+        padding-block-start: 0.5rem;
+        padding-inline-end: 0.5625rem;
+        padding-block-end: 0.5rem;
+        padding-inline-start: 0.5625rem;
+
+        &:hover,
+        &:active {
+            color: var(--dnn-color-foreground-dark, #333)
         }
     }
+
     tr:nth-child(2n) td {
-        background: rgba(
-            var(--dnn-color-foreground-r, 0),
-            var(--dnn-color-foreground-g, 0),
-            var(--dnn-color-foreground-b, 0),
-            0.04);
+        background: rgba(var(--dnn-color-foreground-r, 0),
+                var(--dnn-color-foreground-g, 0),
+                var(--dnn-color-foreground-b, 0),
+                0.04)
     }
+
     .dnnTableDisplay tr:hover td {
-        background: rgba(
-            var(--dnn-color-info-r, 2),
-            139,
-            255,
-            0.15);
+        background: rgba(var(--dnn-color-info-r, 2),
+                139,
+                255,
+                0.15)
     }
+
     tfoot tr:hover td {
-        background: none;
+        background: none
     }
 }
 
 .dnnTableFilter {
-    margin-bottom: 18px;
-    background: rgba(
-        var(--dnn-color-foreground, 0),
-        var(--dnn-color-foreground, 0),
-        var(--dnn-color-foreground, 0),
-        0.04);
-        .dnnTableDisplay {
-            margin-bottom: 0;
-        }
+    margin-block-end: 18px;
+    background: rgba(var(--dnn-color-foreground, 0),
+            var(--dnn-color-foreground, 0),
+            var(--dnn-color-foreground, 0),
+            0.04);
+
+    .dnnTableDisplay {
+        margin-block-end: 0
+    }
 }
 
 .dnnFilterSet {
     padding: 1.125rem;
+
     label {
-        display: inline-block;
+        display: inline-block
     }
+
     input,
     select {
         display: inline-block;
-        margin: 0 0.3125rem;
+        margin-block-start: 0;
+        margin-inline-end: 0.3125rem;
+        margin-block-end: 0;
+        margin-inline-start: 0.3125rem
     }
 }
 
-.verticalFilter{
+.verticalFilter {
     .dnnFilterSet {
-        float: left;
-        width: 20%;
-        padding: 2% 1.125rem;
+        float: inline-start;
+        inline-size: 20%;
+        padding-block-start: 2%;
+        padding-inline-end: 1.125rem;
+        padding-block-end: 2%;
+        padding-inline-start: 1.125rem
     }
+
     .dnnTableDisplay {
-        float: right;
-        width: 75%;
+        float: inline-end;
+        inline-size: 75%
     }
+
     input[type=search],
     select,
     input[type=text] {
         margin: 0;
-        width: 100%;
-        box-sizing: border-box;
+        inline-size: 100%;
+        box-sizing: border-box
     }
 }

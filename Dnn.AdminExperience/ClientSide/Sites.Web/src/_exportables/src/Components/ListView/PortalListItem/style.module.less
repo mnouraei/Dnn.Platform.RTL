@@ -1,76 +1,97 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.portalListItem) {
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
-    float: left;
-    width: 100%;
+
+    float: inline-start;
+    inline-size: 100%;
     box-sizing: border-box;
     border:1px solid @alto;
     padding: 15px;
-    margin-top: 25px;
+    margin-block-start: 25px;
     background: @white;
+
     .portal-main-info {
-        border-right: 1px solid @alto;
+        border-inline-end: 1px solid @alto;
+
         .portal-name-info {
             .dnn-text-overflow-wrapper {
                 font-weight: bold;
                 display: block;
-                margin-bottom: 5px;
+                margin-block-end: 5px
             }
+
             a {
                 color: @curiousBlue;
-                max-width: 100%;
+                max-inline-size: 100%;
                 word-wrap: break-word;
                 display: block;
                 white-space: nowrap;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                text-overflow: ellipsis
             }
         }
+
         &:hover {
             .icon-container {
-                > div {
+                >div {
                     svg {
                         fill: @alto;
+
                         &:hover {
-                            fill: @rollingStone;
+                            fill: @rollingStone
                         }
+
                         &:active {
-                            fill: @curiousBlue;
+                            fill: @curiousBlue
                         }
                     }
                 }
             }
         }
+
         .icon-container {
-            margin-top: 10px;
+            margin-block-start: 10px;
+
             >div {
                 display: inline;
-                margin-right: 10px;
+                margin-inline-end: 10px;
+
                 svg {
                     cursor: pointer;
-                    width: 20px;
-                    height: 20px;
-                    fill: white;
+                    inline-size: 20px;
+                    block-size: 20px;
+                    fill: white
                 }
             }
         }
     }
+
     .portal-statistics-info {
-        padding: 0 15px;
+        padding-block-start: 0;
+        padding-inline-end: 15px;
+        padding-block-end: 0;
+        padding-inline-start: 15px;
+
         .portal-statistic {
-            float: left;
-            width: 50%;
+            float: inline-start;
+            inline-size: 50%;
+
             .statistic-label {
-                padding: 0 15px;
-                float: left;
-                width: 100%;
-                margin-bottom: 5px;
+                padding-block-start: 0;
+                padding-inline-end: 15px;
+                padding-block-end: 0;
+                padding-inline-start: 15px;
+                float: inline-start;
+                inline-size: 100%;
+                margin-block-end: 5px;
+
                 p {
                     span {
-                        float: right;
-                        margin-right: 24px;
+                        float: inline-end;
+                        margin-inline-end: 24px
                     }
                 }
             }

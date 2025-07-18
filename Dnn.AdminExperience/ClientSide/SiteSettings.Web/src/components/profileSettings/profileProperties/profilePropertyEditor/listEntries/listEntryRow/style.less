@@ -1,83 +1,107 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .collapsible-component-entry {
     display: block;
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%;
     cursor: auto;
+
     &:not(:last-child) {
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
+
     div.collapsible-entry {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 10px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
         box-sizing: border-box;
         cursor: auto;
+
         .row {
-            float: left;
-            width: 100%;
+            float: inline-start;
+            inline-size: 100%;
+
             .item-row-text {
-                width: 44%;
-                float: left;
-                padding-left: 15px;
-                word-break: break-all;
+                inline-size: 44%;
+                float: inline-start;
+                padding-inline-start: 15px;
+                word-break: break-all
             }
+
             .item-row-value {
-                width: 43%;
-                float: left;
-            }            
+                inline-size: 43%;
+                float: inline-start
+            }
+
             .item-row-actionButtons {
-                width: 10%;
-                margin-right: 15px;
-                float: right;
+                inline-size: 10%;
+                margin-inline-end: 15px;
+                float: inline-end;
+
                 &:not(:last-child) {
-                    float: left;
-                    margin-right: 0px;
+                    float: inline-start;
+                    margin-inline-end: 0px
                 }
-                .delete-icon, 
+
+                .delete-icon,
                 .edit-icon,
                 .order-icon {
-                    margin-left: 5px;
-                    float: right;
+                    margin-inline-start: 5px;
+                    float: inline-end;
                     display: block;
                     cursor: pointer;
-                    > svg {
-                        width: 16px;
-                        float: left;
-                        height: 16px;
+
+                    >svg {
+                        inline-size: 16px;
+                        float: inline-start;
+                        block-size: 16px;
+
                         &:hover {
-                            fill: @thunder;
+                            fill: @thunder
                         }
-                        fill: @alto;
+
+                        fill: @alto
                     }
                 }
+
                 .order-icon-hidden,
                 .delete-icon-hidden {
-                    display: none;
+                    display: none
                 }
+
                 .order-icon-active,
                 .edit-icon-active {
-                    > svg {
-                        width: 16px;
-                        float: right;
-                        height: 16px;
-                        fill: @curiousBlue;
+                    >svg {
+                        inline-size: 16px;
+                        float: inline-end;
+                        block-size: 16px;
+                        fill: @curiousBlue
                     }
                 }
             }
+
             .item-row-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px
             }
         }
     }
+
     .collapsible-entry-body {
-        width: 100%;
+        inline-size: 100%;
         overflow: visible;
+
         .entry-editor {
-            height: 270px;
+            block-size: 270px;
+
             &.with-sort-order {
-                height: 220px;
+                block-size: 220px
             }
         }
     }

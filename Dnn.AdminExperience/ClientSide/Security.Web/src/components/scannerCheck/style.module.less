@@ -1,535 +1,793 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.scannerCheckResults) {
-    min-height: 171px;
+    min-block-size: 171px;
+
     .scannerCheckItems-title {
-        margin: 0 0 0 25px;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 0;
+        margin-inline-start: 25px;
         color: @thunder;
     }
+
     .scannercheck-topbar {
-        border-bottom: solid 1px @alto;
-        height: 34px;
-        margin: 20px 25px 20px 25px;
-        padding: 0 0 10px 0;
+        border-block-end: solid 1px @alto;
+        block-size: 34px;
+        margin-block-start: 20px;
+        margin-inline-end: 25px;
+        margin-block-end: 20px;
+        margin-inline-start: 25px;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
         font-weight: bolder;
+
         .search-filter {
-            float: left;
-            width: 400px;
+            float: inline-start;
+            inline-size: 400px;
+
             &:hover {
                 svg {
                     fill: @curiousBlue;
                 }
             }
-            > div {
+
+            >div {
                 display: block !important;
-                border-right: 1px solid @alto;
+                border-inline-end: 1px solid @alto;
+
                 input {
                     display: block;
-                    width: 100%;
+                    inline-size: 100%;
                     position: inherit !important;
                     border: none;
                     border-radius: none;
                     background-color: transparent;
                     outline: none;
-                    padding-right: 45px;
-                    padding: 9px 16px 9px 0 !important;
+                    padding-inline-end: 45px;
+                    padding-block-start: 9px !important;
+                    padding-inline-end: 16px !important;
+                    padding-block-end: 9px !important;
+                    padding-inline-start: 0 !important;
+
                     &::-webkit-search-cancel-button {
                         position: relative;
-                        right: 30px;
-                        cursor: pointer
+                        inset-inline-end: 30px;
+                        cursor: pointer;
                     }
                 }
             }
         }
+
         .search-filter-active {
-            float: left;
-            width: 400px;
-            > div {
+            float: inline-start;
+            inline-size: 400px;
+
+            >div {
                 display: block !important;
-                border-right: 1px solid @alto;
+                border-inline-end: 1px solid @alto;
+
                 input {
                     display: block;
-                    width: 100%;
+                    inline-size: 100%;
                     position: inherit !important;
                     border: none;
                     border-radius: none;
                     background-color: transparent;
                     outline: none;
-                    padding-right: 45px;
+                    padding-inline-end: 45px;
                     color: @curiousBlue !important;
-                    padding: 9px 16px 9px 0 !important;
+                    padding-block-start: 9px !important;
+                    padding-inline-end: 16px !important;
+                    padding-block-end: 9px !important;
+                    padding-inline-start: 0 !important;
+
                     &::-webkit-search-cancel-button {
                         position: relative;
-                        right: 30px;
-                        cursor: pointer
+                        inset-inline-end: 30px;
+                        cursor: pointer;
                     }
                 }
             }
+
             svg {
-                fill: @curiousBlue;
+                fill: @curiousBlue
             }
         }
+
         .files-filter {
-            float: right;
-            border-right: 1px solid @alto;
-            margin: 0px 20px 0 0;
-            padding: 9px 20px 4px 0px;
-            height: 21px;
+            float: inline-end;
+            border-inline-end: 1px solid @alto;
+            margin-block-start: 0px;
+            margin-inline-end: 20px;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            padding-block-start: 9px;
+            padding-inline-end: 20px;
+            padding-block-end: 4px;
+            padding-inline-start: 0px;
+            block-size: 21px;
             color: @thunder;
+
             &:hover {
                 cursor: pointer;
                 color: @curiousBlue;
             }
         }
+
         .files-filter-active {
-            float: right;
-            border-right: 1px solid @alto;
-            margin: 0px 20px 0 0;
-            padding: 9px 20px 4px 0px;
-            height: 21px;
+            float: inline-end;
+            border-inline-end: 1px solid @alto;
+            margin-block-start: 0px;
+            margin-inline-end: 20px;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            padding-block-start: 9px;
+            padding-inline-end: 20px;
+            padding-block-end: 4px;
+            padding-inline-start: 0px;
+            block-size: 21px;
             color: @curiousBlue;
         }
+
         .settings-filter {
-            float: right;
+            float: inline-end;
             color: @thunder;
-            margin: 9px 0 0 0;
+            margin-block-start: 9px;
+            margin-inline-end: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+
             &:hover {
                 cursor: pointer;
                 color: @curiousBlue;
             }
         }
+
         .settings-filter-active {
-            float: right;
+            float: inline-end;
             color: @curiousBlue;
-            margin: 9px 0 0 0;
+            margin-block-start: 9px;
+            margin-inline-end: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0
         }
     }
+
     .scannerCheckItems {
         display: inline-block;
-        margin: 15px 25px 30px 25px;
+        margin-block-start: 15px;
+        margin-inline-end: 25px;
+        margin-block-end: 30px;
+        margin-inline-start: 25px;
         border: solid 1px @alto;
-        width: 746px;
+        inline-size: 746px;
+
         .scannerCheckHeader-wrapper {
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             width: 100%;
-            float: left;
-            padding: 15px 0 15px 0;
+            float: inline-start;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             text-transform: uppercase;
             font-weight: bolder;
+
             .scannerCheckHeader-FileName {
-                padding: 0 0 0 25px;
-                width: 73%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+                inline-size: 73%;
+                float: inline-start
             }
+
             .scannerCheckHeader-LastWriteTime {
-                width: 23%;
-                float: left;
+                inline-size: 23%;
+                float: inline-start
             }
+
             .scannerCheckHeader-DatabaseInstance {
-                padding: 0 0 0 25px;
-                width: 40%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+                inline-size: 40%;
+                float: inline-start
             }
+
             .scannerCheckHeader-DatabaseValue {
-                width: 54%;
-                float: left;
+                inline-size: 54%;
+                float: inline-start
             }
         }
+
         .scannerCheckItem {
             display: table;
-            width: 100%;
-            padding: 15px 0;
+            inline-size: 100%;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             color: @thunder;
+
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             .label-name {
-                padding: 0 0 0 20px;
-                width: 73%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
+                inline-size: 73%;
+                float: inline-start
             }
+
             .label-date {
-                width: 23%;
-                float: left;
+                inline-size: 23%;
+                float: inline-start
             }
+
             .label-columnname {
-                padding: 0 0 0 20px;
-                width: 40%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
+                inline-size: 40%;
+                float: inline-start
             }
+
             .label-columnvalue {
-                width: 54%;
-                float: left;
+                inline-size: 54%;
+                float: inline-start
             }
+
             .label-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px;
                 overflow-wrap: break-word;
-                word-break:break-all;
-                max-width:500px;
-                width: 100%;
+                word-break: break-all;
+                max-inline-size: 500px;
+                inline-size: 100%;
             }
         }
     }
+
     .scannerCheckItems-riskFiles {
         display: inline-block;
-        margin: 15px 25px 30px 25px;
+        margin-block-start: 15px;
+        margin-inline-end: 25px;
+        margin-block-end: 30px;
+        margin-inline-start: 25px;
         border: solid 1px @alto;
-        width: 746px;
+        inline-size: 746px;
+
         .scannerCheckHeader-wrapper {
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             width: 100%;
-            float: left;
-            padding: 15px 0 15px 0;
+            float: inline-start;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             text-transform: uppercase;
             font-weight: bolder;
+
             .scannerCheckHeader-FileName {
-                padding: 0 0 0 25px;
-                width: 75%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+                inline-size: 75%;
+                float: inline-start;
             }
+
             .scannerCheckHeader-LastWriteTime {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start;
             }
         }
+
         .scannerCheckItem {
             display: table;
-            width: 100%;
-            padding: 15px 0;
+            inline-size: 100%;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             color: @thunder;
+
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             .label-name {
-                padding: 0 0 0 20px;
-                width: 75%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
+                inline-size: 75%;
+                float: inline-start;
             }
+
             .label-date {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start;
             }
+
             .label-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px;
                 overflow-wrap: break-word;
-                word-break:break-all;
-                max-width:500px;
-                width: 100%;
+                word-break: break-all;
+                max-inline-size: 500px;
+                inline-size: 100%;
             }
         }
     }
+
     .scannerCheckItems-portalSettings {
         display: inline-block;
-        margin: 15px 25px 30px 25px;
+        margin-block-start: 15px;
+        margin-inline-end: 25px;
+        margin-block-end: 30px;
+        margin-inline-start: 25px;
         border: solid 1px @alto;
-        width: 746px;
+        inline-size: 746px;
+
         .scannerCheckHeader-wrapper {
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             width: 100%;
-            float: left;
-            padding: 15px 0 15px 0;
+            float: inline-start;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             text-transform: uppercase;
             font-weight: bolder;
+
             .scannerCheckHeader-PortalId {
-                padding: 0 0 0 25px;
-                width: 10%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+                inline-size: 10%;
+                float: inline-start;
             }
+
             .scannerCheckHeader-SettingName {
-                width: 35%;
-                float: left;
+                inline-size: 35%;
+                float: inline-start
             }
+
             .scannerCheckHeader-SettingValue {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start;
             }
+
             .scannerCheckHeader-UserId {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start;
             }
+
             .scannerCheckHeader-LastWriteTime {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
         }
+
         .scannerCheckItem {
             display: table;
-            width: 100%;
-            padding: 15px 0;
+            inline-size: 100%;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             color: @thunder;
+
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             .label-id {
-                padding: 0 0 0 20px;
-                width: 10%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .label-name {
-                width: 35%;
-                float: left;
+                inline-size: 35%;
+                float: inline-start
             }
+
             .label-value {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start
             }
+
             .label-user {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .label-date {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
+
             .label-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px;
                 overflow-wrap: break-word;
-                word-break:break-all;
-                width: 100%;
-                max-width:150px;
+                word-break: break-all;
+                inline-size: 100%;
+                max-inline-size: 150px
             }
         }
     }
+
     .scannerCheckItems-hostSettings {
         display: inline-block;
-        margin: 15px 25px 30px 25px;
+        margin-block-start: 15px;
+        margin-inline-end: 25px;
+        margin-block-end: 30px;
+        margin-inline-start: 25px;
         border: solid 1px @alto;
-        width: 746px;
+        inline-size: 746px;
+
         .scannerCheckHeader-wrapper {
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             width: 100%;
-            float: left;
-            padding: 15px 0 15px 0;
+            float: inline-start;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             text-transform: uppercase;
             font-weight: bolder;
+
             .scannerCheckHeader-SettingName {
-                padding: 0 0 0 25px;
-                width: 35%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+                inline-size: 35%;
+                float: inline-start
             }
+
             .scannerCheckHeader-SettingValue {
-                width: 30%;
-                float: left;
+                inline-size: 30%;
+                float: inline-start
             }
+
             .scannerCheckHeader-UserId {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .scannerCheckHeader-LastWriteTime {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
         }
+
         .scannerCheckItem {
             display: table;
-            width: 100%;
-            padding: 15px 0;
+            inline-size: 100%;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             color: @thunder;
+
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             .label-name {
-                padding: 0 0 0 20px;
-                width: 35%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
+                inline-size: 35%;
+                float: inline-start
             }
+
             .label-value {
-                width: 30%;
-                float: left;
+                inline-size: 30%;
+                float: inline-start
             }
+
             .label-user {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .label-date {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
+
             .label-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px;
                 overflow-wrap: break-word;
-                word-break:break-all;
-                width: 100%;
-                max-width:150px;
+                word-break: break-all;
+                inline-size: 100%;
+                max-inline-size: 150px
             }
         }
     }
+
     .scannerCheckItems-tabSettings {
         display: inline-block;
-        margin: 15px 25px 30px 25px;
+        margin-block-start: 15px;
+        margin-inline-end: 25px;
+        margin-block-end: 30px;
+        margin-inline-start: 25px;
         border: solid 1px @alto;
-        width: 746px;
+        inline-size: 746px;
+
         .scannerCheckHeader-wrapper {
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             width: 100%;
-            float: left;
-            padding: 15px 0 15px 0;
+            float: inline-start;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             text-transform: uppercase;
             font-weight: bolder;
+
             .scannerCheckHeader-TabId {
-                padding: 0 0 0 25px;
-                width: 10%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .scannerCheckHeader-PortalId {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .scannerCheckHeader-SettingName {
-                width: 25%;
-                float: left;
+                inline-size: 25%;
+                float: inline-start
             }
+
             .scannerCheckHeader-SettingValue {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start
             }
+
             .scannerCheckHeader-UserId {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .scannerCheckHeader-LastWriteTime {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
         }
+
         .scannerCheckItem {
             display: table;
-            width: 100%;
-            padding: 15px 0;
+            inline-size: 100%;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             color: @thunder;
+
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             .label-tab {
-                padding: 0 0 0 20px;
-                width: 10%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .label-id {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .label-name {
-                width: 25%;
-                float: left;
+                inline-size: 25%;
+                float: inline-start
             }
+
             .label-value {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start
             }
+
             .label-user {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .label-date {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
+
             .label-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px;
                 overflow-wrap: break-word;
-                word-break:break-all;
-                width: 100%;
-                max-width:150px;
+                word-break: break-all;
+                inline-size: 100%;
+                max-inline-size: 150px
             }
         }
     }
+
     .scannerCheckItems-moduleSettings {
         display: inline-block;
-        margin: 15px 25px 30px 25px;
+        margin-block-start: 15px;
+        margin-inline-end: 25px;
+        margin-block-end: 30px;
+        margin-inline-start: 25px;
         border: solid 1px @alto;
-        width: 746px;
+        inline-size: 746px;
+
         .scannerCheckHeader-wrapper {
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             width: 100%;
-            float: left;
-            padding: 15px 0 15px 0;
+            float: inline-start;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             text-transform: uppercase;
             font-weight: bolder;
+
             .scannerCheckHeader-Type {
-                padding: 0 0 0 25px;
-                width: 18%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 25px;
+                inline-size: 18%;
+                float: inline-start
             }
+
             .scannerCheckHeader-ModuleId {
-                width: 11%;
-                float: left;
+                inline-size: 11%;
+                float: inline-start
             }
+
             .scannerCheckHeader-PortalId {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .scannerCheckHeader-SettingName {
-                width: 15%;
-                float: left;
+                inline-size: 15%;
+                float: inline-start
             }
+
             .scannerCheckHeader-SettingValue {
-                width: 15%;
-                float: left;
+                inline-size: 15%;
+                float: inline-start
             }
+
             .scannerCheckHeader-UserId {
-                width: 8%;
-                float: left;
+                inline-size: 8%;
+                float: inline-start
             }
+
             .scannerCheckHeader-LastWriteTime {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
         }
+
         .scannerCheckItem {
             display: table;
-            width: 100%;
-            padding: 15px 0;
+            inline-size: 100%;
+            padding-block-start: 15px;
+            padding-inline-end: 0;
+            padding-block-end: 15px;
+            padding-inline-start: 0;
             color: @thunder;
+
             &:not(:last-child) {
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
             }
+
             .label-type {
-                padding: 0 0 0 20px;
-                width: 18%;
-                float: left;
+                padding-block-start: 0;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
+                inline-size: 18%;
+                float: inline-start
             }
+
             .label-module {
-                width: 11%;
-                float: left;
+                inline-size: 11%;
+                float: inline-start
             }
+
             .label-id {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start
             }
+
             .label-name {
-                width: 15%;
-                float: left;
+                inline-size: 15%;
+                float: inline-start
             }
+
             .label-value {
-                width: 15%;
-                float: left;
+                inline-size: 15%;
+                float: inline-start
             }
+
             .label-user {
-                width: 8%;
-                float: left;
+                inline-size: 8%;
+                float: inline-start
             }
+
             .label-date {
-                width: 18%;
-                float: left;
+                inline-size: 18%;
+                float: inline-start
             }
+
             .label-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px;
                 overflow-wrap: break-word;
-                word-break:break-all;
-                width: 100%;
-                max-width: 150px;
+                word-break: break-all;
+                inline-size: 100%;
+                max-inline-size: 150px
             }
         }
     }

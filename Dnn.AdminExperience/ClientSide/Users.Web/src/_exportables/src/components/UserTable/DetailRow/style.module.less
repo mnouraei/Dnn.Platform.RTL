@@ -1,122 +1,152 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .collapsible-component-users {
   .collapsible-header-users.false {
-    border-top: 2px solid @curiousBlue;
-    border-bottom: 2px solid @curiousBlue;
-    margin-top: -2px;
+    border-block-start: 2px solid @curiousBlue;
+    border-block-end: 2px solid @curiousBlue;
+    margin-block-start: -2px
   }
 }
 
 :local(.extensionDetailRow) {
   &.closed {
     padding: 0;
-    border-bottom: none;
+    border-block-end: none
   }
+
   padding: 15px 0 7.5px;
-  border-bottom: 1px solid @alto;
+  border-block-end: 1px solid @alto;
+
   .user-avatar {
     text-align: center;
+
     img {
       border-radius: 25px;
-      width: 40px;
+      inline-size: 40px
     }
   }
+
   .user-detail-row {
-    float: left;
-    width: 100%;
-    > div {
-      width: 100%;
-      float: left;
+    float: inline-start;
+    inline-size: 100%;
+
+    >div {
+      inline-size: 100%;
+      float: inline-start
     }
   }
+
   .user-emails {
-    padding-left: 11px !important;
+    padding-inline-start: 11px !important
   }
+
   .email-link {
-    > a {
+    >a {
       color: @curiousBlue;
-      text-decoration: none;
+      text-decoration: none
     }
   }
+
   .user-names {
-    .user-name{
+    .user-name {
       display: flex;
       gap: 0.5rem;
       align-items: center;
-      img{
-        max-width: 32px;
-        max-height: 32px;
-        border-radius: 50%;
+
+      img {
+        max-inline-size: 32px;
+        max-block-size: 32px;
+        border-radius: 50%
       }
     }
+
     padding-left: 2px !important;
+
     h6 {
-      font-size: 15px;
+      font-size: 15px
     }
+
     p {
-      text-transform: lowercase;
+      text-transform: lowercase
     }
   }
+
   .user-joined {
-    padding-left: 22px !important;
+    padding-inline-start: 22px !important
   }
+
   .deleted {
-    text-decoration: line-through;
+    text-decoration: line-through
   }
+
   .extension-action {
     //width: 20px;
     //height: 20px;
-    margin-left: 5px;
-    float: right;
+    margin-inline-start: 5px;
+    float: inline-end;
     cursor: pointer;
+
     svg {
-      width: 20px;
-      float: left;
-      height: 20px;
+      inline-size: 20px;
+      float: inline-start;
+      block-size: 20px
     }
+
     &.false {
       svg {
-        fill: @curiousBlue;
+        fill: @curiousBlue
       }
+
       svg:hover {
-        fill: @thunder;
+        fill: @thunder
       }
     }
+
     &.more-menu {
-      position: relative;
+      position: relative
     }
   }
+
   .user-status {
     svg {
-      width: 20px;
-      float: left;
-      height: 20px;
+      inline-size: 20px;
+      float: inline-start;
+      block-size: 20px
     }
+
     &.grey {
       svg {
-        fill: @alto;
+        fill: @alto
       }
     }
+
     &.red {
       svg {
-        fill: @alizarinCrimson;
+        fill: @alizarinCrimson
       }
     }
+
     &.black {
       svg {
-        fill: @blackPearl;
+        fill: @blackPearl
       }
     }
   }
+
   .dnn-grid-cell {
-    padding: 0 15px;
+    padding-block-start: 0;
+    padding-inline-end: 15px;
+    padding-block-end: 0;
+    padding-inline-start: 15px;
+
     p {
-      word-wrap: break-word;
+      word-wrap: break-word
     }
   }
+
   .package-name {
     word-wrap: break-word;
     display: inline;
-    vertical-align: top;
+    vertical-align: top
   }
 }

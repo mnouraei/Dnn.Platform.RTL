@@ -1,130 +1,193 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.exportModal) {
     border: 1px solid @alto;
     background: #fff;
-    float: left;
+    float: inline-start;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     .sectionTitle {
         font-weight: bold;
-        margin: 20px 0;
+        margin-block-start: 20px;
+        margin-inline-end: 0;
+        margin-block-end: 20px;
+        margin-inline-start: 0
     }
+
     .export-site-container {
         .left-column {
-            width: 50%;
-            float: left;            
-            padding: 10px 30px 10px 30px;
+            inline-size: 50%;
+            float: inline-start;
+            padding-block-start: 10px;
+            padding-inline-end: 30px;
+            padding-block-end: 10px;
+            padding-inline-start: 30px;
+
             .dnn-dropdown-with-error {
-                width: 100%;
+                inline-size: 100%
             }
+
             .dnn-single-line-input-with-error {
-                padding-top: 15px;
+                padding-block-start: 15px
             }
+
             .dnn-label {
-                margin-bottom: 5px;
-                font-weight: 700;
+                margin-block-end: 5px;
+                font-weight: 700
             }
         }
+
         .right-column {
-            width: 50%;
-            float: left;
-            padding: 10px 30px 10px 30px;
+            inline-size: 50%;
+            float: inline-start;
+            padding-block-start: 10px;
+            padding-inline-end: 30px;
+            padding-block-end: 10px;
+            padding-inline-start: 30px
         }
+
         .export-switches {
-            padding: 0 30px 0 30px;
+            padding-block-start: 0;
+            padding-inline-end: 30px;
+            padding-block-end: 0;
+            padding-inline-start: 30px;
+
             .dnn-ui-common-input-group {
-                padding: 5px 0;
-                float: left;
+                padding-block-start: 5px;
+                padding-inline-end: 0;
+                padding-block-end: 5px;
+                padding-inline-start: 0;
+                float: inline-start;
+
                 .dnn-label {
                     font-weight: bolder;
-                    float: left;
+                    float: inline-start
                 }
+
                 .dnn-switch-container {
-                    float: right;
+                    float: inline-end
                 }
             }
         }
+
         .export-pages {
-            padding: 0 30px 20px 30px;
-            border-left: 1px solid @alto;
+            padding-block-start: 0;
+            padding-inline-end: 30px;
+            padding-block-end: 20px;
+            padding-inline-start: 30px;
+            border-inline-start: 1px solid @alto;
+
             .export-page-picker {
-                width: 100% !important;
-                .page-picker-content > div {
-                    height: 395px !important;
+                inline-size: 100% !important;
+
+                .page-picker-content>div {
+                    block-size: 395px !important
                 }
             }
+
             .language-box {
-                float: left;
-                width: 100%;
-                height: 70px;
+                float: inline-start;
+                inline-size: 100%;
+                block-size: 70px;
+
                 .dnn-dropdown-with-error {
-                    width: 100%;
+                    inline-size: 100%
                 }
             }
+
             .dnn-checkbox-container {
-                float: left;
+                float: inline-start
             }
+
             .dnn-checkbox-container {
                 .checkbox {
-                    margin-bottom: 2px;
+                    margin-block-end: 2px
                 }
             }
+
             .dnn-label {
-                float: left;
+                float: inline-start;
+
                 label {
-                    float: left;
+                    float: inline-start
                 }
-                font-weight: 700;
+
+                font-weight: 700
             }
+
             .dnn-dropdown {
                 .collapsible-content {
                     ul {
                         li {
                             display: -webkit-box;
+
                             .dnn-ui-common-tooltip {
-                                float: left;
+                                float: inline-start
                             }
                         }
                     }
                 }
             }
+
             div.tooltip-text {
-                max-width: 250px;
+                max-inline-size: 250px
             }
+
             .dnn-radio-buttons {
-                float: right;
-                width: auto;
-                margin-top: 6px;
+                float: inline-end;
+                inline-size: auto;
+                margin-block-start: 6px
             }
+
             .lastExport {
-                margin-top: 6px;
+                margin-block-start: 6px;
                 font-weight: 500;
                 color: @thunder;
-                float: right;
+                float: inline-end
             }
         }
     }
+
     .seperator {
-        padding: 0 20px;
+        padding-block-start: 0;
+        padding-inline-end: 20px;
+        padding-block-end: 0;
+        padding-inline-start: 20px
     }
+
     .seperator2 {
-        padding: 30px 0 20px 0;
+        padding-block-start: 30px;
+        padding-inline-end: 0;
+        padding-block-end: 20px;
+        padding-inline-start: 0
     }
+
     .pageTitle {
         text-transform: uppercase;
         font-weight: bold;
-        padding: 20px 0 10px 30px;
+        padding-block-start: 20px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 30px
     }
+
     .sectionTitle {
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: bold
     }
+
     .action-buttons {
         text-align: center;
-        padding: 30px 0;
+        padding-block-start: 30px;
+        padding-inline-end: 0;
+        padding-block-end: 30px;
+        padding-inline-start: 0;
+
         button {
-            margin: 5px;
+            margin: 5px
         }
     }
 }

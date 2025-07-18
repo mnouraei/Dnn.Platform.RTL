@@ -1,45 +1,52 @@
 .slider-container {
-    float: left;
-    width: 100%;
-    & > span {
-        float: left;
-        width: 60px;
+    float: inline-start;
+    inline-size: 100%;
+
+    &>span {
+        float: inline-start;
+        inline-size: 60px;
         text-align: center;
-        min-height: 1px;
+        min-block-size: 1px
     }
+
     &.with-min-max {
         .slider {
-            width: calc(~"100% - 124px");
+            inline-size: calc(~"100% - 124px")
         }
     }
+
     .slider {
         background: var(--dnn-color-surface, #c6c6c6);
-        height: 10px;
+        block-size: 10px;
         border: 1px solid var(--dnn-color-primary-light, #6891a7);
         border-radius: 10px;
-        width: 100%;
-        float: left;
-        margin-top: 2px;
+        inline-size: 100%;
+        float: inline-start;
+        margin-block-start: 2px;
+
         .thumb {
-            width: 20px;
-            height: 20px;
+            inline-size: 20px;
+            block-size: 20px;
             border-radius: 100%;
             background: var(--dnn-color-background, #fff);
             border: 1px solid var(--dnn-color-primary-light, #bfbfbf);
-            top: -6px;
-            & > div {
+            inset-block-start: -6px;
+
+            &>div {
                 position: absolute;
-                top: -100%;
+                inset-block-start: -100%;
                 background: var(--dnn-color-background, #fff);
-                left: 50%;
-                transform: translate(-50%, 0);
+                inset-inline-start: 50%;
+                transform: translate(-50%, 0)
             }
         }
+
         .track {
-            height: 100%;
+            block-size: 100%;
+
             &.track-0 {
                 border-radius: 10px;
-                background: var(--dnn-color-primary, #0087c6);
+                background: var(--dnn-color-primary, #0087c6)
             }
         }
     }

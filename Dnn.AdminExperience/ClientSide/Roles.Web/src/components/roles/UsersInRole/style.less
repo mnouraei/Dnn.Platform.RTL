@@ -1,118 +1,151 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .roles-list-container {
     .roleusers-form {
-        width: 80%;
-        margin: 20px 10%;
-        float: left;
+        inline-size: 80%;
+        margin-block-start: 20px;
+        margin-inline-end: 10%;
+        margin-block-end: 20px;
+        margin-inline-start: 10%;
+        float: inline-start;
         box-sizing: border-box;
+
         &.isloading {
             pointer-events: none !important;
+
             * {
-                pointer-events: none !important;
+                pointer-events: none !important
             }
+
             .role-user-row {
-                opacity: .4;
+                opacity: .4
             }
         }
+
         .role-users-list {
-            float: left;
-            width: 100%;
-            margin: 15px 0;
+            float: inline-start;
+            inline-size: 100%;
+            margin-block-start: 15px;
+            margin-inline-end: 0;
+            margin-block-end: 15px;
+            margin-inline-start: 0;
             display: table;
             cursor: auto;
             box-sizing: border-box;
             border: 1px solid @alto;
+
             .role-user-body {
                 color: @rollingStone;
+
                 .no-roles-row {
-                    width: 100%;
-                    float: left;
+                    inline-size: 100%;
+                    float: inline-start;
                     text-align: center;
                     font-weight: bold;
-                    padding: 13px 20px;
-                    box-sizing: border-box;
+                    padding-block-start: 13px;
+                    padding-inline-end: 20px;
+                    padding-block-end: 13px;
+                    padding-inline-start: 20px;
+                    box-sizing: border-box
                 }
             }
+
             .role-user-header-row {
                 display: table;
-                width: 100%;
-                border-bottom: 1px solid @alto;
-                width: 100%;
-                float: left;
+                inline-size: 100%;
+                border-block-end: 1px solid @alto;
+                inline-size: 100%;
+                float: inline-start;
                 position: relative;
-                padding: 15px 20px;
+                padding-block-start: 15px;
+                padding-inline-end: 20px;
+                padding-block-end: 15px;
+                padding-inline-start: 20px;
                 box-sizing: border-box;
                 text-transform: uppercase;
+
                 .search-container {
-                    float: left;
-                    width: 100%;
+                    float: inline-start;
+                    inline-size: 100%;
                     box-sizing: border-box;
-                    > div {
-                        float: left;
-                        width: 100%;
+
+                    >div {
+                        float: inline-start;
+                        inline-size: 100%;
                         box-sizing: border-box;
                         display: block !important;
+
                         input {
                             display: block;
-                            width: 100%;
+                            inline-size: 100%;
                             border: none;
                             //position: inherit !important;
-                            border-left: 1px solid @alto;
+                            border-inline-start: 1px solid @alto;
                             background-color: transparent;
                             border-radius: 0;
                             outline: none;
-                            padding-right: 24px;
+                            padding-inline-end: 24px
                         }
+
                         svg {
-                            width: 16px !important;
-                            height: 16px !important;
-                            margin-top: 7px;
+                            inline-size: 16px !important;
+                            block-size: 16px !important;
+                            margin-block-start: 7px
                         }
                     }
                 }
             }
         }
+
         .header {
-            width: 100%;
-            float: left;
+            inline-size: 100%;
+            float: inline-start;
             box-sizing: border-box;
+
             .header-title {
-                width: 100%;
+                inline-size: 100%;
                 font-weight: bold;
                 display: inline-block;
                 text-transform: uppercase;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                margin-block-start: 10px;
+                margin-block-end: 10px
             }
+
             .add-box {
-                width: 100%;
-                float: left;
+                inline-size: 100%;
+                float: inline-start;
                 box-sizing: border-box;
-                border-bottom: 1px solid @alto;
+                border-block-end: 1px solid @alto;
+
                 .send-email-box {
-                    width: 100%;
-                    float: left;
+                    inline-size: 100%;
+                    float: inline-start;
+
                     .dnn-checkbox-container {
                         .checkbox {
-                            margin-bottom: 0px;
+                            margin-block-end: 0px
                         }
-                        float: left;
-                        margin-top: 10px;
-                        margin-right: 10px;
+
+                        float: inline-start;
+                        margin-block-start: 10px;
+                        margin-inline-end: 10px
                     }
+
                     label {
-                        color: @alto;
+                        color: @alto
                     }
                 }
+
                 span {
-                    float: left;
-                    width: 100%;
+                    float: inline-start;
+                    inline-size: 100%;
                     display: inline-block;
-                    border-left: 1px solid @alto;
+                    border-inline-start: 1px solid @alto;
+
                     .rw-combobox {
-                        float: left;
-                        width: 250px;
-                        height: 34px;
+                        float: inline-start;
+                        inline-size: 250px;
+                        block-size: 34px;
                         vertical-align: middle;
                         padding: 0;
                         border: none;
@@ -120,99 +153,124 @@
                         border-radius: 0;
                         display: inline-block;
                         box-shadow: none;
-                        background: transparent;                        						
+                        background: transparent;
+
                         button {
-                            display: none;
+                            display: none
                         }
+
                         ::-webkit-input-placeholder {
                             /* WebKit, Blink, Edge */
-                            color: @alto;
+                            color: @alto
                         }
+
                         :-moz-placeholder {
                             /* Mozilla Firefox 4 to 18 */
                             color: @alto;
-                            opacity: 1;
+                            opacity: 1
                         }
+
                         ::-moz-placeholder {
                             /* Mozilla Firefox 19+ */
                             color: @alto;
-                            opacity: 1;
+                            opacity: 1
                         }
+
                         :-ms-input-placeholder {
                             /* Internet Explorer 10-11 */
-                            color: @alto;
+                            color: @alto
                         }
+
                         input {
                             -webkit-box-shadow: none;
-                            padding: 0 0 0 12px;
-                            height: 100%;
+                            padding-block-start: 0;
+                            padding-inline-end: 0;
+                            padding-block-end: 0;
+                            padding-inline-start: 12px;
+                            block-size: 100%;
                             vertical-align: top;
                             background-color: transparent;
+
                             &::-ms-clear {
-                                display: none;
+                                display: none
                             }
                         }
+
                         .rw-widget-picker.rw-widget-container {
-                            height: 32px;
+                            block-size: 32px;
                             line-height: 32px;
                             border: none;
+
                             input {
-                                height: inherit;
+                                block-size: inherit;
                                 line-height: inherit;
-                                border: inherit;
+                                border: inherit
                             }
                         }
+
                         .rw-popup-container {
                             box-shadow: none;
+
                             .rw-popup {
                                 border-radius: 0px;
                                 border: 1px solid @alto;
                                 box-shadow: none;
+
                                 ul.rw-list {
                                     margin: 0;
                                     padding: 0;
+
                                     li {
-                                        padding-left: 15px;
-                                        height: 30px;
+                                        padding-inline-start: 15px;
+                                        block-size: 30px;
                                         line-height: 30px;
                                         color: @rollingStone;
                                         border: none;
                                         outline: none;
                                         overflow: hidden;
                                         text-overflow: ellipsis;
-                                        white-space: nowrap;
+                                        white-space: nowrap
                                     }
+
                                     li:hover {
                                         background-color: @gallery;
-                                        color: @curiousBlue;
+                                        color: @curiousBlue
                                     }
+
                                     li.rw-state-selected {
                                         background-color: transparent;
-                                        color: @curiousBlue;
+                                        color: @curiousBlue
                                     }
                                 }
                             }
                         }
                     }
+
                     .add-user-button {
-                        float: right;
-                        text-align: right;
-                        width: auto;
+                        float: inline-end;
+                        text-align: end;
+                        inline-size: auto;
                         font-weight: bolder;
                         overflow: hidden;
                         cursor: pointer;
                         box-sizing: border-box;
-                        padding-top: 10px;
+                        padding-block-start: 10px;
+
                         svg {
-                            fill: @rollingStone;
+                            fill: @rollingStone
                         }
+
                         span {
-                            border: none;
+                            border: none
                         }
                     }
+
                     button[role="secondary"] {
                         vertical-align: middle;
-                        margin: 0 0 0 10px;
+                        margin-block-start: 0;
+                        margin-inline-end: 0;
+                        margin-block-end: 0;
+                        margin-inline-start: 10px
                     }
                 }
             }

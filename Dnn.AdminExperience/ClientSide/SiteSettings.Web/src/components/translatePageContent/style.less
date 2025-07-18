@@ -1,69 +1,87 @@
 @import "../../less/style.less";
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .translate-page-content {
     .persona-bar-page-body {
         background-color: transparent;
-        border: none;
+        border: none
     }
+
     .top-block {
         border: 1px solid @curiousBlue;
-        margin-bottom: 20px;
+        margin-block-end: 20px;
         background: white;
         padding: 20px;
+
         .button-block {
             button.dnn-ui-common-button {
-                padding: 0 14px;
+                padding-block-start: 0;
+                padding-inline-end: 14px;
+                padding-block-end: 0;
+                padding-inline-start: 14px
             }
         }
     }
+
     img {
-        margin-right: 10px;
+        margin-inline-end: 10px
     }
+
     .language-block {
-        padding-bottom: 20px;
-        margin-bottom: 10px;
-        border-bottom: 1px solid @alto;
+        padding-block-end: 20px;
+        margin-block-end: 10px;
+        border-block-end: 1px solid @alto
     }
+
     .activate-pages-switch {
         label {
-            float: left;
+            float: inline-start
         }
     }
+
     button {
-        margin-right: 5px;
+        margin-inline-end: 5px
     }
+
     .list-header {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid @alto;
+        padding-block-start: 10px;
+        padding-block-end: 10px;
+        margin-block-end: 15px;
+        border-block-end: 1px solid @alto;
+
         span {
             font-weight: 600;
             text-transform: uppercase;
-            & > span {
-                color: @curiousBlue;
+
+            &>span {
+                color: @curiousBlue
             }
+
             em {
                 font-style: normal;
                 font-size: 20px;
                 line-height: 10px;
                 line-height: 17px;
-                float: left;
-                margin-right: 6px;
+                float: inline-start;
+                margin-inline-end: 6px
             }
         }
+
         .float-right {
-            cursor: pointer;
+            cursor: pointer
         }
     }
+
     .button-block {
-        margin-top: 6px;
+        margin-block-start: 6px
     }
+
     .float-right {
-        float: right;
+        float: inline-end
     }
+
     .float-left {
-        float: left;
+        float: inline-start
     }
 }
 
@@ -71,18 +89,27 @@
     .page-list {
         border: 1px solid @alto;
         background: white;
+
         .page-list-item {
-            padding: 12px 20px;
-            border-bottom: 1px solid @alto;
+            padding-block-start: 12px;
+            padding-inline-end: 20px;
+            padding-block-end: 12px;
+            padding-inline-start: 20px;
+            border-block-end: 1px solid @alto;
+
             &:last-of-type {
-                border-bottom: none;
+                border-block-end: none
             }
-            a, a:visited, a:active, a:hover {
+
+            a,
+            a:visited,
+            a:active,
+            a:hover {
                 color: @curiousBlue !important;
                 font-weight: 600;
-                margin-left: 10px;
+                margin-inline-start: 10px;
                 text-decoration: none;
-                cursor: pointer;
+                cursor: pointer
             }
         }
     }

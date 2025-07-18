@@ -1,115 +1,145 @@
 @import "../../styles/index";
+
 .dnn-pager {
-    width: 100%;
+    inline-size: 100%;
     box-sizing: border-box;
     margin: 0px;
+
     .dnn-pager-summary-box {
-        float: left;
-        width: 35%;
-        margin-top: 9px;
+        float: inline-start;
+        inline-size: 35%;
+        margin-block-start: 9px
     }
+
     .dnn-pager-control {
-        float: left;
-        width: 65%;
+        float: inline-start;
+        inline-size: 65%;
+
         .dnn-pager-options-info-box {
-            float: right;
-            width: auto;
-            max-width: 40%;
-            margin-right: 20px;
-            margin-top: 9px;
+            float: inline-end;
+            inline-size: auto;
+            max-inline-size: 40%;
+            margin-inline-end: 20px;
+            margin-block-start: 9px
         }
+
         .dnn-pager-pageSize-box {
-            float: right;
-            width: auto;
-            max-width: 40%;
-            margin-right: 20px;
-            .collapsible-label{
-                box-sizing: border-box;
+            float: inline-end;
+            inline-size: auto;
+            max-inline-size: 40%;
+            margin-inline-end: 20px;
+
+            .collapsible-label {
+                box-sizing: border-box
             }
+
             .collapsible-content {
                 &.open {
-                    margin-bottom: 20px;
+                    margin-block-end: 20px
                 }
             }
         }
+
         .dnn-pager-paging-box {
-            width: auto;
-            max-width: 60%;
-            float: right;
+            inline-size: auto;
+            max-inline-size: 60%;
+            float: inline-end;
+
             ul {
                 margin: 0;
                 padding: 0;
                 list-style: none;
                 line-height: 32px;
+
                 li.pages {
-                    min-width: 32px;
-                    width: auto;
-                    padding: 0px 5px;
-                    height: 32px;
+                    min-inline-size: 32px;
+                    inline-size: auto;
+                    padding-block-start: 0px;
+                    padding-inline-end: 5px;
+                    padding-block-end: 0px;
+                    padding-inline-start: 5px;
+                    block-size: 32px;
                     border: 1px solid var(--dnn-color-foreground-light, @alto);
-                    float: left;
-                    margin-left: -1px;
+                    float: inline-start;
+                    margin-inline-start: -1px;
                     cursor: pointer;
                     position: relative;
-                    text-align: center;
+                    text-align: center
                 }
+
                 li.pages:not(.disabled):hover {
                     color: var(--dnn-color-foreground-light, @thunder);
+
                     svg {
-                        fill: var(--dnn-color-foreground-light, @thunder);
+                        fill: var(--dnn-color-foreground-light, @thunder)
                     }
                 }
-                li.prev, li.next {
+
+                li.prev,
+                li.next {
                     text-align: center;
+
                     span {
                         vertical-align: middle;
-                        width: 16px;
-                        padding-top: 8px;
+                        inline-size: 16px;
+                        padding-block-start: 8px
                     }
                 }
+
                 li.current {
                     color: var(--dnn-color-primary, @curiousBlue);
                     cursor: auto;
-                    font-weight: bold;
+                    font-weight: bold
                 }
+
                 li.disabled span {
-                    opacity: 0.5;
+                    opacity: 0.5
                 }
+
                 .text {
                     color: var(--dnn-color-foreground-light, @thunder);
+
                     &:hover {
                         color: var(--dnn-color-foreground-light, @thunder)
                     }
+
                     &:active {
-                        color: var(--dnn-color-primary, @curiousBlue);
+                        color: var(--dnn-color-primary, @curiousBlue)
                     }
                 }
+
                 .icon-button {
                     display: inline-block;
+
                     svg {
                         vertical-align: top;
                         fill: @alto;
-                        width: 16px;
-                        height: 16px;
+                        inline-size: 16px;
+                        block-size: 16px
                     }
+
                     &:hover {
                         svg {
-                            fill: var(--dnn-color-foreground-light, @thunder);
+                            fill: var(--dnn-color-foreground-light, @thunder)
                         }
                     }
-                    &:active, &.activated {
+
+                    &:active,
+                    &.activated {
                         svg {
-                            fill: var(--dnn-color-primary, @curiousBlue);
+                            fill: var(--dnn-color-primary, @curiousBlue)
                         }
                     }
                 }
+
                 .icon-flat {
                     display: inline-block;
+
                     svg {
                         vertical-align: top;
                         fill: var(--dnn-color-foreground-light, @alto);
-                        width: 16px;
-                        height: 16px;
+                        inline-size: 16px;
+                        block-size: 16px
                     }
                 }
             }

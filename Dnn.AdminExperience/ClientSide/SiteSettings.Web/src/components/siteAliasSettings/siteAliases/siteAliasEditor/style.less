@@ -1,56 +1,89 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .alias-editor {
-    margin: 20px 30px;
-    height: 320px;
+    margin-block-start: 20px;
+    margin-inline-end: 30px;
+    margin-block-end: 20px;
+    margin-inline-start: 30px;
+    block-size: 320px;
+
     .topMessage {
         border: 1px solid @alto;
-        padding: 10px 20px;
+        padding-block-start: 10px;
+        padding-inline-end: 20px;
+        padding-block-end: 10px;
+        padding-inline-start: 20px;
         background-color: @mercury;
-        margin: 0 0 20px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 20px;
+        margin-inline-start: 0
     }
+
     .dnn-ui-common-input-group {
-        padding: 0 0 15px 0;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0;
+
         label {
             font-weight: bolder;
-            float: left;
+            float: inline-start
         }
+
         .dnn-label {
-            margin: 8px 0;
+            margin-block-start: 8px;
+            margin-inline-end: 0;
+            margin-block-end: 8px;
+            margin-inline-start: 0
         }
-        .dnn-dropdown
-        {
-            width: 100% !important;
-            box-sizing: border-box;
-        }        
+
+        .dnn-dropdown {
+            inline-size: 100% !important;
+            box-sizing: border-box
+        }
+
         .dnn-single-line-input-with-error {
-            width: 100% !important;
-        }        
+            inline-size: 100% !important
+        }
     }
+
     .dnn-grid-system {
         .left-column {
-            padding-right: 30px;
-            border-right: 1px solid @alto;
+            padding-inline-end: 30px;
+            border-inline-end: 1px solid @alto
         }
+
         .right-column {
-            padding-left: 30px;    
-            border-left: 0 !important;        
-        }        
-    }
-    .editor-buttons-box {
-        width: 100%;
-        text-align: center;
-        float: left;
-        margin: 30px 0 0 0;
-        .dnn-ui-common-button {
-            margin: 5px;
+            padding-inline-start: 30px;
+            border-inline-start: 0 !important
         }
+    }
+
+    .editor-buttons-box {
+        inline-size: 100%;
+        text-align: center;
+        float: inline-start;
+        margin-block-start: 30px;
+        margin-inline-end: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0;
+
+        .dnn-ui-common-button {
+            margin: 5px
+        }
+
         .edit-icon {
-            margin: 0px 10px 20px 10px;
-            float: right;
+            margin-block-start: 0px;
+            margin-inline-end: 10px;
+            margin-block-end: 20px;
+            margin-inline-start: 10px;
+            float: inline-end;
+
             svg {
-                width: 16px;
-                float: left;
-                height: 16px;
+                inline-size: 16px;
+                float: inline-start;
+                block-size: 16px
             }
         }
     }

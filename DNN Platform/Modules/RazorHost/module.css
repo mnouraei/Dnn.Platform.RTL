@@ -1,6 +1,32 @@
-.dnnRazorHostEditScript{margin:1em auto;}
-.dnnRazorHostAddScript{padding:1em 2em;}
-.dnnRazorHostEditScript .dnnFormItem input[type="text"], .dnnRazorHostEditScript .dnnFormItem textarea{width:80%;}
-	.razorHostModSource{margin:1em 0 1em 16%;}
-.dnnRazorHostEditScript .dnnFormItem .dnnTooltip{ width: 15%;}
-.dnnRazorHostCreateModule .dnnFormItem .dnnTooltip{ width: 15%;}
+.dnnRazorHostEditScript {
+    margin-block-start: 1em;
+    margin-inline-end: auto;
+    margin-block-end: 1em;
+    margin-inline-start: auto;
+}
+
+.dnnRazorHostAddScript {
+    padding-block-start: 1em;
+    padding-inline-end: 2em;
+    padding-block-end: 1em;
+    padding-inline-start: 2em;
+}
+
+.dnnRazorHostEditScript .dnnFormItem input[type="text"], .dnnRazorHostEditScript .dnnFormItem textarea {
+    inline-size: 80%;
+}
+
+.razorHostModSource {
+    margin-block-start: 1em;
+    margin-inline-end: 0;
+    margin-block-end: 1em;
+    margin-inline-start: 16%;
+}
+
+.dnnRazorHostEditScript .dnnFormItem .dnnTooltip {
+    inline-size: 15%;
+}
+
+.dnnRazorHostCreateModule .dnnFormItem .dnnTooltip {
+    inline-size: 15%;
+}

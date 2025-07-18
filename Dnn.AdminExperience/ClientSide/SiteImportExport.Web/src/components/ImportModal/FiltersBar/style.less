@@ -1,59 +1,73 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .jobs-filter-container {
-    float: left;
+    float: inline-start;
     box-sizing: border-box;
-    margin-bottom: 15px;
-    width: 100%;
+    margin-block-end: 15px;
+    inline-size: 100%;
     border: none;
-    border-bottom: 1px solid @alto;
-    padding-bottom: 5px;
+    border-block-end: 1px solid @alto;
+    padding-block-end: 5px;
+
     .dnn-grid-cell {
-        margin-bottom: 5px;
+        margin-block-end: 5px;
+
         .job-filters-filter {
-            width: 100%;
-            border-right: 1px solid @alto;
+            inline-size: 100%;
+            border-inline-end: 1px solid @alto;
             font-size: 13px;
             font-family: inherit;
-            float: left;
-            height: 32px;
-            padding-top: 4px;
+            float: inline-start;
+            block-size: 32px;
+            padding-block-start: 4px;
+
             .dnn-dropdown {
                 .collapsible-label {
-                    padding-top: 4px;
-                    padding-left: 0;
+                    padding-block-start: 4px;
+                    padding-inline-start: 0
                 }
+
                 .dropdown-icon {
-                    top: 5px;
+                    inset-block-start: 5px
                 }
             }
+
             .dnn-search-box {
-                width: 100%;
-                height: 24px;
+                inline-size: 100%;
+                block-size: 24px;
+
                 input {
-                    padding: 0px 16px;
+                    padding-block-start: 0px;
+                    padding-inline-end: 16px;
+                    padding-block-end: 0px;
+                    padding-inline-start: 16px
                 }
             }
+
             .dnn-dropdown {
                 .collapsible-toggle {
-                    width: auto;
+                    inline-size: auto
                 }
             }
         }
+
         .search-filter {
-            float: left;
-            width: 100%;
-            > div {
+            float: inline-start;
+            inline-size: 100%;
+
+            >div {
                 display: block !important;
-                border-left: 1px solid @alto;
+                border-inline-start: 1px solid @alto;
+
                 input {
                     display: block;
-                    width: 100%;
+                    inline-size: 100%;
                     position: inherit !important;
                     border: none;
                     border-radius: none;
                     background-color: transparent;
                     outline: none;
-                    padding-right: 45px;
+                    padding-inline-end: 45px
                 }
             }
         }

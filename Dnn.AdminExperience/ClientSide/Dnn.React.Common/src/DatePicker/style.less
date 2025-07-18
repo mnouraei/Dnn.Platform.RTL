@@ -1,27 +1,32 @@
 @import "../../styles/index";
+
 .prefixes(@property, @value) {
-    -webkit-@{property}: @value;
-     -khtml-@{property}: @value;
-       -moz-@{property}: @value;
-        -ms-@{property}: @value;
-            @{property}: @value;
+    -webkit-@{    property}: @value;
+    -khtml-@{    property}: @value;
+    -moz-@{    property}: @value;
+    -ms-@{    property}: @value;
+    @{    property}: @value;
 }
+
 @transition: .18s;
+
 .dnn-day-picker {
-    float: left;
-    width: auto;
-    height: 30px;
+    float: inline-start;
+    inline-size: auto;
+    block-size: 30px;
     box-sizing: border-box;
     position: relative;
+
     &.has-outside-controle {
-        width: 0;
-        height: 0;
-        border: none;
+        inline-size: 0;
+        block-size: 0;
+        border: none
     }
+
     .calendar-container {
         position: absolute;
-        width: 256px;
-        left: 0px;
+        inline-size: 256px;
+        inset-inline-start: 0px;
         border: 1px solid @alto;
         box-shadow: 0px 0px 17px 2px rgba(var(--dnn-color-foreground-r, 0), var(--dnn-color-foreground-g, 0), var(--dnn-color-foreground-b, 0), .2);
         opacity: 0;
@@ -34,370 +39,454 @@
         text-align: center;
 
         &.show-above-input {
-            bottom: calc(100%);
-            top: auto; // needed for old version compatibility
-        }
+            inset-block-end: calc(100%);
+            inset-block-start: auto;
+            // needed for old version compatibility}
 
-        &.show-below-input {
-            top: calc(100% + 12px);
-        }
+            &.show-below-input {
+                inset-block-start: calc(100% + 12px)
+            }
 
-        &.invisible {
-            * {
-                pointer-events: none !important;
+            &.invisible {
+                * {
+                    pointer-events: none !important
+                }
+            }
+
+            &>div {
+                inline-size: 256px;
+                float: inline-start
+            }
+
+            &.visible {
+                opacity: 1;
+                pointer-events: all
             }
         }
-        & > div {
-            width: 256px;
-            float: left;
-        }
-        &.visible  {
-            opacity: 1;
-            pointer-events: all;
-        }        
-    }
-    .calendar-icon {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        float: left;
-        padding-top: 1px;
-        color: var(--dnn-color-foreground-light, @alto);
-        margin-left: 7px;
-        &:hover {
-            color: var(--dnn-color-neutral, @rollingStone);
-        }
-        &.active, &.active:hover {
-            color: var(--dnn-color-primary, @curiousBlue);
-        }
-    }
-    .clear-button {
-        color: @alto;
-        cursor: pointer;
-        height: 9px;
-        position: absolute;
-        left: 5px;
-        top: 3px;
-        font-size: 26px;
-        &:hover {
-            color: var(--dnn-color-foreground-light, @rollingStone);
-        }
-    }
-    .calendar-text {
-        border: 1px solid var(--dnn-color-foreground-light, #b0afae);
-        border-radius: var(--dnn-controls-radius, 0);
-        padding: 8px 12px;
-        cursor: pointer;
-        min-height: 16px;
-        text-align: right;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        float: left;
-        width: 204px;
-        position: relative;
-        &.with-time-picker {
-            padding-right: 40px;
-        }
-        div, span {
-            float: left;
-            }
-    }
-    .DayPicker {
-        float: left;
-        width: 240px;
-        margin: 8px;
-        outline: 0 !important;
-        &, * {
-            .prefixes(user-select, none);
-        }
-        .DayPicker-NavBar {
-            position: relative;
-            width: 100%;
-        }
-        .DayPicker-NavButton {
-            position: absolute;
-            display: block;
+
+        .calendar-icon {
+            inline-size: 30px;
+            block-size: 30px;
             cursor: pointer;
-            border: 1px solid var(--dnn-color-foreground-light, #ccc);
-            padding: 0;
-            width: 28px;
-            height: 28px;
-            border-radius: 3px;
-            text-indent: 30px;
+            float: inline-start;
+            padding-block-start: 1px;
+            color: var(--dnn-color-foreground-light, @alto);
+            margin-inline-start: 7px;
+
+            &:hover {
+                color: var(--dnn-color-neutral, @rollingStone)
+            }
+
+            &.active,
+            &.active:hover {
+                color: var(--dnn-color-primary, @curiousBlue)
+            }
+        }
+
+        .clear-button {
+            color: @alto;
+            cursor: pointer;
+            block-size: 9px;
+            position: absolute;
+            inset-inline-start: 5px;
+            inset-block-start: 3px;
+            font-size: 26px;
+
+            &:hover {
+                color: var(--dnn-color-foreground-light, @rollingStone)
+            }
+        }
+
+        .calendar-text {
+            border: 1px solid var(--dnn-color-foreground-light, #b0afae);
+            border-radius: var(--dnn-controls-radius, 0);
+            padding-block-start: 8px;
+            padding-inline-end: 12px;
+            padding-block-end: 8px;
+            padding-inline-start: 12px;
+            cursor: pointer;
+            min-block-size: 16px;
+            text-align: end;
             white-space: nowrap;
             overflow: hidden;
-            background-color: transparent;
-            background-position: center center;
-            background-repeat: no-repeat;
-            opacity: .5;
-            &:hover {
-                opacity: 1;
-            }
-            &.DayPicker-NavButton--prev {
-                left: 2px;
-                background-image: url(./img/leftBlack.png);
-            }
-            &.DayPicker-NavButton--next {
-                right: 2px;
-                background-image: url(./img/rightBlack.png);
-            }
-        }
-        .DayPicker-Caption {
-            width: 100%;
-            text-align: center;
-            text-transform: uppercase;
-            padding: 10px 0;
-            font-weight: 600;
-            color: var(--dnn-color-foreground, @bulgarianRose);
-        }
-        .DayPicker-Weekdays {
-            width: 100%;
-            float: left;
-            .DayPicker-WeekdaysRow {
-                width: 100%;
-                float: left;
-                .DayPicker-Weekday {
-                    color: var(--dnn-color-neutral-contrast, #fff);
-                    line-height: 30px;
-                    text-align: center;
-                    background-color: var(--dnn-color-neutral, @alto);
-                    width: 14.28%;
-                    box-sizing: border-box;
-                    float: left;
-                    border: 2px solid var(--dnn-color-neutral, @alto);
-                }
-            }
-        }
-        .DayPicker-Week {
-            width: 100%;
-            float: left;
-        }
-        .DayPicker-Day {
-            width: 14.28%;
-            float: left;
-            height: 32px;
-            cursor: pointer;
-            display: block;
-            padding: 6px 0 6px 0;
-            color: @rollingStone;
-            font-size: 11px;
-            font-family: inherit;
-            line-height: 15px;
-            text-align: center;
-            background: @mercury;
-            box-sizing: border-box;
-            border: 2px solid #fff;
-            outline: 0 !important;
-            &.DayPicker-Day--selected {
-                background: @curiousBlue !important;
-                color: #fff;
-            }
-            &.DayPicker-Day--outside {
-                opacity: 0;
-                pointer-events: none;
-            }
-            &.DayPicker-Day--disabled {
-                pointer-events: none;
-                cursor: default;
-                color: #999;
-                opacity: .3;
-            }
-            &:hover {
-                background: @alto;
-            }
-        }
-    }
-    button[role="primary"] {
-        float: right;
-        margin: 10px;
-        background: @curiousBlue;
-        color: white;
-        padding: 9px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        &:hover {
-            background: @cerulean;
-        }
-        &:active {
-            background: @matisse;
-        }
-    }
-    button[role="secondary"] {
-        float: right;
-        height: 34px;
-        margin: 10px;
-        background: @white;
-        color: @curiousBlue;
-        padding: 0 22px;
-        border: 1px solid @curiousBlue;        
-        border-radius: 4px;
-        cursor: pointer;
-        &:hover {
-            color: @cerulean;
-            border-color: @cerulean;
-        }
-        &:focus{
-            outline: none;
-        }
-        &:active {
-            color: @matisse;
-            border-color: @matisse;
-        }
-    }
-    .date-input {
-        span {
-            float: left;
-        }
-        .select-container {
-            overflow: hidden;
-            position: absolute;
-            width: 36px;
-            right: 0px;
-            height: 100%;
-            top: 0;
-            span {
-                padding-top: 8px;
-            }
-            &:after {
-                content: "";
-                position: absolute;
-                top: 14px;
-                right: 5px;
-                width: 0;
-                height: 0;
-                border-left: 4.88px solid transparent;
-                border-right: 4.88px solid transparent;
-                border-top: 4.34px solid #6f7273;
-                z-index: 2;
-                pointer-events: none;
-            }
-            &, * {
-                .prefixes(user-select, none);
-            }
-        }
-        input[type="text"] {
-            float: left;
-            padding: 0px;
-            min-width: 0;
-            width: 20px;
-            border: none;
-            outline: none !important;
-            text-align: center;
-            background: transparent;
-            &::-webkit-input-placeholder {
-                font-size: 10px;
-            }
-            &.year {
-                width: 40px;
-            }
-        }
-    }
-}
-
-.dnn-time-picker-box {
-    .dnn-time-picker {
-        &.timezone-picker {
-            text-align: left;
-            width: 155px;
-            .time-selector {
-                width: 215px;
-                .time-options {
-                    width: 228px;
-                }
-            }
-            .time-text {
-                width: 150px;
-                .time-text-label {
-                    display: block;
-                    width: 135px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                }
-            }
-        }
-        &.time-picker {
-            &.half {
-                text-align: left;
-                width: 75px;
-                .time-text {
-                    width: 75px;
-                }
-            }
-            &.full {
-                text-align: center;
-                width: 240px;
-                .time-text {
-                    width: 82px;
-                    margin: auto;
-                    padding: 8px 0 0 0;
-                }
-            }
-            .time-selector {
-                width: 134px;
-                .time-options {
-                    width: 147px;
-                }
-            }
-        }
-        
-        
-        float: left;
-        border-top: 1px solid @mercury;
-        margin-left: 10px;
-        pointer-events: none;
-        .time-text {
+            text-overflow: ellipsis;
+            float: inline-start;
+            inline-size: 204px;
             position: relative;
-            color: @curiousBlue;
-            font-weight: 600;
-            letter-spacing: 1px;
-            height: 16px;
-            pointer-events: all;
-            &:after {
-                position: absolute;
-                content: "";
-                right: 0px;
-                top: 13px;
-                width: 0;
-                height: 0;
-                border-left: 3px solid transparent;
-                border-right: 3px solid transparent;
-                border-top: 4px solid @curiousBlue;
+
+            &.with-time-picker {
+                padding-inline-end: 40px
             }
-            .time-selector {
-                height: 132px;
-                overflow: hidden;
-                background: white;
+
+            div,
+            span {
+                float: inline-start
+            }
+        }
+
+        .DayPicker {
+            float: inline-start;
+            inline-size: 240px;
+            margin: 8px;
+            outline: 0 !important;
+
+            &,
+            * {
+                .prefixes(user-select, none)
+            }
+
+            .DayPicker-NavBar {
+                position: relative;
+                inline-size: 100%
+            }
+
+            .DayPicker-NavButton {
                 position: absolute;
-                left: 50%;
-                transform: translate(-50%);
-                top: 31px;
-                border: 1px solid @alto;
-                padding: 5px 0px;
-                box-sizing: border-box;
-                box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, .2);
-                transition: @transition;
-                opacity: 0;
-                &.show {
+                display: block;
+                cursor: pointer;
+                border: 1px solid var(--dnn-color-foreground-light, #ccc);
+                padding: 0;
+                inline-size: 28px;
+                block-size: 28px;
+                border-radius: 3px;
+                text-indent: 30px;
+                white-space: nowrap;
+                overflow: hidden;
+                background-color: transparent;
+                background-position: center center;
+                background-repeat: no-repeat;
+                opacity: .5;
+
+                &:hover {
                     opacity: 1;
                 }
-                .time-options {
-                    overflow-y: scroll;
-                    overflow-x: auto;
-                    height: 100%;
-                    .time-option {
-                        color: @rollingStone;
-                        padding: 5px;
-                        cursor: pointer;
-                        &:hover {
-                            background: @gallery;
-                            color: @curiousBlue;
+
+                &.DayPicker-NavButton--prev {
+                    inset-inline-start: 2px;
+                    background-image: url(./img/leftBlack.png)
+                }
+
+                &.DayPicker-NavButton--next {
+                    inset-inline-end: 2px;
+                    background-image: url(./img/rightBlack.png)
+                }
+            }
+
+            .DayPicker-Caption {
+                inline-size: 100%;
+                text-align: center;
+                text-transform: uppercase;
+                padding-block-start: 10px;
+                padding-inline-end: 0;
+                padding-block-end: 10px;
+                padding-inline-start: 0;
+                font-weight: 600;
+                color: var(--dnn-color-foreground, @bulgarianRose);
+            }
+
+            .DayPicker-Weekdays {
+                inline-size: 100%;
+                float: inline-start;
+
+                .DayPicker-WeekdaysRow {
+                    inline-size: 100%;
+                    float: inline-start;
+
+                    .DayPicker-Weekday {
+                        color: var(--dnn-color-neutral-contrast, #fff);
+                        line-height: 30px;
+                        text-align: center;
+                        background-color: var(--dnn-color-neutral, @alto);
+                        inline-size: 14.28%;
+                        box-sizing: border-box;
+                        float: inline-start;
+                        border: 2px solid var(--dnn-color-neutral, @alto);
+                    }
+                }
+            }
+
+            .DayPicker-Week {
+                inline-size: 100%;
+                float: inline-start
+            }
+
+            .DayPicker-Day {
+                inline-size: 14.28%;
+                float: inline-start;
+                block-size: 32px;
+                cursor: pointer;
+                display: block;
+                padding-block-start: 6px;
+                padding-inline-end: 0;
+                padding-block-end: 6px;
+                padding-inline-start: 0;
+                color: @rollingStone;
+                font-size: 11px;
+                font-family: inherit;
+                line-height: 15px;
+                text-align: center;
+                background: @mercury;
+                box-sizing: border-box;
+                border: 2px solid #fff;
+                outline: 0 !important;
+
+                &.DayPicker-Day--selected {
+                    background: @curiousBlue !important;
+                    color: #fff
+                }
+
+                &.DayPicker-Day--outside {
+                    opacity: 0;
+                    pointer-events: none
+                }
+
+                &.DayPicker-Day--disabled {
+                    pointer-events: none;
+                    cursor: default;
+                    color: #999;
+                    opacity: .3
+                }
+
+                &:hover {
+                    background: @alto;
+                }
+            }
+        }
+
+        button[role="primary"] {
+            float: inline-end;
+            margin: 10px;
+            background: @curiousBlue;
+            color: white;
+            padding-block-start: 9px;
+            padding-inline-end: 20px;
+            padding-block-end: 9px;
+            padding-inline-start: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background: @cerulean;
+            }
+
+            &:active {
+                background: @matisse;
+            }
+        }
+
+        button[role="secondary"] {
+            float: inline-end;
+            block-size: 34px;
+            margin: 10px;
+            background: @white;
+            color: @curiousBlue;
+            padding-block-start: 0;
+            padding-inline-end: 22px;
+            padding-block-end: 0;
+            padding-inline-start: 22px;
+            border: 1px solid @curiousBlue;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                color: @cerulean;
+                border-color: @cerulean
+            }
+
+            &:focus {
+                outline: none
+            }
+
+            &:active {
+                color: @matisse;
+                border-color: @matisse;
+            }
+        }
+
+        .date-input {
+            span {
+                float: inline-start
+            }
+
+            .select-container {
+                overflow: hidden;
+                position: absolute;
+                inline-size: 36px;
+                inset-inline-end: 0px;
+                block-size: 100%;
+                inset-block-start: 0;
+
+                span {
+                    padding-block-start: 8px
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    inset-block-start: 14px;
+                    inset-inline-end: 5px;
+                    inline-size: 0;
+                    block-size: 0;
+                    border-inline-start: 4.88px solid transparent;
+                    border-inline-end: 4.88px solid transparent;
+                    border-block-start: 4.34px solid #6f7273;
+                    z-index: 2;
+                    pointer-events: none
+                }
+
+                &,
+                * {
+                    .prefixes(user-select, none)
+                }
+            }
+
+            input[type="text"] {
+                float: inline-start;
+                padding: 0px;
+                min-inline-size: 0;
+                inline-size: 20px;
+                border: none;
+                outline: none !important;
+                text-align: center;
+                background: transparent;
+
+                &::-webkit-input-placeholder {
+                    font-size: 10px
+                }
+
+                &.year {
+                    inline-size: 40px;
+                }
+            }
+        }
+    }
+
+    .dnn-time-picker-box {
+        .dnn-time-picker {
+            &.timezone-picker {
+                text-align: start;
+                inline-size: 155px;
+
+                .time-selector {
+                    inline-size: 215px;
+
+                    .time-options {
+                        inline-size: 228px
+                    }
+                }
+
+                .time-text {
+                    inline-size: 150px;
+
+                    .time-text-label {
+                        display: block;
+                        inline-size: 135px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden
+                    }
+                }
+            }
+
+            &.time-picker {
+                &.half {
+                    text-align: start;
+                    inline-size: 75px;
+
+                    .time-text {
+                        inline-size: 75px
+                    }
+                }
+
+                &.full {
+                    text-align: center;
+                    inline-size: 240px;
+
+                    .time-text {
+                        inline-size: 82px;
+                        margin: auto;
+                        padding-block-start: 8px;
+                        padding-inline-end: 0;
+                        padding-block-end: 0;
+                        padding-inline-start: 0
+                    }
+                }
+
+                .time-selector {
+                    inline-size: 134px;
+
+                    .time-options {
+                        inline-size: 147px;
+                    }
+                }
+            }
+
+
+            float: inline-start;
+            border-block-start: 1px solid @mercury;
+            margin-inline-start: 10px;
+            pointer-events: none;
+
+            .time-text {
+                position: relative;
+                color: @curiousBlue;
+                font-weight: 600;
+                letter-spacing: 1px;
+                block-size: 16px;
+                pointer-events: all;
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    inset-inline-end: 0px;
+                    inset-block-start: 13px;
+                    inline-size: 0;
+                    block-size: 0;
+                    border-inline-start: 3px solid transparent;
+                    border-inline-end: 3px solid transparent;
+                    border-block-start: 4px solid @curiousBlue;
+                }
+
+                .time-selector {
+                    block-size: 132px;
+                    overflow: hidden;
+                    background: white;
+                    position: absolute;
+                    inset-inline-start: 50%;
+                    transform: translate(-50%);
+                    inset-block-start: 31px;
+                    border: 1px solid @alto;
+                    padding-block-start: 5px;
+                    padding-inline-end: 0px;
+                    padding-block-end: 5px;
+                    padding-inline-start: 0px;
+                    box-sizing: border-box;
+                    box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, .2);
+                    transition: @transition;
+                    opacity: 0;
+
+                    &.show {
+                        opacity: 1
+                    }
+
+                    .time-options {
+                        overflow-block: scroll;
+                        overflow-inline: auto;
+                        block-size: 100%;
+
+                        .time-option {
+                            color: @rollingStone;
+                            padding: 5px;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: @gallery;
+                                color: @curiousBlue
+                            }
                         }
                     }
                 }
             }
         }
     }
-}

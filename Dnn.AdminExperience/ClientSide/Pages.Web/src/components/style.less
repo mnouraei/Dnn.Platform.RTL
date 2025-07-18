@@ -1,123 +1,148 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .pages-app {
     #confirmation-dialog {
-        left: 400px!important;
+        inset-inline-start: 400px !important
     }
+
     .tags-container {
-        padding-top: 10px;
-        width: 100%;
-        float: right;
+        padding-block-start: 10px;
+        inline-size: 100%;
+        float: inline-end
     }
+
     .filter-by-tags {
         display: inline-block;
         background-color: @curiousBlue;
         padding: 5px;
-        margin-right: 3px;
+        margin-inline-end: 3px;
         border-radius: 2px;
         color: #fff;
         position: relative;
+
         div {
-            float: left;
+            float: inline-start;
             padding: 5px;
-            height: 25px;
+            block-size: 25px
         }
+
         .xIcon {
             cursor: pointer;
-            width: 25px;
+            inline-size: 25px
         }
     }
+
     .header-dropdown {
         padding: 5px;
         border-radius: 3px;
         border: 1px solid @curiousBlue;
         color: @curiousBlue;
-        float: right;
+        float: inline-end
     }
 
     .page-container {
         background-color: #fff;
         border: 1px solid @alto;
+
         .fade-in {
             transition: all .15s forwards ease-in;
-            animation: fadeIn .15s;
+            animation: fadeIn .15s
         }
+
         .tree-container {
             transition: all .5s;
             opacity: 1;
-            cursor: auto;
+            cursor: auto
         }
+
         .disabled {
             opacity: 0.5;
+
             .dnn-persona-bar-treeview {
                 cursor: not-allowed;
+
                 .collapse-expand {
-                    pointer-events: none;
+                    pointer-events: none
                 }
+
                 li {
-                    pointer-events: none;
+                    pointer-events: none
                 }
             }
         }
     }
+
     .empty-page-state {
-        height: 300px;
+        block-size: 300px;
         border: 1px solid @alto;
         text-align: center;
         font-family: inherit;
         animation: fadeIn .25s ease-in;
+
         h1 {
-            margin: 30px 0px 10px 0px;
+            margin-block-start: 30px;
+            margin-inline-end: 0px;
+            margin-block-end: 10px;
+            margin-inline-start: 0px;
             font-size: 24px;
-            font-family: inherit;
+            font-family: inherit
         }
+
         p {
-            color: @alto;
+            color: @alto
         }
     }
+
     .treeview-page-details {
-        padding:44px 2px 30px 0px;
+        padding-block-start: 44px;
+        padding-inline-end: 2px;
+        padding-block-end: 30px;
+        padding-inline-start: 0px
     }
 }
 
 @keyframes fadeIn {
     0% {
-        opacity: 0;
+        opacity: 0
     }
+
     100% {
-        opacity: 1;
+        opacity: 1
     }
 }
 
 .expand-down {
     animation: ExpandDown .25s ease-in forwards;
     z-index: 9999;
-    display: inline-block !important;
+    display: inline-block !important
 }
 
 .expand-up {
     overflow: hidden;
-    animation: ExpandUp .25s ease-in forwards;
+    animation: ExpandUp .25s ease-in forwards
 }
 
 @keyframes ExpandDown {
     0% {
-        height: 0px;
+        block-size: 0px
     }
+
     100% {
-        height: 350px;
+        block-size: 350px;
         background-color: white;
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
 }
 
 @keyframes ExpandUp {
     0% {
-        height: 350px;
-        background-color: white;
+        block-size: 350px;
+        background-color: white
     }
+
     100% {
-        height: 0px;
+        block-size: 0px;
         border: 1px solid transparent;
-        background-color: transparent;
+        background-color: transparent
     }
 }

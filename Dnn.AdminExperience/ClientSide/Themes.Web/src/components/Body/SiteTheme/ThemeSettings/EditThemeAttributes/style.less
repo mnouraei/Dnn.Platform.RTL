@@ -1,15 +1,20 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
-.edit-theme-attributes{
-    & > .dnn-ui-common-button{
+
+.edit-theme-attributes {
+    &>.dnn-ui-common-button {
         display: block;
-        margin: 0 auto;
+        margin-block-start: 0;
+        margin-inline-end: auto;
+        margin-block-end: 0;
+        margin-inline-start: auto
     }
-    .edit-popup{
-        float: left;
+
+    .edit-popup {
+        float: inline-start;
         position: absolute;
-        left: 0;
-        top: 0;
-        width: 565px;
+        inset-inline-start: 0;
+        inset-block-start: 0;
+        inline-size: 565px;
         border: 1px solid @alto;
         border-radius: 3px;
         z-index: 50;
@@ -17,44 +22,52 @@
         -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
         -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
-        
-        & > div {
-            margin: 35px 30px;
-        }
-        .edit-popup-body { height: 420px; }
 
-        .dnn-grid-cell > .dnn-grid-cell{
-            margin-bottom: 20px;
-            padding-right: 25px;
+        &>div {
+            margin-block-start: 35px;
+            margin-inline-end: 30px;
+            margin-block-end: 35px;
+            margin-inline-start: 30px;
         }
-        
+
+        .edit-popup-body {
+            block-size: 420px
+        }
+
+        .dnn-grid-cell>.dnn-grid-cell {
+            margin-block-end: 20px;
+            padding-inline-end: 25px;
+        }
+
         h3 {
             font-size: 12px;
             font-weight: bold;
             text-transform: uppercase;
         }
 
-        .dnn-grid-cell > .dnn-grid-cell.right-column{
-            padding-right: 0;
-            padding-left: 25px;
-            border-left: none;
+        .dnn-grid-cell>.dnn-grid-cell.right-column {
+            padding-inline-end: 0;
+            padding-inline-start: 25px;
+            border-inline-start: none;
 
-            .dnn-radio-buttons{
-                margin-top: 28px;
-                ul li label{
-                    margin-bottom: 10px;
-                    line-height: 20px;
+            .dnn-radio-buttons {
+                margin-block-start: 28px;
+
+                ul li label {
+                    margin-block-end: 10px;
+                    line-height: 20px
                 }
             }
         }
 
-        .split{
-            margin-bottom: 20px;
-            border-top: 1px solid @alto;
+        .split {
+            margin-block-end: 20px;
+            border-block-start: 1px solid @alto;
         }
 
-        .dnn-dropdown-with-error, .dnn-single-line-input-with-error  {
-            display: block;
+        .dnn-dropdown-with-error,
+        .dnn-single-line-input-with-error {
+            display: block
         }
 
         .dnn-grid-cell.actions-cell {
@@ -62,7 +75,7 @@
             text-align: center;
 
             button:first-child {
-                margin-right: 10px;
+                margin-inline-end: 10px
             }
         }
     }

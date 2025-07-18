@@ -1,48 +1,64 @@
-
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 :local(.siteAliasSettings) {
-    margin: 30px 30px;
+    margin: 30px;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     .urlMappingSettings {
         .dnn-ui-common-input-group {
             .dnn-label.inline {
-                width: 35%;
+                inline-size: 35%;
+
                 label {
                     font-weight: bolder;
-                    float: left;
+                    float: inline-start
                 }
             }
+
             .dnn-radio-buttons {
-                margin-top: 3px;
-                width: auto;
+                margin-block-start: 3px;
+                inline-size: auto;
+
                 label {
-                    margin-right: 15px;
+                    margin-inline-end: 15px
                 }
             }
+
             .dnn-switch-container {
-                float: left;
+                float: inline-start;
                 padding: 0;
+
                 .dnn-switch {
-                    margin-left: 15px;
+                    margin-inline-start: 15px
                 }
             }
         }
     }
+
     .sectionTitleNoBorder {
         font-weight: bolder;
-        float: left;
-        width: 100%;
-        padding: 40px 0 20px 0;
+        float: inline-start;
+        inline-size: 100%;
+        padding-block-start: 40px;
+        padding-inline-end: 0;
+        padding-block-end: 20px;
+        padding-inline-start: 0
     }
+
     .buttons-box {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         text-align: center;
-        margin: 30px 0;
+        margin-block-start: 30px;
+        margin-inline-end: 0;
+        margin-block-end: 30px;
+        margin-inline-start: 0;
+
         .dnn-ui-common-button {
-            margin: 5px;
+            margin: 5px
         }
     }
 }

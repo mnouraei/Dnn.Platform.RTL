@@ -1,85 +1,108 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .collapsible-component-scheduler {
     display: block;
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%;
     cursor: auto;
+
     &:not(:last-child) {
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto
     }
+
     div.collapsible-header-scheduler {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 10px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
         box-sizing: border-box;
         cursor: auto;
-        .row {    
-            float: left;
-            width: 100%;      
+
+        .row {
+            float: inline-start;
+            inline-size: 100%;
+
             .item-row-name {
-                width: 28%;
-                float: left;
-                padding-left: 15px;
+                inline-size: 28%;
+                float: inline-start;
+                padding-inline-start: 15px
             }
+
             .item-row-frequency {
-                width: 17%;
-                float: left;
+                inline-size: 17%;
+                float: inline-start
             }
+
             .item-row-retryTimeLapse {
-                width: 17%;
-                float: left;
+                inline-size: 17%;
+                float: inline-start
             }
+
             .item-row-nextStart {
-                width: 19%;
-                float: left;
+                inline-size: 19%;
+                float: inline-start
             }
+
             .item-row-enabled {
-                width: 10%;
-                float: left;
+                inline-size: 10%;
+                float: inline-start;
                 text-align: center;
+
                 .checkMarkIcon {
-                    width: 16px;
-                    height: 16px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    > svg {
-                        fill: @thunder;
+                    inline-size: 16px;
+                    block-size: 16px;
+                    margin-inline-start: auto;
+                    margin-inline-end: auto;
+
+                    >svg {
+                        fill: @thunder
                     }
                 }
             }
+
             .item-row-editButton {
-                width: 3%;
-                float: right;
-                margin-right: 5px;       
+                inline-size: 3%;
+                float: inline-end;
+                margin-inline-end: 5px;
+
                 .edit-icon {
                     cursor: pointer;
-                    > svg {
-                        width: 22px;
-                        float: left;
-                        height: 22px;
-                        margin-top: -2px;
+
+                    >svg {
+                        inline-size: 22px;
+                        float: inline-start;
+                        block-size: 22px;
+                        margin-block-start: -2px;
+
                         &:hover {
-                            fill: @thunder;
+                            fill: @thunder
                         }
-                        fill: @alto;
+
+                        fill: @alto
                     }
                 }
+
                 .edit-icon-active {
                     cursor: pointer;
-                    > svg {
-                        width: 22px;
-                        float: left;
-                        height: 22px;    
-                        margin-top: -2px;                    
-                        fill: @curiousBlue;
+
+                    >svg {
+                        inline-size: 22px;
+                        float: inline-start;
+                        block-size: 22px;
+                        margin-block-start: -2px;
+                        fill: @curiousBlue
                     }
                 }
             }
+
             .item-row-historyButton {
-                width: 3%;
-                float: right;      
-                margin-right: 10px;             
+                inline-size: 3%;
+                float: inline-end;
+                margin-inline-end: 10px;
+
                 .collapsible-content {
                     -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
                     -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
@@ -87,41 +110,55 @@
                     z-index: 1000;
                     background-color: @white;
                     position: absolute;
-                    width: 810px;
-                    margin: -114px 0 0 -764px;
-                    text-align: left;
+                    inline-size: 810px;
+                    margin-block-start: -114px;
+                    margin-inline-end: 0;
+                    margin-block-end: 0;
+                    margin-inline-start: -764px;
+                    text-align: start
                 }
+
                 .history-icon {
                     cursor: pointer;
-                    > svg {
-                        width: 22px;
-                        float: left;
-                        height: 22px;
-                        margin-top: -2px;
+
+                    >svg {
+                        inline-size: 22px;
+                        float: inline-start;
+                        block-size: 22px;
+                        margin-block-start: -2px;
+
                         &:hover {
-                            fill: @thunder;
+                            fill: @thunder
                         }
-                        fill: @alto;
+
+                        fill: @alto
                     }
                 }
+
                 .history-icon-active {
                     cursor: pointer;
-                    > svg {
-                        width: 22px;
-                        float: left;
-                        height: 22px;    
-                        margin-top: -2px;                    
-                        fill: @curiousBlue;
+
+                    >svg {
+                        inline-size: 22px;
+                        float: inline-start;
+                        block-size: 22px;
+                        margin-block-start: -2px;
+                        fill: @curiousBlue
                     }
                 }
             }
+
             .item-row-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px
             }
         }
     }
+
     .collapsible-body-scheduler {
-        float: left;
-        width: 100%;
+        float: inline-start;
+        inline-size: 100%
     }
 }

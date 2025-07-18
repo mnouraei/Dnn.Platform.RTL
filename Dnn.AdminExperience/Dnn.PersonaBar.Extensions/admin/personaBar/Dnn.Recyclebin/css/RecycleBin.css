@@ -2,53 +2,53 @@
     .tooltip strong {
         overflow: hidden !important;
         white-space: nowrap;
-        width: 90px !important;
+        inline-size: 90px !important;
         display: inline-block;
-        overflow-x: hidden !important;
-        overflow-y: hidden;
+        overflow-inline: hidden !important;
+        overflow-block: hidden
     }
 
     input[type=checkbox] {
-        padding: 0px;
+        padding: 0px
     }
 
     .recycleBinContainer .containerUlPages {
-        width: auto !important;
-        overflow-x: scroll !important;
-        overflow-y: hidden !important;
+        inline-size: auto !important;
+        overflow-inline: scroll !important;
+        overflow-block: hidden !important;
         position: relative;
         margin: 0px;
         padding: 0px;
-        list-style: outside none none;
+        list-style: outside none none
     }
 
     .recycleBinContainer table.dnnRBGrid tr td.thumbnail.pagename {
-        width: 55%;
-        max-width: 100px !important;
+        inline-size: 55%;
+        max-inline-size: 100px !important;
         vertical-align: top;
-        overflow: hidden;
+        overflow: hidden
     }
 }
 
 /* pageSettingsContainer Style*/
 
 div#recycleBin-header.socialpanelheader {
-    position: relative;
+    position: relative
 }
 
 div#recycleBin-body.socialpanelbody > div {
-    padding: 30px;
+    padding: 30px
 }
 
 div#recycleBin-body.socialpanelbody {
-    margin-top: 30px;
+    margin-block-start: 30px
 }
 
     div#recycleBin-body.socialpanelbody .listOfItems {
-        height: 100%;
+        block-size: 100%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box;
+        box-sizing: border-box
     }
 
 .recycleBinContainer {
@@ -57,101 +57,113 @@ div#recycleBin-body.socialpanelbody {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    height: 80%;
-    width: 90%;
+    block-size: 80%;
+    inline-size: 90%;
     background-color: #fff;
     overflow: hidden;
-    margin: 30px 30px 0 30px;
+    margin-block-start: 30px;
+    margin-inline-end: 30px;
+    margin-block-end: 0;
+    margin-inline-start: 30px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px;
-    border: 2px solid #e9e9ec;
+    border: 2px solid #e9e9ec
 }
 
     .recycleBinContainer * {
         -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
-        box-sizing: content-box;
+        box-sizing: content-box
     }
 
     .recycleBinContainer div.actions {
         padding: 25px;
-        text-align: center;
+        text-align: center
     }
 
     .recycleBinContainer div.title {
         background-color: #FFF;
-        height: 70px;
-        line-height: 70px;
+        block-size: 70px;
+        line-height: 70px
     }
 
         .recycleBinContainer div.title span.caption {
             font-size: 28px;
-            margin-left: 30px;
-            font-weight: bold;
+            margin-inline-start: 30px;
+            font-weight: bold
         }
 
         .recycleBinContainer div.title span.page-name {
             color: #494949;
             font-size: 14px;
-            margin-left: 16px;
-            font-weight: bold;
+            margin-inline-start: 16px;
+            font-weight: bold
         }
 
         .recycleBinContainer div.title > a {
             display: block;
-            height: 70px;
+            block-size: 70px;
             line-height: 70px;
             color: #0386c4;
-            padding-left: 16px;
-            margin: 0 30px;
+            padding-inline-start: 16px;
+            margin-block-start: 0;
+            margin-inline-end: 30px;
+            margin-block-end: 0;
+            margin-inline-start: 30px;
             background: url('../Images/icon-back-blue.png') no-repeat left center;
-            float: right;
-            text-decoration: none;
+            float: inline-end;
+            text-decoration: none
         }
 
     .recycleBinContainer .content-container {
         overflow: hidden;
         outline: none;
-        background-color: #fff !important;
+        background-color: #fff !important
     }
 
     .recycleBinContainer .dnnFormMessage {
-        max-width: none;
+        max-inline-size: none;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin: 10px 25px 0 25px;
+        margin-block-start: 10px;
+        margin-inline-end: 25px;
+        margin-block-end: 0;
+        margin-inline-start: 25px
     }
 
     .recycleBinContainer ul.tabs-nav {
-        border-bottom: 1px solid #e4e4e8;
-        height: 42px;
+        border-block-end: 1px solid #e4e4e8;
+        block-size: 42px;
         margin: 0;
         padding: 0;
         list-style: none;
         clear: both;
-        background-color: #eee;
+        background-color: #eee
     }
 
         .recycleBinContainer ul.tabs-nav li {
             padding: 0;
             line-height: 42px;
             font-weight: bold;
-            float: left;
+            float: inline-start;
             border: 1px solid #eeeeee;
-            border-bottom: none;
+            border-block-end: none;
             list-style: none;
-            background: none;
+            background: none
         }
 
             .recycleBinContainer ul.tabs-nav li a {
                 color: #000;
                 display: block;
-                padding: 0 34px;
+                padding-block-start: 0;
+                padding-inline-end: 34px;
+                padding-block-end: 0;
+                padding-inline-start: 34px;
                 text-decoration: none;
-                outline: none;
+                outline: none
             }
 
             .recycleBinContainer ul.tabs-nav li.ui-tabs-active,
@@ -159,152 +171,155 @@ div#recycleBin-body.socialpanelbody {
                 border: 1px solid #FFF;
                 -webkit-border-top-left-radius: 3px;
                 -moz-border-top-left-radius: 3px;
-                border-top-left-radius: 3px;
+                border-start-start-radius: 3px;
                 -webkit-border-top-right-radius: 3px;
                 -moz-border-top-right-radius: 3px;
-                border-top-right-radius: 3px;
-                background-color: #fff;
+                border-start-end-radius: 3px;
+                background-color: #fff
             }
 
                 .recycleBinContainer ul.tabs-nav li.ui-tabs-active a,
                 .recycleBinContainer ul.tabs-nav li.ui-state-active a {
-                    color: #1488c3;
+                    color: #1488c3
                 }
 
     .recycleBinContainer div.ui-tabs-panel {
         background-color: #fff;
-        padding: 25px;
+        padding: 25px
     }
 
 div#recycleBin-header.socialpanelheader .actions {
-    float: right;
-    margin-right: 28px;
+    float: inline-end;
+    margin-inline-end: 28px
 }
 
     div#recycleBin-header.socialpanelheader .actions a.button {
-        margin: 22px 38px 0 0;
+        margin-block-start: 22px;
+        margin-inline-end: 38px;
+        margin-block-end: 0;
+        margin-inline-start: 0
     }
 
         div#recycleBin-header.socialpanelheader .actions a.button.create-page {
-            text-transform: uppercase;
+            text-transform: uppercase
         }
 
 .recyclbin-header {
-    width: 100%;
+    inline-size: 100%;
     text-transform: uppercase;
     border: 1px solid lightgrey;
-    padding: 10px;
+    padding: 10px
 }
 
     .recyclbin-header .page {
-        width: 70% !important;
-        border-right: 1px solid lightgrey;
+        inline-size: 70% !important;
+        border-inline-end: 1px solid lightgrey
     }
 
     .recyclbin-header .deleteddate {
-        width: 20% !important;
-        border-right: 1px solid lightgrey;
+        inline-size: 20% !important;
+        border-inline-end: 1px solid lightgrey
     }
 
     .recyclbin-header .acctions {
-        width: 10% !important;
+        inline-size: 10% !important
     }
 
 /*Recycle Bin Grid*/
 
 .recycleBinContainer table.dnnRBGrid {
-    width: 98% !important;
-    margin-bottom: 20px;
+    inline-size: 98% !important;
+    margin-block-end: 20px;
     border: 1px solid #c9c9c9;
     border-collapse: collapse;
-    color: #000000;
+    color: #000000
 }
 
     .recycleBinContainer table.dnnRBGrid tr.dnnRBGridHeader {
-        height: 20px;
+        block-size: 20px
     }
 
         .recycleBinContainer table.dnnRBGrid tr.dnnRBGridHeader td {
             padding: 10px;
             vertical-align: middle;
             line-height: 120%;
-            text-align: left;
+            text-align: start;
             text-transform: uppercase;
             font-weight: bold;
             font-family: sourcecodepro, Arial;
             font-size: 11px;
             border: 1px solid #c9c9c9;
-            background: white !important;
+            background: white !important
         }
 
             .recycleBinContainer table.dnnRBGrid tr.dnnRBGridHeader td.mtitle,
             .recycleBinContainer table.dnnRBGrid tr.dnnRBGridHeader td.username {
-                border-left: 0px;
+                border-inline-start: 0px
             }
 
             .recycleBinContainer table.dnnRBGrid tr.dnnRBGridHeader td.first {
-                width: 2%;
-                border-right: 0px;
+                inline-size: 2%;
+                border-inline-end: 0px
             }
 
     .recycleBinContainer table.dnnRBGrid tr td.thumbnail.pagename {
-        width: 55%;
-        max-width: 400px;
+        inline-size: 55%;
+        max-inline-size: 400px;
         vertical-align: top;
-        overflow: hidden;
+        overflow: hidden
     }
 
     .recycleBinContainer table.dnnRBGrid tr.dnnRBGridHeader td.thumbnail.pagename {
         vertical-align: middle;
-        border-left: 0px;
+        border-inline-start: 0px
     }
 
     .recycleBinContainer table.dnnRBGrid td {
         padding: 6px;
         text-align: center;
         color: #4b4d4f;
-        height: 52px;
-        border: none;
+        block-size: 52px;
+        border: none
     }
 
         .recycleBinContainer table.dnnRBGrid td.thumbnail {
-            width: 10% !important;
+            inline-size: 10% !important
         }
 
             .recycleBinContainer table.dnnRBGrid td.thumbnail .image-table {
-                height: 42px;
-                width: 48px;
+                block-size: 42px;
+                inline-size: 48px;
                 border: 2px solid #e1e1e6;
-                float: left;
+                float: inline-start
             }
 
                 .recycleBinContainer table.dnnRBGrid td.thumbnail .image-table img {
-                    height: 100%;
-                    width: 100%;
-                    margin-right: 20px;
+                    block-size: 100%;
+                    inline-size: 100%;
+                    margin-inline-end: 20px
                 }
 
         .recycleBinContainer table.dnnRBGrid td.pagename {
-            width: 45% !important;
-            padding-left: 9px;
+            inline-size: 45% !important;
+            padding-inline-start: 9px;
             font-weight: bolder;
-            text-align: left;
+            text-align: start
         }
 
 .recycleBinContainer div.rbactions {
-    text-align: right;
+    text-align: end;
     font-weight: bold;
-    padding: 25px;
+    padding: 25px
 }
 
 .recycleBinContainer td.actions {
-    width: 13%;
+    inline-size: 13%
 }
 
 .recycleBinContainer table.dnnRBGrid td.username,
 .recycleBinContainer table.dnnRBGrid td.displayname {
-    text-align: left;
-    width: 30%;
+    text-align: start;
+    inline-size: 30%
 }
 
 .recycleBinContainer td.actions span.restore {
@@ -312,14 +327,14 @@ div#recycleBin-header.socialpanelheader .actions {
     background-position: -24px 0px;
     text-decoration: none;
     display: inline-block;
-    width: 10px;
-    height: 15px;
-    padding-right: 10px;
-    cursor: pointer;
+    inline-size: 10px;
+    block-size: 15px;
+    padding-inline-end: 10px;
+    cursor: pointer
 }
 
 .recycleBinContainer td.actions .action-disabled {
-    cursor: not-allowed !important;
+    cursor: not-allowed !important
 }
 
 .recycleBinContainer td.actions span.remove {
@@ -327,122 +342,125 @@ div#recycleBin-header.socialpanelheader .actions {
     background-position: -54px 0px;
     text-decoration: none;
     display: inline-block;
-    width: 10px;
-    height: 15px;
-    padding-right: 10px;
-    cursor: pointer;
+    inline-size: 10px;
+    block-size: 15px;
+    padding-inline-end: 10px;
+    cursor: pointer
 }
 
 .recycleBinContainer table.dnnRBGrid tr {
-    height: 60px;
-    border-bottom: 1px solid #e1e1e6;
-    border-top: 1px solid #e1e1e6;
+    block-size: 60px;
+    border-block-end: 1px solid #e1e1e6;
+    border-block-start: 1px solid #e1e1e6
 }
 
     .recycleBinContainer table.dnnRBGrid tr:nth-child(odd) {
-        background: #F2F2F2;
+        background: #F2F2F2
     }
 
     .recycleBinContainer table.dnnRBGrid tr:nth-child(even) {
-        background: #FAFAFA;
+        background: #FAFAFA
     }
 
 /*Recycle Bin Grid END*/
 
 .recycleBinContainer .NoItems {
-    background-color: #f2f2f2 !important;
+    background-color: #f2f2f2 !important
 }
 
 .recycleBinContainer .EmptyList {
-    width: 100%;
-    height: 100% !important;
+    inline-size: 100%;
+    block-size: 100% !important;
     background-color: #ffffff !important;
-    padding: 175px 0 !important;
+    padding-block-start: 175px !important;
+    padding-inline-end: 0 !important;
+    padding-block-end: 175px !important;
+    padding-inline-start: 0 !important;
     background-position: 50% 92px;
     background-repeat: no-repeat;
     font-size: xx-large;
     color: #D7D7D7;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: center
 }
 
     .recycleBinContainer .EmptyList.NoPages {
-        background-image: url('../Images/Icon-Empty-Pages-white.png');
+        background-image: url('../Images/Icon-Empty-Pages-white.png')
     }
 
     .recycleBinContainer .EmptyList.NoModules {
-        background-image: url('../Images/Icon-Empty-Modules-white.png');
+        background-image: url('../Images/Icon-Empty-Modules-white.png')
     }
 
 .recycleBinContainer input[type="checkbox"]:disabled + .qaTooltip {
-    left: 20px;
-    top: 8px;
+    inset-inline-start: 20px;
+    inset-block-start: 8px
 }
 
     .recycleBinContainer input[type="checkbox"]:disabled + .qaTooltip > .tag-menu {
         display: none;
-        min-height: 15px;
+        min-block-size: 15px
     }
 
         .recycleBinContainer input[type="checkbox"]:disabled + .qaTooltip > .tag-menu a.help {
             display: inline-block;
             position: absolute;
-            left: 7px;
-            top: 10px;
-            width: 16px;
-            height: 16px;
+            inset-inline-start: 7px;
+            inset-block-start: 10px;
+            inline-size: 16px;
+            block-size: 16px;
             background: url(../Images/exclamation.png) no-repeat;
             padding: 0 !important;
-            margin: 0 !important;
+            margin: 0 !important
         }
 
         .recycleBinContainer input[type="checkbox"]:disabled + .qaTooltip > .tag-menu p {
-            padding-left: 10px;
+            padding-inline-start: 10px
         }
 
         .recycleBinContainer input[type="checkbox"]:disabled + .qaTooltip > .tag-menu:after {
-            border-bottom: 7px solid rgba(0, 0, 0, 0);
-            border-top: 7px solid rgba(0, 0, 0, 0);
-            border-right: 7px solid #000;
-            bottom: 12px;
-            left: -14px;
+            border-block-end: 7px solid rgba(0, 0, 0, 0);
+            border-block-start: 7px solid rgba(0, 0, 0, 0);
+            border-inline-end: 7px solid #000;
+            inset-block-end: 12px;
+            inset-inline-start: -14px
         }
 
 .recycleBinContainer input[type="checkbox"]:disabled:hover + .qaTooltip > .tag-menu {
-    display: block;
+    display: block
 }
 
 .content-container .jspContainer .jspPane {
-    width: 100% !important;
+    inline-size: 100% !important;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .content-container .jspVerticalBar {
     background-color: #f2f2f2 !important;
-    border-left: 1px solid #d4d4d4;
-    width: 10px;
+    border-inline-start: 1px solid #d4d4d4;
+    inline-size: 10px
 }
 
     .content-container .jspVerticalBar .jspTrack {
-        width: 5px !important;
-        margin-left: 2px !important;
+        inline-size: 5px !important;
+        margin-inline-start: 2px !important
     }
 
         .content-container .jspVerticalBar .jspTrack .jspDrag {
             filter: alpha(opacity=50) !important;
-            opacity: 0.5 !important;
+            opacity: 0.5 !important
         }
 
 /* TREE OF PAGES STYLES */
 
 .recycleBinContainer #pages table.dnnRBGrid tr td.thumbnail.pagename {
-    padding: 0px 0px 0px 0px;
+    padding: 0px
 }
 
 .recycleBinContainer #pages table.dnnRBGrid tr.dnnRBGridHeader td.thumbnail.pagename {
-    padding: 10px;
+    padding: 10px
 }
 
 .recycleBinContainer #pages table.dnnRBGrid tr td.checkbox.hover,
@@ -450,29 +468,29 @@ div#recycleBin-header.socialpanelheader .actions {
 .recycleBinContainer #pages table.dnnRBGrid tr td.actions.hover,
 .recycleBinContainer #modules table.dnnRBGrid tr.hover,
 .recycleBinContainer #users table.dnnRBGrid tr.hover {
-    background-color: #d9ecfa;
+    background-color: #d9ecfa
 }
 
 .recycleBinContainer #pages table.dnnRBGrid tr {
-    background: #F2F2F2;
+    background: #F2F2F2
 }
 
     .recycleBinContainer #pages table.dnnRBGrid tr.dnnRBGridHeader td.pagename,
     .recycleBinContainer #pages table.dnnRBGrid tr.dnnRBGridHeader td.deleteddate {
-        cursor: pointer;
+        cursor: pointer
     }
 
-    .recycleBinContainer #modules table.dnnRBGrid tr.dnnRBGridHeader td.mtitle,
-    .recycleBinContainer #modules table.dnnRBGrid tr.dnnRBGridHeader td.mpage,
-    .recycleBinContainer #modules table.dnnRBGrid tr.dnnRBGridHeader td.deleteddate {
-        cursor: pointer;
-    }
+.recycleBinContainer #modules table.dnnRBGrid tr.dnnRBGridHeader td.mtitle,
+.recycleBinContainer #modules table.dnnRBGrid tr.dnnRBGridHeader td.mpage,
+.recycleBinContainer #modules table.dnnRBGrid tr.dnnRBGridHeader td.deleteddate {
+    cursor: pointer
+}
 
-    .recycleBinContainer #users table.dnnRBGrid tr.dnnRBGridHeader td.username,
-    .recycleBinContainer #users table.dnnRBGrid tr.dnnRBGridHeader td.displayname,
-    .recycleBinContainer #users table.dnnRBGrid tr.dnnRBGridHeader td.deleteddate {
-        cursor: pointer;
-    }
+.recycleBinContainer #users table.dnnRBGrid tr.dnnRBGridHeader td.username,
+.recycleBinContainer #users table.dnnRBGrid tr.dnnRBGridHeader td.displayname,
+.recycleBinContainer #users table.dnnRBGrid tr.dnnRBGridHeader td.deleteddate {
+    cursor: pointer
+}
 
 .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.thumbnail,
 .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.title,
@@ -482,7 +500,7 @@ div#recycleBin-header.socialpanelheader .actions {
 .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.username,
 .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.displayname,
 .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.userdeleteddate {
-    cursor: pointer;
+    cursor: pointer
 }
 
     .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.thumbnail.action-disabled,
@@ -490,111 +508,111 @@ div#recycleBin-header.socialpanelheader .actions {
     .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.pagename.action-disabled,
     .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.thumbnail.pagename.action-disabled,
     .recycleBinContainer table.dnnRBGrid tr.dnnRBGridBody td.deleteddate.action-disabled {
-        cursor: auto !important;
+        cursor: auto !important
     }
 
 .recycleBinContainer #pages table.dnnRBGrid tr.even {
-    background: #FAFAFA;
+    background: #FAFAFA
 }
 
 .recycleBinContainer #pages table.dnnRBGrid tr.withChildren {
-    border-bottom: 0px;
+    border-block-end: 0px
 }
 
     .recycleBinContainer #pages table.dnnRBGrid tr.withChildren td.thumbnail.pagename .containerUlPages.shadow {
         -webkit-box-shadow: inset 6px 1px 4px -4px rgba(0,0,0,0.50), inset -6px 1px 4px -4px rgba(0,0,0,0.50);
         -moz-box-shadow: inset 6px 1px 4px -4px rgba(0,0,0,0.50), inset -6px 1px 4px -4px rgba(0,0,0,0.50);
-        box-shadow: inset 6px 1px 4px -4px rgba(0,0,0,0.50), inset -6px 1px 4px -4px rgba(0,0,0,0.50);
+        box-shadow: inset 6px 1px 4px -4px rgba(0,0,0,0.50), inset -6px 1px 4px -4px rgba(0,0,0,0.50)
     }
 
 .recycleBinContainer #pages table.dnnRBGrid tr.child {
-    border-bottom: 0px;
-    border-top: 0px;
+    border-block-end: 0px;
+    border-block-start: 0px
 }
 
 .recycleBinContainer #pages table.dnnRBGrid tr.root {
-    border-top: 1px solid #c9c9c9;
+    border-block-start: 1px solid #c9c9c9
 }
 
 .recycleBinContainer .containerUlPages {
-    width: 100%;
-    max-width: 410px;
+    inline-size: 100%;
+    max-inline-size: 410px;
     overflow: hidden;
     position: relative;
     margin: 0px;
     padding: 0px;
-    list-style: outside none none;
+    list-style: outside none none
 }
 
     .recycleBinContainer .containerUlPages * {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box;
+        box-sizing: border-box
     }
 
     .recycleBinContainer .containerUlPages .hover {
         background-color: #d9ecfa;
         cursor: pointer;
-        left: 22px;
-        margin-left: -11px;
+        inset-inline-start: 22px;
+        margin-inline-start: -11px
     }
 
     .recycleBinContainer .containerUlPages .row {
-        height: 64px;
+        block-size: 64px
     }
 
     .recycleBinContainer .containerUlPages .pageDataContainer {
         position: relative;
         padding: 10px;
-        height: 100%;
+        block-size: 100%
     }
 
         .recycleBinContainer .containerUlPages .pageDataContainer .pagename {
-            float: left;
+            float: inline-start;
             padding: 10px;
             display: inline-block;
             position: absolute;
-            width: 160px;
+            inline-size: 160px
         }
 
 
     .recycleBinContainer .containerUlPages .pageDataContainer {
-        padding-top: 8px;
-        min-width: 150px;
+        padding-block-start: 8px;
+        min-inline-size: 150px
     }
 
         .recycleBinContainer .containerUlPages .pageDataContainer::before {
             content: '';
             position: absolute;
-            top: -5px;
-            left: -20px;
-            bottom: -2px;
-            width: 17px;
+            inset-block-start: -5px;
+            inset-inline-start: -20px;
+            inset-block-end: -2px;
+            inline-size: 17px;
             border: 2px solid #d9d9d9;
-            border-top: 0px;
-            border-right: 0px;
-            height: 33px;
+            border-block-start: 0px;
+            border-inline-end: 0px;
+            block-size: 33px
         }
 
         .recycleBinContainer .containerUlPages .pageDataContainer::before {
-            left: -22px;
+            inset-inline-start: -22px
         }
 
     .recycleBinContainer .containerUlPages .treeEdges {
         content: '';
         position: absolute;
-        width: 17px;
-        border-left: 2px solid #d9d9d9;
-        margin-left: 30px;
-        bottom: 60px;
+        inline-size: 17px;
+        border-inline-start: 2px solid #d9d9d9;
+        margin-inline-start: 30px;
+        inset-block-end: 60px
     }
 
     .recycleBinContainer .containerUlPages .pageDataContainer {
-        border-left: 2px solid transparent;
+        border-inline-start: 2px solid transparent
     }
 
     .recycleBinContainer .containerUlPages .jspContainer .jspVerticalBar {
-        display: none;
+        display: none
     }
 
 /** Tool tip for the three Tabs **/
@@ -605,48 +623,48 @@ div#recycleBin-header.socialpanelheader .actions {
     position: relative;
     display: block;
     font-weight: bold;
-    line-height: 30px;
+    line-height: 30px
 }
 
     .recycleBinContainer a.tooltip span {
         z-index: 10;
         position: absolute;
         display: none;
-        margin-top: 0;
-        width: 150px;
+        margin-block-start: 0;
+        inline-size: 150px;
         line-height: 16px;
         background-color: #0F0F0F;
         padding: 20px;
         -ms-border-radius: 3px;
         border-radius: 3px;
-        bottom: 38px;
-        left: -30px;
+        inset-block-end: 38px;
+        inset-inline-start: -30px;
         -moz-min-width: 95px;
         -ms-min-width: 95px;
         -o-min-width: 95px;
         -webkit-min-width: 95px;
-        min-width: 95px;
+        min-inline-size: 95px;
         white-space: nowrap;
         -webkit-box-sizing: content-box;
         -moz-box-sizing: content-box;
         box-sizing: content-box;
-        color: #fff;
+        color: #fff
     }
 
     .recycleBinContainer a.tooltip:hover span {
-        display: inline;
+        display: inline
     }
 
     .recycleBinContainer a.tooltip span:after {
         content: '';
         display: block;
-        width: 0;
-        height: 0;
+        inline-size: 0;
+        block-size: 0;
         border: 16px solid;
         border-color: #0F0F0F transparent transparent transparent;
         position: absolute;
-        left: 75px;
-        bottom: -26px;
+        inset-inline-start: 75px;
+        inset-block-end: -26px
     }
 
 /* END OF TREE OF PAGES STYLES */

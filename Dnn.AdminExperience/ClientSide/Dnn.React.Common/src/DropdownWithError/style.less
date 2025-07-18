@@ -1,65 +1,81 @@
 @import "../../styles/index";
+
 .dnn-dropdown-with-error {
     display: inline-block;
     position: relative;
+
     &.disabled {
         .dnn-label {
             label {
                 color: var(--dnn-color-neutral, @mountainMist);
-                cursor: not-allowed;
+                cursor: not-allowed
             }
         }
+
         .dropdown-tooltip-container {
             .dnn-dropdown-input {
                 color: var(--dnn-color-foreground, @mountainMist);
-                cursor: not-allowed;
+                cursor: not-allowed
             }
         }
     }
+
     .dnn-label {
         label {
             font-weight: 700;
             cursor: pointer;
-            float: left;
+            float: inline-start
         }
     }
+
     .dnn-dropdown {
-        color: var(--dnn-color-foreground, @bulgarianRose);
+        color: var(--dnn-color-foreground, @bulgarianRose)
     }
+
     &.error {
         .dnn-dropdown {
-            border-bottom: 2px solid var(--dnn-color-danger, @alizarinCrimson);
+            border-block-end: 2px solid var(--dnn-color-danger, @alizarinCrimson)
         }
     }
+
     .dnn-ui-common-tooltip {
         .tooltip-text {
-            max-width: 255px;
+            max-inline-size: 255px;
             text-align: center;
-            padding: 7px 15px;
+            padding-block-start: 7px;
+            padding-inline-end: 15px;
+            padding-block-end: 7px;
+            padding-inline-start: 15px
         }
     }
+
     .dropdown-tooltip-container {
-        float: left;
+        float: inline-start;
         position: relative;
-        width: 100%;
+        inline-size: 100%;
+
         .dnn-dropdown {
-            width: 100%;
+            inline-size: 100%;
             box-sizing: border-box;
-            border-radius: 0px;
+            border-radius: 0px
         }
+
         &.inline {
-            width: auto;
+            inline-size: auto
         }
+
         .dnn-ui-common-tooltip {
             position: absolute;
-            top: 7px;
-            right: 30px;
+            inset-block-start: 7px;
+            inset-inline-end: 30px;
+
             &.outside {
-                right: -25px;
+                inset-inline-end: -25px
             }
+
             svg {
-                width: 20px;
-                height: 20px;
+                inline-size: 20px;
+                block-size: 20px
             }
         }
     }

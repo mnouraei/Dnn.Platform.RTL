@@ -1,120 +1,163 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 :local(.languageSettings) {
-    margin: 30px 30px;
+    margin: 30px;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     .dnn-ui-common-input-group {
-        padding: 0 0 15px 0;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0;
+
         label {
             font-weight: bolder;
-            float: left;
+            float: inline-start
         }
+
         .dnn-single-line-input-with-error {
-            width: 100%;
+            inline-size: 100%
         }
+
         .languageSettings-row_switch {
             .dnn-label.inline {
                 label {
-                    max-width: 220px;
+                    max-inline-size: 220px
                 }
             }
+
             .dnn-switch-container {
-                float: right;
+                float: inline-end
             }
         }
+
         .dnn-radio-buttons {
             li {
-                width: 40% !important;
-                margin: 15px 0 0 0 !important;
+                inline-size: 40% !important;
+                margin-block-start: 15px !important;
+                margin-inline-end: 0 !important;
+                margin-block-end: 0 !important;
+                margin-inline-start: 0 !important
             }
         }
+
         .dnn-dropdown {
             .collapsible-label {
                 .language-name {
-                    width: 240px;
+                    inline-size: 240px;
                     white-space: nowrap;
                     overflow: hidden;
-                    text-overflow: ellipsis;
+                    text-overflow: ellipsis
                 }
             }
+
             li {
-                float: left;
-                width: 100%;
+                float: inline-start;
+                inline-size: 100%
             }
         }
+
         .default-language {
             cursor: not-allowed;
-            float: left;
-            width: 100%;
+            float: inline-start;
+            inline-size: 100%;
             background: @mercury;
             border: @mercury;
+
             .language-container {
-                float: left;
-                padding: 8px 15px;
-                box-sizing: border-box;
+                float: inline-start;
+                padding-block-start: 8px;
+                padding-inline-end: 15px;
+                padding-block-end: 8px;
+                padding-inline-start: 15px;
+                box-sizing: border-box
             }
         }
+
         .language-flag {
-            float: left;
-            height: 18px;
+            float: inline-start;
+            block-size: 18px
         }
+
         .language-name {
-            float: left;
-            margin-left: 10px;
+            float: inline-start;
+            margin-inline-start: 10px
         }
     }
+
     .buttons-box {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         text-align: center;
-        margin: 0 0 30px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 30px;
+        margin-inline-start: 0;
+
         .dnn-ui-common-button {
-            margin: 5px;
+            margin: 5px
         }
     }
+
     .buttons-box-alter {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         text-align: center;
-        margin: 0 0 30px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 30px;
+        margin-inline-start: 0;
+
         .dnn-ui-common-button {
-            margin: 5px;
+            margin: 5px
         }
     }
+
     .sectionTitle {
         font-weight: bolder;
-        float: left;
-        width: 100%;
-        padding: 30px 0 15px 0;
+        float: inline-start;
+        inline-size: 100%;
+        padding-block-start: 30px;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0
     }
+
     .dnn-grid-system {
         .left-column {
-            padding-right: 30px;
+            padding-inline-end: 30px;
+
             .dnn-dropdown {
-                width: 100%;
+                inline-size: 100%;
             }
         }
+
         .right-column {
-            padding-left: 30px;
-            border-left: 1px solid @alto;
+            padding-inline-start: 30px;
+            border-inline-start: 1px solid @alto;
         }
     }
+
     .collapsible-button {
         text-align: center;
         background: @gallery;
         transition: .18s;
-        max-height: 0px;
-        margin-bottom: 30px;
+        max-block-size: 0px;
+        margin-block-end: 30px;
         overflow: hidden;
         clear: both;
+
         &.open {
-            max-height: 80px;
-            float: left;
-            width: 100%;
+            max-block-size: 80px;
+            float: inline-start;
+            inline-size: 100%
         }
+
         button {
-            margin: 20px;
+            margin: 20px
         }
     }
 }

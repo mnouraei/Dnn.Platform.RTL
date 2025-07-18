@@ -1,8 +1,31 @@
-	.dnnSendPasswordContent input[type=text]{width:35%;}
-	.dnnSendPasswordContent ul.dnnActions{margin:0;border:none;padding:0;}
-	.dnnSendPasswordContent{width:550px;}
-    
-    .dnnPasswordResetContent input[type=text]{width:45%;}
-	.dnnPasswordResetContent ul.dnnActions{margin:0;border:none;padding:0;}
-	.dnnPasswordResetContent{width:550px;}
-	.dnnPasswordResetContent .confirm-password-tooltip{ left: 3% !important; }
+.dnnSendPasswordContent input[type=text] {
+    inline-size: 35%;
+}
+
+.dnnSendPasswordContent ul.dnnActions {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.dnnSendPasswordContent {
+    inline-size: 550px;
+}
+
+.dnnPasswordResetContent input[type=text] {
+    inline-size: 45%;
+}
+
+.dnnPasswordResetContent ul.dnnActions {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+.dnnPasswordResetContent {
+    inline-size: 550px;
+}
+
+    .dnnPasswordResetContent .confirm-password-tooltip {
+        inset-inline-start: 3% !important
+    }

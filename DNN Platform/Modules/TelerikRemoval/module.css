@@ -1,48 +1,48 @@
 ﻿#telerikRemoval input[type=checkbox] {
-    margin-right: 12px;
+    margin-inline-end: 12px
 }
 
 #telerikRemoval table {
-    width: 100%;
+    inline-size: 100%
 }
 
 #uninstallReport td, #uninstallReport th {
     padding: 12px;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    border-block-start: 1px solid lightgray;
+    border-block-end: 1px solid lightgray
 }
 
 #telerikRemoval .telerikVersion {
     font-weight: bold;
-    color: #ec3d46;
+    color: #ec3d46
 }
 
 #uninstallReport th {
-    font-size: initial;
+    font-size: initial
 }
 
 #telerikRemoval td:nth-child(2), #telerikRemoval th:nth-child(2) {
-    text-align: center;
+    text-align: center
 }
 
 #telerikRemoval:before {
     background: rgba(255,255,255,0.8);
     content: " ";
     display: block;
-    height: 100%;
-    left: 0;
+    block-size: 100%;
+    inset-inline-start: 0;
     opacity: 0;
     position: absolute;
-    top: 0;
+    inset-block-start: 0;
     transition: all .3s;
     transition-timing-function: ease-in;
-    width: 99%;
-    z-index: -1;
+    inline-size: 99%;
+    z-index: -1
 }
 
 #telerikRemoval.running:before {
     z-index: 4000;
-    opacity: 1;
+    opacity: 1
 }
 
 #telerikRemoval .loading {
@@ -51,36 +51,36 @@
     color: #21a3da;
     display: inline-block;
     font-size: 3em;
-    height: 1em;
-    left: 50%;
+    block-size: 1em;
+    inset-inline-start: 50%;
     margin: -0.5em;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    inset-block-start: 50%;
     transform-origin: 50% 50%;
     transition: all .1s;
     transition-timing-function: ease-in;
-    width: 1em;
-    z-index: -1;
+    inline-size: 1em;
+    z-index: -1
 }
 
-#telerikRemoval .loading:after {
-    backface-visibility: hidden;
-    border-radius: 50%;
-    border: 0.3em solid currentColor;
-    border-left-color: transparent;
-    box-sizing: border-box;
-    content: " ";
-    display: block;
-    height: 2em;
-    transform-origin: 0 0;
-    transform: translateZ(0) scale(0.5);
-    width: 2em;
-}
+    #telerikRemoval .loading:after {
+        backface-visibility: hidden;
+        border-radius: 50%;
+        border: 0.3em solid currentColor;
+        border-inline-start-color: transparent;
+        box-sizing: border-box;
+        content: " ";
+        display: block;
+        block-size: 2em;
+        transform-origin: 0 0;
+        transform: translateZ(0) scale(0.5);
+        inline-size: 2em
+    }
 
 #telerikRemoval.running .loading {
     opacity: 1;
-    z-index: 4001;
+    z-index: 4001
 }
 
 @keyframes ld-spin {
@@ -88,6 +88,7 @@
         animation-timing-function: cubic-bezier(0.5856,0.0703,0.4143,0.9297);
         transform: rotate(0)
     }
+
     100% {
         transform: rotate(360deg)
     }

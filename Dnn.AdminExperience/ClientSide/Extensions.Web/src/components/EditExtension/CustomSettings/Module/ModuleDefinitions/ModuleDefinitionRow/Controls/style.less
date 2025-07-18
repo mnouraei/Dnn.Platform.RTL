@@ -1,71 +1,95 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .extensions-app {
     .extension-form {
         .module-controls {
             padding: 10px;
+
             .header-container {
                 .box-title {
                     text-transform: none;
                     font-size: 13px;
                     font-weight: bold;
-                    margin-bottom: 10px;
+                    margin-block-end: 10px
                 }
             }
+
             .module-controls-table {
                 padding: 0;
                 border: 1px solid @alto;
-                margin-top: 25px;
+                margin-block-start: 25px;
+
                 .module-control-row:first-child {
-                    border: none;
+                    border: none
                 }
-                .module-control-title-header, .module-control-source-header {
-                    border-top: 1px solid @alto;
-                    text-transform: uppercase;
+
+                .module-control-title-header,
+                .module-control-source-header {
+                    border-block-start: 1px solid @alto;
+                    text-transform: uppercase
                 }
+
                 .edit-module-control {
-                    float: left;
-                    > div {
-                        float: left;
+                    float: inline-start;
+
+                    >div {
+                        float: inline-start
                     }
                 }
+
                 .edit-module-control-box {
                     padding: 0;
-                    margin-top: 20px;
+                    margin-block-start: 20px;
+
                     .dnn-dropdown-with-error .dropdown-tooltip-container {
-                        margin-bottom: 32px;
+                        margin-block-end: 32px
                     }
+
                     .dnn-switch-container {
-                        width: 100%;
-                        margin-bottom: 32px;
-                        padding-top: 15px;
+                        inline-size: 100%;
+                        margin-block-end: 32px;
+                        padding-block-start: 15px;
+
                         .switch-label {
-                            max-width: 50%;
+                            max-inline-size: 50%
                         }
+
                         .dnn-switch {
-                            float: right;
+                            float: inline-end
                         }
                     }
                 }
+
                 .add-control-box {
-                    float: left;
-                    > div {
-                        float: left;
+                    float: inline-start;
+
+                    >div {
+                        float: inline-start
                     }
                 }
+
                 .module-control-row {
-                    padding: 10px 15px;
-                    border-top: 1px solid @alto;
-                    .module-control-title, .module-control-source {
-                        padding: 0;
+                    padding-block-start: 10px;
+                    padding-inline-end: 15px;
+                    padding-block-end: 10px;
+                    padding-inline-start: 15px;
+                    border-block-start: 1px solid @alto;
+
+                    .module-control-title,
+                    .module-control-source {
+                        padding: 0
                     }
+
                     .action-buttons {
                         padding: 0;
-                        > div {
-                            float: right;
+
+                        >div {
+                            float: inline-end;
                             cursor: pointer;
-                            > svg {
-                                width: 15px;
-                                height: 15px;
+
+                            >svg {
+                                inline-size: 15px;
+                                block-size: 15px
                             }
                         }
                     }

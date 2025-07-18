@@ -1,98 +1,107 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
 
 #apiTokenSettings-container {
-    margin: 30px 30px;
+    margin: 30px;
 
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
 
     .dnn-ui-common-input-group {
         label {
             font-weight: bolder;
-            float: left;
+            float: inline-start
         }
 
         .sectionLabel {
-            border-top: 1px solid @alto;
-            padding-top: 20px;
-            margin-top: 20px;
-            margin-bottom: 15px;
+            border-block-start: 1px solid @alto;
+            padding-block-start: 20px;
+            margin-block-start: 20px;
+            margin-block-end: 15px;
 
             label {
                 color: #000;
-                text-transform: uppercase;
+                text-transform: uppercase
             }
         }
 
         .dnn-dropdown {
-            width: 100%;
-            margin-bottom: 32px;
+            inline-size: 100%;
+            margin-block-end: 32px
         }
 
         .dnn-switch-container {
-            float: right;
+            float: inline-end
         }
 
         .dnn-single-line-input-with-error {
-            width: 100%;
+            inline-size: 100%
         }
 
         .apiTokenSettings-row_switch {
-            border-bottom: 1px solid @alto;
-            margin: 0 0 20px 0;
+            border-block-end: 1px solid @alto;
+            margin-block-start: 0;
+            margin-inline-end: 0;
+            margin-block-end: 20px;
+            margin-inline-start: 0;
             display: table;
-            width: 100%;
-            padding: 0 0 10px 0;
+            inline-size: 100%;
+            padding-block-start: 0;
+            padding-inline-end: 0;
+            padding-block-end: 10px;
+            padding-inline-start: 0
         }
 
         float: none;
 
         .half-input-left {
-            float: left;
-            width: 50%;
-            padding-right: 10px;
+            float: inline-start;
+            inline-size: 50%;
+            padding-inline-end: 10px
         }
 
         .half-input-right {
-            float: right;
-            width: 50%;
-            padding-left: 10px;
+            float: inline-end;
+            inline-size: 50%;
+            padding-inline-start: 10px
         }
     }
 
     .buttons-box {
-        width: 100%;
+        inline-size: 100%;
         text-align: center;
-        margin: 0 0 10px 0;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 10px;
+        margin-inline-start: 0;
 
         .dnn-ui-common-button {
-            margin: 5px;
+            margin: 5px
         }
     }
 
     .warningBox {
         border: 1px solid @alto;
         background-color: @gallery;
-        width: 100%;
+        inline-size: 100%;
         padding: 15px;
-        margin-bottom: 20px;
+        margin-block-end: 20px;
 
         .warningText {
             font-weight: bolder;
-            color: @thunder;
+            color: @thunder
         }
 
         .warningButton {
-            width: 100%;
+            inline-size: 100%;
 
             .dnn-ui-common-button {
-                width: 100%;
-                padding-top: 6px;
-                padding-bottom: 6px;
+                inline-size: 100%;
+                padding-block-start: 6px;
+                padding-block-end: 6px;
 
                 &:first-child {
-                    margin-top: 15px;
+                    margin-block-start: 15px
                 }
             }
         }

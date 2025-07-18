@@ -1,34 +1,45 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .extensions-app {
     :local(.editExtension) {
         box-sizing: border-box;
         padding: 0;
+
         * {
-            box-sizing: border-box;
+            box-sizing: border-box
         }
+
         .box-title {
-            margin-bottom: 25px;
-            text-transform: uppercase;
+            margin-block-end: 25px;
+            text-transform: uppercase
         }
+
         .dnn-tabs.react-tabs.primary>ul li {
-            padding: 17px 28px;
-            margin-bottom: -3px;
-            > span {
-                float: left;
+            padding-block-start: 17px;
+            padding-inline-end: 28px;
+            padding-block-end: 17px;
+            padding-inline-start: 28px;
+            margin-block-end: -3px;
+
+            >span {
+                float: inline-start
             }
+
             .dnn-ui-common-tooltip {
-                float: right;
-                margin-left: 5px;
+                float: inline-end;
+                margin-inline-start: 5px;
+
                 svg {
-                    width: 16px;
-                    height: 16px;
+                    inline-size: 16px;
+                    block-size: 16px
                 }
             }
         }
+
         .package-information-box {
             .create-new-module-dropdown {
-                padding-bottom: 45px;
-                border-bottom: 1px solid @alto;
+                padding-block-end: 45px;
+                border-block-end: 1px solid @alto;
             }
         }
     }

@@ -1,14 +1,19 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.vocabulariesLeftPane) {
-    padding: 0 30px 30px 40px;
+    padding-block-start: 0;
+    padding-inline-end: 30px;
+    padding-block-end: 30px;
+    padding-inline-start: 40px;
     display: block;
     box-sizing: border-box;
-    float: left;
-    width: 100%;
-    height: auto;
-    border-right: 1px solid #ddd;
-    margin-bottom: 15px;
-    .dnn-editable-field:first-child{
-        padding-top: 2px;
+    float: inline-start;
+    inline-size: 100%;
+    block-size: auto;
+    border-inline-end: 1px solid #ddd;
+    margin-block-end: 15px;
+
+    .dnn-editable-field:first-child {
+        padding-block-start: 2px
     }
 }

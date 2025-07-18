@@ -164,8 +164,8 @@ require(['jquery', 'knockout', 'dayjs', '../util', '../sf', '../config', './../e
                 $personaBarPlaceholder.hide();
                 self.leaveCustomModules();
                 var $activePanel = $('#' + utility.getPanelIdFromPath(activePath));
-                $activePanel.animate({ left: -860 }, 189, 'linear', function () {
-                    $('.socialpanel').css({ left: -860 }).hide();
+                $activePanel.animate({ 'inset-inline-start': -860 }, 189, 'linear', function () {
+                    $('.socialpanel').css({ 'inset-inline-start': -860 }).hide();
                     $mask.animate({
                         opacity: 0.0
                     }, 200, function () {
@@ -288,7 +288,7 @@ require(['jquery', 'knockout', 'dayjs', '../util', '../sf', '../config', './../e
                     $mask.animate({
                         opacity: 0.85
                     }, 200, function () {
-                        $panel.show().delay(100).animate({ left: personaBarMenuWidth }, 189, 'linear', function () {
+                        $panel.show().delay(100).animate({ 'inset-inline-start': personaBarMenuWidth }, 189, 'linear', function () {
                             inAnimation = false;
                             $personaBarPlaceholder.show();
                             self.loadTemplate(folderName, template, $panel, params, function () {
@@ -315,7 +315,7 @@ require(['jquery', 'knockout', 'dayjs', '../util', '../sf', '../config', './../e
                         inAnimation = true;
                         var $activePanel = $('#' + util.getPanelIdFromPath(activePath));
                         $activePanel.fadeOut("fast", function handleHideCurrentPanel() {
-                            $panel.css({ left: personaBarMenuWidth }).fadeIn("fast", function handleShowSelectedPanel() {
+                            $panel.css({ 'inset-inline-start': personaBarMenuWidth }).fadeIn("fast", function handleShowSelectedPanel() {
 
                                 activePath = path;
                                 activemodule = moduleName;
@@ -995,7 +995,7 @@ require(['jquery', 'knockout', 'dayjs', '../util', '../sf', '../config', './../e
 
                                                         $hoverMenu.css({
                                                             position: 'absolute',
-                                                            left: '-1000px'
+                                                            'inset-inline-start': '-1000px'
                                                         });
 
                                                         $('.btn_panel').each(function () {
@@ -1153,16 +1153,16 @@ require(['jquery', 'knockout', 'dayjs', '../util', '../sf', '../config', './../e
                     var $parentBody = $(parentBody);
 
                     if ($parentBody.hasClass('dnnEditState')) {
-                        $personaBar.css({ left: 0, 'display': 'block' });
-                        $parentBody.animate({ marginLeft: personaBarMenuWidth }, 1, 'linear', onShownPersonaBar);
+                        $personaBar.css({ 'inset-inline-start': 0, 'display': 'block' });
+                        $parentBody.animate({ 'margin-inline-start': personaBarMenuWidth }, 1, 'linear', onShownPersonaBar);
                         callback();
                     } else {
                         $iframe.width(personaBarMenuWidth);
                         $personaBar.show();
           
-                        $personaBar.css({ left: 0, 'display': 'block' });
-                        $parentBody.animate({ marginLeft: personaBarMenuWidth }, 1, 'linear', onShownPersonaBar);
-                        $personaBar.animate({ left: 0 }, 1, 'linear', callback);
+                        $personaBar.css({ 'inset-inline-start': 0, 'display': 'block' });
+                        $parentBody.animate({ 'margin-inline-start': personaBarMenuWidth }, 1, 'linear', onShownPersonaBar);
+                        $personaBar.animate({ 'inset-inline-start': 0 }, 1, 'linear', callback);
                     }
 
                     $mask.click(function(e) {

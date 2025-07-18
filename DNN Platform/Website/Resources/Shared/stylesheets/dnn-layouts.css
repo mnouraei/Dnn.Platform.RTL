@@ -31,167 +31,123 @@
 .twocol-contentR,
 .twocol-contentL,
 .onecol
-{
-    position: relative; 
+{    position: relative;
     clear: both;
-    float: left;
-    width: 100%;
-    text-align: left;
-    overflow: hidden; 
-}
+    float: inline-start;
+    inline-size: 100%;
+    text-align: start;
+    overflow: hidden}
 
 .threecol-portal .dnn-mid
-{
-    float: left;
-    width: 200%;
+{    float: inline-start;
+    inline-size: 200%;
     position: relative;
-    right: 100%;
-}
+    inset-inline-end: 100%}
 
 .threecol-portal .dnn-side
-{
-    float: left;
-    margin-left: -50%;
-    width: 100%;
-    position: relative;
-}
+{    float: inline-start;
+    margin-inline-start: -50%;
+    inline-size: 100%;
+    position: relative}
 
 .threecol-portal .dnn-main
-{
-    float: left;
-    width: 50%;
-    position: relative;
-}
+{    float: inline-start;
+    inline-size: 50%;
+    position: relative}
 
 .threecol-portal .dnn-a
-{
-    position: relative;
-    left: 200%;
-    overflow: hidden;
-}
+{    position: relative;
+    inset-inline-start: 200%;
+    overflow: hidden}
 
 .threecol-portal .dnn-b
-{
-    float: right;
+{    float: inline-end;
     position: relative;
     overflow: hidden;
-    width: 100px;
-}
+    inline-size: 100px}
 
 .threecol-portal .dnn-c
-{
-    float: right;
+{    float: inline-end;
     position: relative;
-    left: 50%;
-    overflow: hidden;
-}
+    inset-inline-start: 50%;
+    overflow: hidden}
 
 .threecol-blog .dnn-mid
-{
-    float: left;
-    width: 200%;
+{    float: inline-start;
+    inline-size: 200%;
     position: relative;
-    right: 100%;
-}
+    inset-inline-end: 100%}
 
 .threecol-blog .dnn-side
-{
-    float: left;
-    width: 100%;
-}
+{    float: inline-start;
+    inline-size: 100%}
 
 .threecol-blog .dnn-main
-{
-    float: left;
-    width: 50%;
-}
+{    float: inline-start;
+    inline-size: 50%}
 
 .threecol-blog .dnn-a
-{
-    position: relative;
-    left: 100%;
-    overflow: hidden;
-}
+{    position: relative;
+    inset-inline-start: 100%;
+    overflow: hidden}
 
 .threecol-blog .dnn-b
-{
-    float: right;
+{    float: inline-end;
     position: relative;
-    overflow: hidden;
-}
+    overflow: hidden}
 
 .threecol-blog .dnn-c
-{
-    float: right;
+{    float: inline-end;
     position: relative;
-    overflow: hidden;
-}
+    overflow: hidden}
 
 .twocol-contentR .dnn-side
-{
-    float: left;
-    width: 200%;
-    position: relative;
-}
+{    float: inline-start;
+    inline-size: 200%;
+    position: relative}
 
 .twocol-contentR .dnn-main
-{
-    float: right;
-    width: 50%;
-    position: relative;
-}
+{    float: inline-end;
+    inline-size: 50%;
+    position: relative}
 
 .twocol-contentR .dnn-a
-{
-    position: relative;
-    right: 100%;
-    overflow: hidden;
-}
+{    position: relative;
+    inset-inline-end: 100%;
+    overflow: hidden}
 
 .twocol-contentR .dnn-b
-{
-    float: left;
+{    float: inline-start;
     position: relative;
-    overflow: hidden;
-}
+    overflow: hidden}
 
 .twocol-contentL .dnn-side
-{
-    float: left;
-    width: 200%;
+{    float: inline-start;
+    inline-size: 200%;
     position: relative;
-    right: 100%;
-}
+    inset-inline-end: 100%}
 
 .twocol-contentL .dnn-main
-{
-    float: left;
-    width: 50%;
+{    float: inline-start;
+    inline-size: 50%;
     position: relative;
-    left: 50%;
-}
+    inset-inline-start: 50%}
 
 .twocol-contentL .dnn-a
-{
-    overflow: hidden;
-}
+{    overflow: hidden}
 
 .twocol-contentL .dnn-c
-{
-    float: right;
+{    float: inline-end;
     position: relative;
-    overflow: hidden;
-}
+    overflow: hidden}
 
 .twocol-contentL .dnn-b,
 .twocol-contentR .dnn-c,
 .onecol .dnn-b,
 .onecol .dnn-c
-{
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-}
+{    inline-size: 0px;
+    block-size: 0px;
+    overflow: hidden}
 
 /**************************************************************************************************/
 /* SIZING                                                                                         */
@@ -207,30 +163,20 @@
 .em14 .threecol-blog .dnn-mid,
 .em14 .threecol-blog .dnn-side,
 .em14 .twocol-contentL .dnn-side
-{
-    margin-left: -14em;
-}
+{    margin-inline-start: -14em}
 
 .em14 .threecol-portal .dnn-main,
 .em14 .twocol-contentR .dnn-main
-{
-    right: 14em; 
-}
+{    inset-inline-end: 14em}
 
 .em14 .twocol-contentR .dnn-side
-{
-    left: 14em;
-}
+{    inset-inline-start: 14em}
 
 .em14 .threecol-portal .dnn-side
-{
-    left: 28em; 
-}
+{    inset-inline-start: 28em}
 
 .em14 .threecol-portal .dnn-a
-{
-    margin-right: 15em;
-}
+{    margin-inline-end: 15em}
 
 .em14 .threecol-portal .dnn-b,
 .em14 .threecol-portal .dnn-c,
@@ -238,60 +184,40 @@
 .em14 .threecol-blog .dnn-c,
 .em14 .twocol-contentR .dnn-b,
 .em14 .twocol-contentL .dnn-c
-{
-    width: 12em;
-}
+{    inline-size: 12em}
 
 .em14 .threecol-portal .dnn-b
-{
-    right: 1em;
-}
+{    inset-inline-end: 1em}
 
 .em14 .threecol-portal .dnn-c
-{
-    margin-right: 3em;
-}
+{    margin-inline-end: 3em}
 
 .em14 .threecol-blog .dnn-a
-{
-    margin-left: 29em;
-}
+{    margin-inline-start: 29em}
 
 .em14 .threecol-blog .dnn-b,
 .em14 .twocol-contentL .dnn-c
-{
-    left: 13em;
-}
+{    inset-inline-start: 13em}
 
 .em14 .threecol-blog .dnn-c
-{
-    left: 39em;
-}
+{    inset-inline-start: 39em}
 
 .em14 .threecol-portal .dnn-a,
 .em14 .twocol-contentR .dnn-a,
 .em14 .twocol-contentL .dnn-a
-{
-    margin-left: 15em;
-}
+{    margin-inline-start: 15em}
 
 .em14 .threecol-blog .dnn-a,
 .em14 .twocol-contentR .dnn-a,
 .em14 .twocol-contentL .dnn-a,
 .em14 .onecol .dnn-a
-{
-    margin-right: 1em;
-}
+{    margin-inline-end: 1em}
 
 .em14 .twocol-contentR .dnn-b
-{
-    right: 13em;
-}
+{    inset-inline-end: 13em}
 
 .em14 .onecol .dnn-a
-{
-    margin-left: 1em;
-}
+{    margin-inline-start: 1em}
 
 /**************************************************************************************************/
 /* em16 = 16em (208px) side bars */
@@ -301,30 +227,20 @@
 .em16 .threecol-blog .dnn-mid,
 .em16 .threecol-blog .dnn-side,
 .em16 .twocol-contentL .dnn-side
-{
-    margin-left: -16em;
-}
+{    margin-inline-start: -16em}
 
 .em16 .threecol-portal .dnn-main,
 .em16 .twocol-contentR .dnn-main
-{
-    right: 16em; 
-}
+{    inset-inline-end: 16em}
 
 .em16 .twocol-contentR .dnn-side
-{
-    left: 16em;
-}
+{    inset-inline-start: 16em}
 
 .em16 .threecol-portal .dnn-side
-{
-    left: 32em; 
-}
+{    inset-inline-start: 32em}
 
 .em16 .threecol-portal .dnn-a
-{
-    margin-right: 17em;
-}
+{    margin-inline-end: 17em}
 
 .em16 .threecol-portal .dnn-b,
 .em16 .threecol-portal .dnn-c,
@@ -332,60 +248,40 @@
 .em16 .threecol-blog .dnn-c,
 .em16 .twocol-contentR .dnn-b,
 .em16 .twocol-contentL .dnn-c
-{
-    width: 14em;
-}
+{    inline-size: 14em}
 
 .em16 .threecol-portal .dnn-b
-{
-    right: 1em;
-}
+{    inset-inline-end: 1em}
 
 .em16 .threecol-portal .dnn-c
-{
-    margin-right: 3em;
-}
+{    margin-inline-end: 3em}
 
 .em16 .threecol-blog .dnn-a
-{
-    margin-left: 33em;
-}
+{    margin-inline-start: 33em}
 
 .em16 .threecol-blog .dnn-b,
 .em16 .twocol-contentL .dnn-c
-{
-    left: 15em;
-}
+{    inset-inline-start: 15em}
 
 .em16 .threecol-blog .dnn-c
-{
-    left: 45em;
-}
+{    inset-inline-start: 45em}
 
 .em16 .threecol-portal .dnn-a,
 .em16 .twocol-contentR .dnn-a,
 .em16 .twocol-contentL .dnn-a
-{
-    margin-left: 17em;
-}
+{    margin-inline-start: 17em}
 
 .em16 .threecol-blog .dnn-a,
 .em16 .twocol-contentR .dnn-a,
 .em16 .twocol-contentL .dnn-a,
 .em16 .onecol .dnn-a
-{
-    margin-right: 1em;
-}
+{    margin-inline-end: 1em}
 
 .em16 .twocol-contentR .dnn-b
-{
-    right: 15em;
-}
+{    inset-inline-end: 15em}
 
 .em16 .onecol .dnn-a
-{
-    margin-left: 1em;
-}
+{    margin-inline-start: 1em}
 
 
 /**************************************************************************************************/
@@ -395,30 +291,20 @@
 .em18 .threecol-blog .dnn-mid,
 .em18 .threecol-blog .dnn-side,
 .em18 .twocol-contentL .dnn-side
-{
-    margin-left: -18em;
-}
+{    margin-inline-start: -18em}
 
 .em18 .threecol-portal .dnn-main,
 .em18 .twocol-contentR .dnn-main
-{
-    right: 18em; 
-}
+{    inset-inline-end: 18em}
 
 .em18 .twocol-contentR .dnn-side
-{
-    left: 18em;
-}
+{    inset-inline-start: 18em}
 
 .em18 .threecol-portal .dnn-side
-{
-    left: 36em; 
-}
+{    inset-inline-start: 36em}
 
 .em18 .threecol-portal .dnn-a
-{
-    margin-right: 19em;
-}
+{    margin-inline-end: 19em}
 
 .em18 .threecol-portal .dnn-b,
 .em18 .threecol-portal .dnn-c,
@@ -426,60 +312,40 @@
 .em18 .threecol-blog .dnn-c,
 .em18 .twocol-contentR .dnn-b,
 .em18 .twocol-contentL .dnn-c
-{
-    width: 16em;
-}
+{    inline-size: 16em}
 
 .em18 .threecol-portal .dnn-b
-{
-    right: 1em;
-}
+{    inset-inline-end: 1em}
 
 .em18 .threecol-portal .dnn-c
-{
-    margin-right: 3em;
-}
+{    margin-inline-end: 3em}
 
 .em18 .threecol-blog .dnn-a
-{
-    margin-left: 37em;
-}
+{    margin-inline-start: 37em}
 
 .em18 .threecol-blog .dnn-b,
 .em18 .twocol-contentL .dnn-c
-{
-    left: 17em;
-}
+{    inset-inline-start: 17em}
 
 .em18 .threecol-blog .dnn-c
-{
-    left: 51em;
-}
+{    inset-inline-start: 51em}
 
 .em18 .threecol-portal .dnn-a,
 .em18 .twocol-contentR .dnn-a,
 .em18 .twocol-contentL .dnn-a
-{
-    margin-left: 19em;
-}
+{    margin-inline-start: 19em}
 
 .em18 .threecol-blog .dnn-a,
 .em18 .twocol-contentR .dnn-a,
 .em18 .twocol-contentL .dnn-a,
 .em18 .onecol .dnn-a
-{
-    margin-right: 1em;
-}
+{    margin-inline-end: 1em}
 
 .em18 .twocol-contentR .dnn-b
-{
-    right: 17em;
-}
+{    inset-inline-end: 17em}
 
 .em18 .onecol .dnn-a
-{
-    margin-left: 1em;
-}
+{    margin-inline-start: 1em}
 
 
 /**************************************************************************************************/
@@ -489,22 +355,16 @@
 .threecol-portal .dnn-side,
 .threecol-blog .dnn-mid,
 .twocol-contentR
-{
-    /* Left sidebar background */
-}
+{    /* Left sidebar background */ }
 
 .threecol-portal .dnn-mid,
 .threecol-blog .dnn-side,
 .twocol-contentR .dnn-side,
 .twocol-contentL .dnn-side,
 .onecol
-{
-    /* Content column background */
-}
+{    /* Content column background */ }
 
 .threecol-portal,
 .threecol-blog,
 .twocol-contentL
-{
-    /* Right sidebar background */
-}
+{    /* Right sidebar background */ }

@@ -1,71 +1,106 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.vocabulariesRightPane) {
     .term-list-label {
         font-weight: bold;
-        text-transform: uppercase;
+        text-transform: uppercase
     }
+
     .add-term-button {
-        float: right;
+        float: inline-end;
         font-weight: bold;
         cursor: pointer;
         color: @alto;
-        &:hover{
+
+        &:hover {
             color: @rollingStone;
-            svg{
-                fill: @rollingStone;
+
+            svg {
+                fill: @rollingStone
             }
         }
-        &:active{
+
+        &:active {
             color: @curiousBlue;
-            svg{
-                fill: @curiousBlue;
+
+            svg {
+                fill: @curiousBlue
             }
         }
+
         svg {
-            width: 16px;
-            height: 16px;
-            float: left;
-            margin-right: 5px;
+            inline-size: 16px;
+            block-size: 16px;
+            float: inline-start;
+            margin-inline-end: 5px
         }
     }
+
     .term-list {
-        padding: 0 30px 15px;
+        padding-block-start: 0;
+        padding-inline-end: 30px;
+        padding-block-end: 15px;
+        padding-inline-start: 30px;
         position: relative;
+
         .term-list-content {
             transition: .5s;
+
             ul.root-level {
                 list-style: none;
-                padding: 5px 15px;
-                min-height: 285px;
-                margin-top: 5px;
-                &.Hierarchy{
-                    padding: 5px 25px
+                padding-block-start: 5px;
+                padding-inline-end: 15px;
+                padding-block-end: 5px;
+                padding-inline-start: 15px;
+                min-block-size: 285px;
+                margin-block-start: 5px;
+
+                &.Hierarchy {
+                    padding-block-start: 5px;
+                    padding-inline-end: 25px;
+                    padding-block-end: 5px;
+                    padding-inline-start: 25px
                 }
+
                 ul {
-                    padding: 0 15px;
-                    list-style: none;
+                    padding-block-start: 0;
+                    padding-inline-end: 15px;
+                    padding-block-end: 0;
+                    padding-inline-start: 15px;
+                    list-style: none
                 }
             }
+
             &.closed {
                 opacity: 0;
-                z-index: -1;
+                z-index: -1
             }
+
             &.open {
                 opacity: 1;
                 z-index: 10;
-                transition-delay: .5s;
+                transition-delay: .5s
             }
         }
+
         .term-ul {
-            padding: 0 15px;
+            padding-block-start: 0;
+            padding-inline-end: 15px;
+            padding-block-end: 0;
+            padding-inline-start: 15px;
             list-style: none;
+
             &.root-level {
-                padding: 5px 25px;
+                padding-block-start: 5px;
+                padding-inline-end: 25px;
+                padding-block-end: 5px;
+                padding-inline-start: 25px
             }
+
             &.term-list-level {
                 li {
-                    &.selected > div > div > span {
-                        color: @rollingStone;
+                    &.selected>div>div>span {
+                        color: @rollingStone
                     }
                 }
             }

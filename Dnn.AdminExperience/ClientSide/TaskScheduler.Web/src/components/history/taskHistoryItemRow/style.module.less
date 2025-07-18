@@ -1,46 +1,71 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.taskHistoryItemRow) {
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%;
     color: @thunder;
+
     &:not(:last-child) {
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
+
     padding: 10px 0 10px 0;
+
     .term-label-logNotes {
-        margin: 0 5px 0 15px;
-        float: left;
-        width: 30%;
+        margin-block-start: 0;
+        margin-inline-end: 5px;
+        margin-block-end: 0;
+        margin-inline-start: 15px;
+        float: inline-start;
+        inline-size: 30%
     }
+
     .term-label-server {
-        margin: 0 5px 0 5px;
-        float: left;
-        width: 15%;
-        word-wrap: break-word;
+        margin-block-start: 0;
+        margin-inline-end: 5px;
+        margin-block-end: 0;
+        margin-inline-start: 5px;
+        float: inline-start;
+        inline-size: 15%;
+        word-wrap: break-word
     }
+
     .term-label-elapsedTime {
         text-align: center;
-        margin: 0 5px 0 5px;
-        width: 15%;
-        float: left;
+        margin-block-start: 0;
+        margin-inline-end: 5px;
+        margin-block-end: 0;
+        margin-inline-start: 5px;
+        inline-size: 15%;
+        float: inline-start
     }
+
     .term-label-succeeded {
         text-align: center;
-        margin: 0 5px 0 5px;
-        width: 12%;
-        float: left;
+        margin-block-start: 0;
+        margin-inline-end: 5px;
+        margin-block-end: 0;
+        margin-inline-start: 5px;
+        inline-size: 12%;
+        float: inline-start
     }
+
     .term-label-startEnd {
-        margin: 0 0 0 5px;
-        float: left;
+        margin-block-start: 0;
+        margin-inline-end: 0;
+        margin-block-end: 0;
+        margin-inline-start: 5px;
+        float: inline-start
     }
+
     .checkMarkIcon {
-        width: 16px;
-        height: 16px;
-        margin-left: auto;
-        margin-right: auto;
-        > svg {
-            fill: @thunder;
+        inline-size: 16px;
+        block-size: 16px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+
+        >svg {
+            fill: @thunder
         }
     }
 }

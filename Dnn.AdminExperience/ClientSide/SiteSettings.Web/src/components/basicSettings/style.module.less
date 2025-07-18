@@ -1,56 +1,77 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 :local(.basicSettings) {
-    margin: 30px 30px;
+    margin: 30px;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     .dnn-ui-common-input-group {
-        padding: 0 0 15px 0;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0;
+
         label {
             font-weight: bolder;
-            float: left;
+            float: inline-start
         }
+
         .sectionLabel {
-            border-top: 1px solid @alto;
-            padding-top: 20px;
-            margin-top: 20px;
+            border-block-start: 1px solid @alto;
+            padding-block-start: 20px;
+            margin-block-start: 20px;
+
             label {
-                color: #000;
+                color: #000
             }
         }
+
         .dnn-dropdown {
-            width: 100%;
+            inline-size: 100%
         }
+
         .dnn-file-upload {
-            width: 100%;
+            inline-size: 100%
         }
+
         .dnn-multi-line-input-with-error {
-            width: 100%;
+            inline-size: 100%
         }
     }
+
     .buttons-box {
-        width: 100%;
+        inline-size: 100%;
         text-align: center;
-        margin: 10px 0;
+        margin-block-start: 10px;
+        margin-inline-end: 0;
+        margin-block-end: 10px;
+        margin-inline-start: 0;
+
         .dnn-ui-common-button {
-            margin: 5px;
+            margin: 5px
         }
     }
+
     .dnn-grid-system {
         .left-column {
-            padding-right: 30px;
+            padding-inline-end: 30px;
+
             .dnn-dropdown {
-                width: 100%;
+                inline-size: 100%
             }
         }
+
         .right-column {
-            padding-left: 30px;
-            border-left: 1px solid @alto;
+            padding-inline-start: 30px;
+            border-inline-start: 1px solid @alto;
         }
     }
+
     .dnn-ui-common-input-group {
         .dnn-file-upload .file-upload-container .drop-down {
-            margin-bottom: 7px;
+            margin-block-end: 7px
         }
     }
 }

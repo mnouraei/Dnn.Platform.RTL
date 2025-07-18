@@ -214,7 +214,7 @@
                   <asp:CheckBox runat="server" ID="OverrideFile" />
               </div>
               <div class="maximumFileUploadInfo ui-state-highlight ui-corner-all">
-                  <span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+                  <span class="ui-icon ui-icon-info" style="float: inline-start; margin-right: .3em;"></span>
                   <asp:Label ID="MaximumUploadSizeInfo" runat="server"></asp:Label>
               </div>
               <hr />

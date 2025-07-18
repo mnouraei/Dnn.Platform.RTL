@@ -1,138 +1,174 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 #scheduler-container {
     .dnn-persona-bar-page-body {
         .react-tabs {
             .schedule-items {
-                width: 100%;
+                inline-size: 100%;
                 display: block;
-                float: left;
-                padding: 0 20px;
+                float: inline-start;
+                padding-block-start: 0;
+                padding-inline-end: 20px;
+                padding-block-end: 0;
+                padding-inline-start: 20px;
                 box-sizing: border-box;
+
                 * {
-                    box-sizing: border-box;
+                    box-sizing: border-box
                 }
+
                 .schedule-items-grid {
                     border: solid 1px @alto;
-                    width: 100%;
-                    float: left;
-                    margin-bottom: 20px;
+                    inline-size: 100%;
+                    float: inline-start;
+                    margin-block-end: 20px
                 }
+
                 .header-row {
-                    border-bottom: 1px solid @alto;
-                    padding: 10px 0 10px 0;
-                    width: 100%;
-                    float: left;
+                    border-block-end: 1px solid @alto;
+                    padding-block-start: 10px;
+                    padding-inline-end: 0;
+                    padding-block-end: 10px;
+                    padding-inline-start: 0;
+                    inline-size: 100%;
+                    float: inline-start;
                     overflow: hidden;
-                    text-transform: uppercase;
+                    text-transform: uppercase
                 }
+
                 .header-FriendlyName {
-                    width: 28%;
-                    float: left;
+                    inline-size: 28%;
+                    float: inline-start;
                     font-weight: bolder;
-                    padding-left: 15px;
+                    padding-inline-start: 15px
                 }
+
                 .header-Frequency {
-                    width: 17%;
-                    float: left;
-                    font-weight: bolder;
+                    inline-size: 17%;
+                    float: inline-start;
+                    font-weight: bolder
                 }
+
                 .header-RetryTimeLapse {
-                    width: 17%;
-                    float: left;
-                    font-weight: bolder;
+                    inline-size: 17%;
+                    float: inline-start;
+                    font-weight: bolder
                 }
+
                 .header-NextStart {
-                    width: 19%;
-                    float: left;
-                    font-weight: bolder;
+                    inline-size: 19%;
+                    float: inline-start;
+                    font-weight: bolder
                 }
+
                 .header-Enabled {
-                    width: 10%;
-                    float: left;
+                    inline-size: 10%;
+                    float: inline-start;
                     font-weight: bolder;
-                    margin-left: 12px;
+                    margin-inline-start: 12px
                 }
+
                 .header-LogSettingEditButton {
-                    float: left;
-                    font-weight: bolder;
+                    float: inline-start;
+                    font-weight: bolder
                 }
+
                 .schedule-item-body {
-                    float: left;
-                    width: 100%;
+                    float: inline-start;
+                    inline-size: 100%;
+
                     .collapsible-component-scheduler {
-                        height: 650px;
+                        block-size: 650px
                     }
                 }
+
                 .collapsible-component {
                     .collapsible-header {
-                        text-align: right;
+                        text-align: end;
                         text-transform: none;
-                        padding-right: 40px;
+                        padding-inline-end: 40px;
+
                         .collapse-icon {
                             display: none;
+
                             &.collapsed {
-                                display: none;
+                                display: none
                             }
                         }
                     }
                 }
+
                 .servergroup-filter-container {
-                    width: 30%;
-                    float: left;
-                    margin: 10px 0 15px 0;
-                    border-bottom: 1px solid @alto;
-                    height: 37px;
-                    font-weight: bolder;
+                    inline-size: 30%;
+                    float: inline-start;
+                    margin-block-start: 10px;
+                    margin-inline-end: 0;
+                    margin-block-end: 15px;
+                    margin-inline-start: 0;
+                    border-block-end: 1px solid @alto;
+                    block-size: 37px;
+                    font-weight: bolder
                 }
+
                 .AddItemRow {
-                    text-align: right;
-                    width: 70%;
-                    float: right;
-                    margin: 10px 0 15px 0;
+                    text-align: end;
+                    inline-size: 70%;
+                    float: inline-end;
+                    margin-block-start: 10px;
+                    margin-inline-end: 0;
+                    margin-block-end: 15px;
+                    margin-inline-start: 0;
                     font-weight: bolder;
-                    border-bottom: 1px solid @alto;
+                    border-block-end: 1px solid @alto;
                     overflow: hidden;
-                    height: 37px;
+                    block-size: 37px;
+
                     .AddItemBox {
-                        width: auto;
-                        float: right;
+                        inline-size: auto;
+                        float: inline-end;
                         color: @thunder;
                         cursor: pointer;
-                        margin-top: 8px;
+                        margin-block-start: 8px;
+
                         .add-icon {
-                            margin-left: 20px;
-                            margin-right: 5px;
-                            float: left;
+                            margin-inline-start: 20px;
+                            margin-inline-end: 5px;
+                            float: inline-start;
                             cursor: pointer;
+
                             svg {
-                                width: 16px;
-                                float: left;
-                                height: 16px;
-                                fill: @thunder;
+                                inline-size: 16px;
+                                float: inline-start;
+                                block-size: 16px;
+                                fill: @thunder
                             }
                         }
                     }
+
                     .AddItemBox-active {
-                        width: auto;
-                        float: right;
+                        inline-size: auto;
+                        float: inline-end;
                         color: @curiousBlue;
+
                         .add-icon {
-                            margin-left: 20px;
-                            margin-right: 5px;
-                            float: left;
+                            margin-inline-start: 20px;
+                            margin-inline-end: 5px;
+                            float: inline-start;
+
                             svg {
-                                width: 16px;
-                                float: left;
-                                height: 16px;
-                                fill: @curiousBlue;
+                                inline-size: 16px;
+                                float: inline-start;
+                                block-size: 16px;
+                                fill: @curiousBlue
                             }
                         }
                     }
                 }
+
                 .schedule-item {
                     color: @thunder;
                     word-break: keep-all;
-                    word-wrap: break-word;
+                    word-wrap: break-word
                 }
             }
         }

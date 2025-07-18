@@ -1,50 +1,60 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .collapsible-component-log {
     display: block;
-    float: left;
-    width: 100%;
-    border-bottom: 1px solid @alto;
+    float: inline-start;
+    inline-size: 100%;
+    border-block-end: 1px solid @alto;
     cursor: auto;
-    // &:not(:last-child) {
-    //     div.collapsible-header1 {
-    //         // border-bottom: 1px solid @alto;
-    //     }
-    // }
-    > div > div {
-        float: left;
+
+    // &:not(:last-child) {    //     div.collapsible-header1 {    //         // border-bottom: 1px solid @alto;
+    //}
+    //}
+    >div>div {
+        float: inline-start
     }
+
     div.collapsible-header-log {
         color: @rollingStone;
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 20px;
+        padding-block-start: 15px;
+        padding-inline-end: 20px;
+        padding-block-end: 15px;
+        padding-inline-start: 20px;
         box-sizing: border-box;
         cursor: auto;
+
         &.false {
             background-color: @alabaster;
         }
+
         .edit-icon {
-            margin-left: 20px;
-            float: right;
+            margin-inline-start: 20px;
+            float: inline-end;
             cursor: pointer;
+
             svg {
-                width: 16px;
-                float: left;
-                height: 16px;
+                inline-size: 16px;
+                float: inline-start;
+                block-size: 16px
             }
+
             &.false {
                 svg {
                     fill: @curiousBlue;
                 }
+
                 svg:hover {
                     fill: @thunder;
                 }
             }
         }
     }
+
     .collapsible-body-log {
-        width: 100%;
-        height: auto;
+        inline-size: 100%;
+        block-size: auto
     }
 }

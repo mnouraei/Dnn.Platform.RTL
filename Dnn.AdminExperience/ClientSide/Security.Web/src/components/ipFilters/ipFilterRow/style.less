@@ -1,103 +1,138 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .collapsible-component-ipfilters {
     display: block;
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%;
     cursor: auto;
+
     &:not(:last-child) {
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
+
     .ip-filter-wrapper {
         overflow: visible;
-        width: 100%;
-        > div {
-            float: left;
-            width: 100%;
+        inline-size: 100%;
+
+        >div {
+            float: inline-start;
+            inline-size: 100%
         }
     }
+
     div.collapsible-ipfilters {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 10px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
         box-sizing: border-box;
         cursor: auto;
+
         &.false {}
+
         .row {
             .item-row-ruleType {
-                width: 20%;
-                float: left;
-                padding-left: 15px;
+                inline-size: 20%;
+                float: inline-start;
+                padding-inline-start: 15px;
+
                 .item-row-ruleType-display {
                     color: @mountainMist;
-                    margin: 0 0 0 -15px;
-                    .allow-icon, .deny-icon {
-                        padding-left: 15px;
-                        > svg {
-                            width: 20px;
-                            float: left;
-                            height: 20px;
-                            fill: @mountainMist;
+                    margin-block-start: 0;
+                    margin-inline-end: 0;
+                    margin-block-end: 0;
+                    margin-inline-start: -15px;
+
+                    .allow-icon,
+                    .deny-icon {
+                        padding-inline-start: 15px;
+
+                        >svg {
+                            inline-size: 20px;
+                            float: inline-start;
+                            block-size: 20px;
+                            fill: @mountainMist
                         }
                     }
                 }
             }
+
             .item-row-ipAddress {
-                width: 25%;
-                float: left;
-                padding-top: 3px;
+                inline-size: 25%;
+                float: inline-start;
+                padding-block-start: 3px
             }
+
             .item-row-notes {
-                width: 40%;
-                float: left;
-                padding-top: 3px;
+                inline-size: 40%;
+                float: inline-start;
+                padding-block-start: 3px
             }
+
             .item-row-editButton {
-                width: 13%;
-                float: left;
+                inline-size: 13%;
+                float: inline-start;
+
                 .edit-icon {
                     cursor: pointer;
-                    float: right;
-                    margin-right: 5px;
-                    > svg {
-                        width: 20px;
-                        float: right;
-                        height: 20px;
+                    float: inline-end;
+                    margin-inline-end: 5px;
+
+                    >svg {
+                        inline-size: 20px;
+                        float: inline-end;
+                        block-size: 20px;
+
                         &:hover {
                             fill: @thunder;
                         }
+
                         fill: @alto;
                     }
                 }
+
                 .edit-icon-active {
-                    float: right;
+                    float: inline-end;
                     cursor: pointer;
-                    > svg {
-                        width: 20px;
-                        float: right;
-                        height: 20px;
-                        fill: @curiousBlue;
+
+                    >svg {
+                        inline-size: 20px;
+                        float: inline-end;
+                        block-size: 20px;
+                        fill: @curiousBlue
                     }
                 }
-                .delete-icon-hidden{
-                    display: none;
+
+                .delete-icon-hidden {
+                    display: none
                 }
+
                 .delete-icon {
                     cursor: pointer;
-                    float: right;
-                    > svg {
-                        width: 20px;
-                        float: right;
-                        height: 20px;
+                    float: inline-end;
+
+                    >svg {
+                        inline-size: 20px;
+                        float: inline-end;
+                        block-size: 20px;
+
                         &:hover {
                             fill: @thunder;
                         }
+
                         fill: @alto;
                     }
                 }
             }
+
             .item-row-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px
             }
         }
     }

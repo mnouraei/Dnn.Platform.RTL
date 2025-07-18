@@ -1,135 +1,184 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 :local(.privacySettings) {
-    margin: 30px 30px;
+    margin: 30px;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     .dnn-ui-common-input-group {
-        padding: 0 0 15px 0;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0;
+
         .dnn-label {
             label {
                 font-weight: bolder;
-                float: left;
+                float: inline-start;
             }
         }
+
         .dnn-label-long {
-            width: 70%;
+            inline-size: 70%;
+
             label {
-                width: 70%;
+                inline-size: 70%;
             }
         }
+
         .dnn-single-line-input-with-error {
-            width: 100%;
-            float: left;
+            inline-size: 100%;
+            float: inline-start
         }
+
         .dnn-dropdown {
-            width: 681px;
+            inline-size: 681px;
         }
+
         input {
-            width: auto;
+            inline-size: auto;
         }
+
         .dnn-switch-container {
-            float: right;
+            float: inline-end
         }
+
         .privacySettings-row_switch {
-            border-bottom: 1px solid @alto;
-            margin: 10px 0 0 0;
+            border-block-end: 1px solid @alto;
+            margin-block-start: 10px;
+            margin-inline-end: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
             display: table;
-            width: 100%;
-            padding: 0 0 10px 0;
+            inline-size: 100%;
+            padding-block-start: 0;
+            padding-inline-end: 0;
+            padding-block-end: 10px;
+            padding-inline-start: 0;
         }
     }
+
     .sectionTitle {
         font-weight: bolder;
         text-transform: uppercase;
-        float: left;
-        width: 100%;
-        padding: 0 0 10px 0;
-        border-bottom: 1px solid #c8c8c8;
-        margin-bottom: 6px;
+        float: inline-start;
+        inline-size: 100%;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
+        border-block-end: 1px solid #c8c8c8;
+        margin-block-end: 6px
     }
+
     .buttons-box {
-        float: left;
-        width: 100%;
+        float: inline-start;
+        inline-size: 100%;
         text-align: center;
-        margin: 20px 0;
+        margin-block-start: 20px;
+        margin-inline-end: 0;
+        margin-block-end: 20px;
+        margin-inline-start: 0;
+
         .dnn-ui-common-button {
-            margin: 5px;
+            margin: 5px
         }
     }
+
     .dnn-grid-system {
         .left-column {
-            padding-right: 30px;
+            padding-inline-end: 30px;
+
             .dnn-dropdown {
-                width: 100%;
+                inline-size: 100%;
             }
         }
+
         .right-column {
-            padding-left: 30px;
-            border-left: 1px solid @alto;
+            padding-inline-start: 30px;
+            border-inline-start: 1px solid @alto;
         }
     }
+
     .warning {
         text-transform: uppercase;
         font-size: larger;
     }
+
     .warningBox {
         border: 1px solid @alto;
         background-color: @gallery;
-        width: 100%;
+        inline-size: 100%;
         padding: 15px;
+
         .warningText {
             font-weight: bolder;
-            color: @thunder;
+            color: @thunder
         }
+
         .warningButton {
-            width: 100%;
+            inline-size: 100%;
+
             .dnn-ui-common-button {
-                width: 100%;
-                padding-top: 6px;
-                padding-bottom: 6px;
+                inline-size: 100%;
+                padding-block-start: 6px;
+                padding-block-end: 6px;
+
                 &:first-child {
-                    margin-top: 15px;
+                    margin-block-start: 15px
                 }
             }
         }
     }
+
     .editor-row {
-        float: left;
-        width: 100%;
+        float: inline-start;
+        inline-size: 100%;
+
         label {
             font-weight: bolder;
             clear: both;
-            float: left;
-            text-align: left;
-            width: 100%;
-            margin-bottom: 5px;
+            float: inline-start;
+            text-align: start;
+            inline-size: 100%;
+            margin-block-end: 5px
         }
+
         select {
-            padding: 8px 16px 8px 5px;
+            padding-block-start: 8px;
+            padding-inline-end: 16px;
+            padding-block-end: 8px;
+            padding-inline-start: 5px;
+
             &.full {
-                float: left;
-                width: 100%;
+                float: inline-start;
+                inline-size: 100%
             }
+
             &.two-fifth {
-                float: left;
-                width: 40%
+                float: inline-start;
+                inline-size: 40%
             }
+
             &.one-fourth {
-                float: left;
-                width: 25%;
+                float: inline-start;
+                inline-size: 25%
             }
         }
+
         .dnn-dropdown {
-            width: 100%;
-            margin-bottom: 30px;
+            inline-size: 100%;
+            margin-block-end: 30px
         }
+
         .text-section {
-            width: 5%;
-            float: left;
+            inline-size: 5%;
+            float: inline-start;
             text-align: center;
             vertical-align: middle;
-            margin-top: 9px;
+            margin-block-start: 9px
         }
     }
 }

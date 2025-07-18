@@ -1,60 +1,83 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .collapsible-logitemdetail {
     display: table;
-    width: 100%;
+    inline-size: 100%;
+
     &.false {
-        border-top: 2px solid @curiousBlue !important;
-        border-bottom: 2px solid @curiousBlue !important;
+        border-block-start: 2px solid @curiousBlue !important;
+        border-block-end: 2px solid @curiousBlue !important;
         position: relative;
-        top: -1px;
+        inset-block-start: -1px
     }
+
     &:not(:last-child) {
-        border-bottom: 1px solid #ddd;
+        border-block-end: 1px solid #ddd
     }
+
     .logitem-collapsible {
-        float: left;
-        width: 100%;
-        > div {
-            float: left;
-            padding-bottom: 25px;
+        float: inline-start;
+        inline-size: 100%;
+
+        >div {
+            float: inline-start;
+            padding-block-end: 25px
         }
     }
+
     div.collapsible-logitemdetail-header {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 15px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0;
         box-sizing: border-box;
+
         .term-header {
             cursor: pointer;
+
             .term-label-checkbox {
-                float: left;
-                margin: 1px 0 0 10px;
-                width: 30px;
+                float: inline-start;
+                margin-block-start: 1px;
+                margin-inline-end: 0;
+                margin-block-end: 0;
+                margin-inline-start: 10px;
+                inline-size: 30px
             }
+
             .term-label-createdate {
-                width: 130px;
-                float: left;
+                inline-size: 130px;
+                float: inline-start
             }
+
             .term-label-typename {
-                width: 140px;
-                float: left;
+                inline-size: 140px;
+                float: inline-start
             }
+
             .term-label-username {
-                width: 90px;
-                float: left;
+                inline-size: 90px;
+                float: inline-start
             }
+
             .term-label-portalname {
-                width: 110px;
-                float: left;
+                inline-size: 110px;
+                float: inline-start
             }
+
             .term-label-summary {
-                width: 220px;
-                float: left;
+                inline-size: 220px;
+                float: inline-start
             }
+
             .term-label-wrapper {
-                padding: 0 5px 0 5px;
-                word-wrap: break-word;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px;
+                word-wrap: break-word
             }
         }
     }

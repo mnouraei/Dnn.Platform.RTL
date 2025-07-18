@@ -2,66 +2,66 @@
 /* URL ACTION */
 /*-------------------------------------*/
 .urlControl label {
-    width: auto;
-    margin-top: 0;
-    font-weight: normal;
+    inline-size: auto;
+    margin-block-start: 0;
+    font-weight: normal
 }
 
 .urlControlLinkType {
-    width: auto;
+    inline-size: auto
 }
 
 .urlControlLinkType span,
 .dnnFormItem .urlControlLinkType span {
     float: none;
     display: block;
-    width: auto;
-    text-align: left;
+    inline-size: auto;
+    text-align: start
 }
 
 .dnnFormItem .ucLinkTypeRadioButtons label {
     display: inline-block;
-    width: 260px;
-    padding-right: 0;
-    margin-top: 0;
+    inline-size: 260px;
+    padding-inline-end: 0;
+    margin-block-start: 0;
     font-weight: normal;
-    text-align: left;
+    text-align: start
 }
 
 .urlControlLinkType span input {
-    min-width: 3%;
+    min-inline-size: 3%
 }
 
 .dnnForm.dnnModuleSettings .dnnFormItem .urlControlLinkType span label {
-    text-align: left;
+    text-align: start
 }
 
 .urlControlFileRow {
-    clear: both;
+    clear: both
 }
 
 .urlControlFileRow span.dnnFormLabel {
-    width: auto;
-    text-align: right;
+    inline-size: auto;
+    text-align: end
 }
 
 .urlControlFileRow select,
 .urlControlFileRow input[type=file] {
-    clear: both;
+    clear: both
 }
 
 .urlControlImagesRow {
     overflow: hidden;
-    clear: both;
+    clear: both
 }
 
 .urlControlImagesRow span.dnnFormLabel {
-    width: auto;
-    text-align: right;
+    inline-size: auto;
+    text-align: end
 }
 
 .urlControlImagesRow select {
-    clear: both;
+    clear: both
 }
 
 /*-------------------------------------*/
@@ -69,36 +69,39 @@
 /*-------------------------------------*/
 
 .urlControl {
-    float: left;
+    float: inline-start;
     display: block;
     padding: 15px;
-    margin-bottom: 10px;
-    background-color: #f0f0f0;
+    margin-block-end: 10px;
+    background-color: #f0f0f0
 }
 
 .urlControl select,
 .urlControl input {
-    width: 180px;
-    margin-bottom: 10px;
+    inline-size: 180px;
+    margin-block-end: 10px
 }
 
 .urlControl dnnFormItem>a.dnnSecondaryAction {
-    margin: 10px 10px 0 0;
-    float: left;
+    margin-block-start: 10px;
+    margin-inline-end: 10px;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    float: inline-start
 }
 
 .urlControl .urlControlLinkType {
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%
 }
 
 .urlControl .urlControlLinkType .dnnFormLabel {
-    float: left;
-    width: auto;
-    margin-right: 5px;
+    float: inline-start;
+    inline-size: auto;
+    margin-inline-end: 5px
 }
 
 .urlControl .urlControlLinkType input[type="radio"] {
-    width: auto;
-    margin-right: 5px;
+    inline-size: auto;
+    margin-inline-end: 5px
 }

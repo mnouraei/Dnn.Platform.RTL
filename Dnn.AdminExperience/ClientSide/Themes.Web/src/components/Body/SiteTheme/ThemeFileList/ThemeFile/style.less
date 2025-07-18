@@ -1,130 +1,149 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
-.theme-file-skin, .theme-file-container{
-    float: left;
-    margin-left: 10px;
-    img{
-        width: 80px;
-        height: 80px;
+
+.theme-file-skin,
+.theme-file-container {
+    float: inline-start;
+    margin-inline-start: 10px;
+
+    img {
+        inline-size: 80px;
+        block-size: 80px
     }
 
-    span.thumbnail{
+    span.thumbnail {
         display: inline-block;
-        width: 80px;
-        height: 80px;
-        margin: 9px 0;
+        inline-size: 80px;
+        block-size: 80px;
+        margin-block-start: 9px;
+        margin-inline-end: 0;
+        margin-block-end: 9px;
+        margin-inline-start: 0;
         position: relative;
         vertical-align: top;
 
-        &.empty{
-            &:before{
+        &.empty {
+            &:before {
                 content: "";
                 display: block;
-                width: 80px;
-                height: 80px;
-                background-color: @mercury;
+                inline-size: 80px;
+                block-size: 80px;
+                background-color: @mercury
             }
         }
 
-        svg{
+        svg {
             fill: @alto;
-            width: 32px;
+            inline-size: 32px;
             position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            inset-inline-start: 50%;
+            inset-block-start: 50%;
+            transform: translate(-50%, -50%)
         }
 
-        & > span.status{
+        &>span.status {
             position: absolute;
-            bottom: 5px;
+            inset-block-end: 5px;
 
-            span{
+            span {
                 display: none;
-                width: 16px;
-                height: 16px;
-                float: left;
+                inline-size: 16px;
+                block-size: 16px;
+                float: inline-start;
                 color: @white;
                 position: relative;
 
-                svg{
-                    width: 20px;
-                    fill: @white;
+                svg {
+                    inline-size: 20px;
+                    fill: @white
                 }
             }
 
-            span.status-site{
-                background-color: @curiousBlue;
+            span.status-site {
+                background-color: @curiousBlue
             }
-            span.status-edit{
-                background-color: @nonPhotoBlue;
+
+            span.status-edit {
+                background-color: @nonPhotoBlue
             }
         }
 
-        span.actions{
+        span.actions {
             position: absolute;
             display: block;
             opacity: 0;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
+            inline-size: 100%;
+            block-size: 100%;
+            inset-block-start: 0;
+            inset-inline-start: 0;
             background-color: rgba(30, 136, 195, 0.6);
-            padding: 15px 10px;
+            padding-block-start: 15px;
+            padding-inline-end: 10px;
+            padding-block-end: 15px;
+            padding-inline-start: 10px;
             transition: opacity 100ms linear;
 
-            a{
+            a {
                 color: @white;
                 font-family: inherit;
                 font-size: 11px;
                 line-height: 12px;
                 text-decoration: none;
-                height: 50%;
+                block-size: 50%;
                 display: block;
-                font-weight: 600;
+                font-weight: 600
             }
-            a.set-edit.split{
-                border-top: 1px solid @white;
-                padding: 5px 0;
+
+            a.set-edit.split {
+                border-block-start: 1px solid @white;
+                padding-block-start: 5px;
+                padding-inline-end: 0;
+                padding-block-end: 5px;
+                padding-inline-start: 0
             }
         }
 
-        &:hover span.actions{
-            opacity: 1;
+        &:hover span.actions {
+            opacity: 1
         }
     }
 
-    div.title{
+    div.title {
         display: block;
         text-align: center;
         font-family: inherit;
-        font-weight: 600;
+        font-weight: 600
     }
 
-    &:first-child{
-        margin-left: 0;
+    &:first-child {
+        margin-inline-start: 0
     }
 
-    &.selected{
-        span.thumbnail{
+    &.selected {
+        span.thumbnail {
             border: 4px solid @nonPhotoBlue;
             margin: 0;
-            width: 98px;
-            height: 98px;
-            padding: 5px;
+            inline-size: 98px;
+            block-size: 98px;
+            padding: 5px
         }
     }
 
-    &.selected.site{
-        span.thumbnail{
-            border-color: @curiousBlue;
+    &.selected.site {
+        span.thumbnail {
+            border-color: @curiousBlue
         }
-        .status, .status-site{
-            display: block;
+
+        .status,
+        .status-site {
+            display: block
         }
     }
-    &.selected.edit{
-        .status, .status-edit{
-            display: block;
+
+    &.selected.edit {
+
+        .status,
+        .status-edit {
+            display: block
         }
     }
 }

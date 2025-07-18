@@ -1,31 +1,32 @@
 .left {
-    float: left;
+    float: inline-start
 }
 
 .right {
-    float: right;
+    float: inline-end
 }
 
 .dnnLeft {
-    float: left;
+    float: inline-start
 }
 
 .dnnRight {
-    float: right;
+    float: inline-end
 }
 
 .dnnClear {
     clear: both;
+
     &:after {
         clear: both;
         content: ".";
         display: block;
-        height: 0;
+        block-size: 0;
         visibility: hidden;
-        font-size: 0;
+        font-size: 0
     }
 }
 
 *+html .dnnClear {
-    min-height: 1%;
+    min-block-size: 1%
 }

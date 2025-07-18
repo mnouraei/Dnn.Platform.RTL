@@ -1,62 +1,80 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 #users-container {
     .user-role-row {
-        width: 100%;
-        float: left;
-        padding: 13px 20px;
+        inline-size: 100%;
+        float: inline-start;
+        padding-block-start: 13px;
+        padding-inline-end: 20px;
+        padding-block-end: 13px;
+        padding-inline-start: 20px;
         box-sizing: border-box;
-        text-align: left;
+        text-align: start;
+
         &:not(:last-child) {
-            border-bottom: 1px solid @alto;
+            border-block-end: 1px solid @alto;
         }
+
         div.edit-row a {
-            display: inline-block;
+            display: inline-block
         }
+
         .dnn-grid-cell {
             box-sizing: border-box;
+
             .actions {
-                float: right;
+                float: inline-end;
                 box-sizing: border-box;
-                height: 20px;
-                text-align: right;
-                & > div {
-                    text-align: left;
-                    float: left;                    
+                block-size: 20px;
+                text-align: end;
+
+                &>div {
+                    text-align: start;
+                    float: inline-start;
                 }
+
                 span {
-                    float: left;
+                    float: inline-start;
+
                     .dnn-day-picker {
-                        height: 19px;
+                        block-size: 19px;
+
                         .calendar-icon {
                             opacity: 0;
-                            width: 19px;
-                            height: 19px;
+                            inline-size: 19px;
+                            block-size: 19px;
+
                             &.active {
                                 opacity: 1;
                             }
                         }
                     }
+
                     a {
                         svg {
-                            width: 23px;
-                            height: 23px;
+                            inline-size: 23px;
+                            block-size: 23px;
                         }
                     }
                 }
+
                 a {
-                    float: left;
+                    float: inline-start;
                     opacity: 0;
                 }
+
                 &:hover {
                     a {
                         display: inline-block;
                     }
                 }
+
                 div.edit-row a {
                     display: inline-block;
                 }
             }
         }
+
         &:hover {
             .dnn-grid-cell {
                 .actions {
@@ -67,6 +85,7 @@
                             }
                         }
                     }
+
                     a {
                         opacity: 1;
                     }

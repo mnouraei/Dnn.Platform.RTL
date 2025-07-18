@@ -1,121 +1,163 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.ipFilterItems) {
-    margin: 20px 30px;
+    margin-block-start: 20px;
+    margin-inline-end: 30px;
+    margin-block-end: 20px;
+    margin-inline-start: 30px;
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     display: block;
+
     .ip-filter-items-grid {
         border: solid 1px @alto;
-        margin: 20px 0 55px 0;
-        float: left;
-        width: 100%;
+        margin-block-start: 20px;
+        margin-inline-end: 0;
+        margin-block-end: 55px;
+        margin-inline-start: 0;
+        float: inline-start;
+        inline-size: 100%
     }
+
     .header-row {
-        padding: 10px 0 10px 0;
-        width: 100%;
-        float: left;
-        overflow: hidden;
+        padding-block-start: 10px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
+        inline-size: 100%;
+        float: inline-start;
+        overflow: hidden
     }
+
     .header-RuleType {
-        width: 20%;
-        float: left;
+        inline-size: 20%;
+        float: inline-start;
         font-weight: bolder;
-        padding-left: 15px;
+        padding-inline-start: 15px
     }
+
     .header-IPAddress {
-        width: 25%;
-        float: left;
-        font-weight: bolder;
+        inline-size: 25%;
+        float: inline-start;
+        font-weight: bolder
     }
+
     .header-Notes {
-        width: 40%;
-        float: left;
-        font-weight: bolder;
+        inline-size: 40%;
+        float: inline-start;
+        font-weight: bolder
     }
+
     .collapsible-component {
         .collapsible-header {
-            text-align: right;
+            text-align: end;
             text-transform: none;
-            padding-right: 40px;
+            padding-inline-end: 40px;
+
             .collapse-icon {
                 display: none;
+
                 &.collapsed {
-                    display: none;
+                    display: none
                 }
             }
         }
     }
+
     .ip-filter-topbar {
-        border-bottom: 1px solid @alto;
-        float: left;
-        width: 100%;
+        border-block-end: 1px solid @alto;
+        float: inline-start;
+        inline-size: 100%;
+
         .warning-container {
-            width: 75%;
-            float: left;
-            margin: 10px 0 15px 0;
+            inline-size: 75%;
+            float: inline-start;
+            margin-block-start: 10px;
+            margin-inline-end: 0;
+            margin-block-end: 15px;
+            margin-inline-start: 0;
             font-weight: bolder;
             color: @alizarinCrimson;
+
             .collapsible-content {
-                margin-top: 5px;
-                > div {
-                    border: solid 1px;
+                margin-block-start: 5px;
+
+                >div {
+                    border: solid 1px
                 }
             }
+
             .warning-icon {
-                > svg {
-                    width: 17px;
-                    float: left;
-                    height: 17px;
-                    margin: 0 10px 0 0;
+                >svg {
+                    inline-size: 17px;
+                    float: inline-start;
+                    block-size: 17px;
+                    margin-block-start: 0;
+                    margin-inline-end: 10px;
+                    margin-block-end: 0;
+                    margin-inline-start: 0
                 }
             }
         }
+
         .AddItemRow {
-            text-align: right;
-            width: 25%;
-            float: right;
-            margin: 10px 0 15px 0;
+            text-align: end;
+            inline-size: 25%;
+            float: inline-end;
+            margin-block-start: 10px;
+            margin-inline-end: 0;
+            margin-block-end: 15px;
+            margin-inline-start: 0;
             font-weight: bolder;
             overflow: hidden;
             cursor: pointer;
+
             .AddItemBox {
-                width: auto;
-                float: right;
+                inline-size: auto;
+                float: inline-end;
                 color: @thunder;
+
                 .add-icon {
-                    margin-left: 20px;
-                    margin-right: 5px;
-                    float: left;
+                    margin-inline-start: 20px;
+                    margin-inline-end: 5px;
+                    float: inline-start;
                     cursor: pointer;
+
                     svg {
-                        width: 16px;
-                        float: left;
-                        height: 16px;
-                        fill: @thunder;
+                        inline-size: 16px;
+                        float: inline-start;
+                        block-size: 16px;
+                        fill: @thunder
                     }
                 }
             }
+
             .AddItemBox-active {
-                width: auto;
-                float: right;
+                inline-size: auto;
+                float: inline-end;
                 color: @curiousBlue;
+
                 .add-icon {
-                    margin-left: 20px;
-                    margin-right: 5px;
-                    float: left;
+                    margin-inline-start: 20px;
+                    margin-inline-end: 5px;
+                    float: inline-start;
                     cursor: pointer;
+
                     svg {
-                        width: 16px;
-                        float: left;
-                        height: 16px;
-                        fill: @curiousBlue;
+                        inline-size: 16px;
+                        float: inline-start;
+                        block-size: 16px;
+                        fill: @curiousBlue
                     }
                 }
             }
         }
     }
+
     .ip-filter-item {
-        color: @thunder;
+        color: @thunder
     }
 }

@@ -1,22 +1,29 @@
 .TransitionModalPortal {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
+    inset-block-start: 0px;
+    inset-inline-start: 0px;
+    inset-inline-end: 0px;
+    inset-block-end: 0px;
     background-color: transparent;
     z-index: 99999;
+
     .transition-modal-content {
-        padding: 30px 40px;
+        padding-block-start: 30px;
+        padding-inline-end: 40px;
+        padding-block-end: 30px;
+        padding-inline-start: 40px;
+
         h3 {
             font-size: 20px;
-            margin-bottom: 20px;
+            margin-block-end: 20px
         }
+
         .buttons-container {
             text-align: center;
-            margin-top: 20px;
+            margin-block-start: 20px;
+
             button {
-                margin-left: 20px;
+                margin-inline-start: 20px
             }
         }
     }
@@ -26,51 +33,57 @@
     opacity: 0;
     transition: .3s;
     position: fixed;
-    top: -1000px;
-    left: -1000px;
-    bottom: -1000px;
-    right: -1000px;
+    inset-block-start: -1000px;
+    inset-inline-start: -1000px;
+    inset-block-end: -1000px;
+    inset-inline-end: -1000px;
     z-index: 9999;
     transform: scale(.86);
+
     &.open {
         opacity: 1;
-        transform: scale(1);
+        transform: scale(1)
     }
+
     .overlay {
         position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: rgba(0, 0, 0, .7);
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        inset-block-end: 0;
+        inset-inline-end: 0;
+        background: rgba(0, 0, 0, .7)
     }
+
     .modal-content {
         position: absolute;
-        width: 1000px;
-        height: 590px;
-        top: 50%;
-        left: 50%;
+        inline-size: 1000px;
+        block-size: 590px;
+        inset-block-start: 50%;
+        inset-inline-start: 50%;
         transform: translate(-50%, -50%);
         background: var(--dnn-color-background, #fff);
         overflow: hidden;
+
         .close {
             position: absolute;
-            top: 4px;
-            right: 6px;
+            inset-block-start: 4px;
+            inset-inline-end: 6px;
             font-size: 46px;
-            padding-right: 14px;
+            padding-inline-end: 14px;
             cursor: pointer;
-            width: 37px;
+            inline-size: 37px;
+
             &:hover {
-                color: var(--dnn-color-background, #fff);
+                color: var(--dnn-color-background, #fff)
             }
         }
+
         .header {
-            float: left;
-            width: 100%;
+            float: inline-start;
+            inline-size: 100%;
             background: var(--dnn-color-primary-dark, #0c3b4f);
             padding: 20px;
-            font-size: 20px;
+            font-size: 20px
         }
     }
 }

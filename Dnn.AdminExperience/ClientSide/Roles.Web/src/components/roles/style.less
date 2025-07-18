@@ -1,112 +1,134 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .roles-list-container {
-    margin-top: 100px;
-    float: left;
-    & > div {
+    margin-block-start: 100px;
+    float: inline-start;
+
+    &>div {
         padding: 0;
     }
+
     * {
-        box-sizing: border-box;
+        box-sizing: border-box
     }
+
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
     display: table;
-    float: left;
+    float: inline-start;
+
     .container {
         .no-users-row {
-            width: 100%;
-            float: left;
+            inline-size: 100%;
+            float: inline-start;
             text-align: center;
             font-weight: bold;
-            padding: 13px 20px;
+            padding-block-start: 13px;
+            padding-inline-end: 20px;
+            padding-block-end: 13px;
+            padding-inline-start: 20px;
             box-sizing: border-box;
-            border-bottom: 1px solid @alto;
+            border-block-end: 1px solid @alto;
         }
-        float: left;
-        width: 100%;
-        margin-bottom: 20px;
-        border-left: 1px solid @alto;
-        border-right: 1px solid @alto;
+
+        float: inline-start;
+        inline-size: 100%;
+        margin-block-end: 20px;
+        border-inline-start: 1px solid @alto;
+        border-inline-end: 1px solid @alto;
         background-color: white;
+
         .users-header-row {
             display: table;
-            width: 100%;
-            border-bottom: 1px solid @alto;
-            border-top: 1px solid @alto;
-            width: 100%;
-            float: left;
+            inline-size: 100%;
+            border-block-end: 1px solid @alto;
+            border-block-start: 1px solid @alto;
+            inline-size: 100%;
+            float: inline-start;
             position: relative;
-            padding: 15px 20px;
+            padding-block-start: 15px;
+            padding-inline-end: 20px;
+            padding-block-end: 15px;
+            padding-inline-start: 20px;
             box-sizing: border-box;
             text-transform: uppercase;
         }
+
         .add-setting-editor {
-            float: left;
+            float: inline-start;
+
             .collapsible-component1.false {
-                border-bottom: 0;
+                border-block-end: 0;
             }
         }
     }
+
     .add-setting-row {
-        text-align: right;
-        width: 100%;
+        text-align: end;
+        inline-size: 100%;
         font-weight: bolder;
         overflow: hidden;
         cursor: pointer;
         box-sizing: border-box;
-        border-bottom: 1px solid @alto;
-        padding: 0 0 15px 20px;
-        margin-bottom: 15px;
+        border-block-end: 1px solid @alto;
+        padding-block-start: 0;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 20px;
+        margin-block-end: 15px;
+
         .add-setting-box {
-            width: auto;
-            float: right;
+            inline-size: auto;
+            float: inline-end;
+
             .add-icon {
-                margin-left: 20px;
-                margin-right: 5px;
-                float: left;
+                margin-inline-start: 20px;
+                margin-inline-end: 5px;
+                float: inline-start;
                 cursor: pointer;
+
                 svg {
                     fill: @rollingStone;
-                    width: 16px;
-                    float: left;
-                    height: 16px;
+                    inline-size: 16px;
+                    float: inline-start;
+                    block-size: 16px;
                 }
             }
+
             &.false {
                 color: @curiousBlue;
+
                 svg {
                     fill: @curiousBlue;
                 }
             }
         }
+
         .add-setting-box {
             &.false:hover {
                 color: @thunder;
+
                 svg {
                     fill: @thunder;
                 }
             }
         }
     }
+
     .loadMore {
         text-align: center;
+
         a {
             display: inline-block;
-            height: 36px;
+            block-size: 36px;
             line-height: 36px;
-            min-width: 130px;
+            min-inline-size: 130px;
             border: 1px solid @alto;
             color: @curiousBlue;
             text-decoration: none;
             font-weight: bold;
         }
     }
-    // label {
-    //     clear: both;
-    //     float: left;
-    //     text-align: left;
-    //     margin-bottom: 5px;
-    //     margin-right: 5px;
-    // }
+
 }

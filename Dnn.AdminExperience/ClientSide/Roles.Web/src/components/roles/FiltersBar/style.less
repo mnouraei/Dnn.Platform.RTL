@@ -1,63 +1,74 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .filter-container {
-    border-bottom: 1px solid @alto;
-    float: left;
+    border-block-end: 1px solid @alto;
+    float: inline-start;
     box-sizing: border-box;
-    margin-bottom: 15px;
-    width: 100%;
+    margin-block-end: 15px;
+    inline-size: 100%;
+
     //background-color: @alabaster;
     .dnn-grid-cell {
-        margin-bottom: 5px;
+        margin-block-end: 5px;
+
         .groups-filter {
-            width: 100%;
-            border-right: 1px solid @alto;
+            inline-size: 100%;
+            border-inline-end: 1px solid @alto;
             font-size: 13px;
             font-family: inherit;
-            float: left;
+            float: inline-start;
+
             .dnn-dropdown {
                 .collapsible-toggle {
-                    width: auto;
+                    inline-size: auto
                 }
             }
+
             .group-actions {
                 color: @bulgarianRose;
-                top: 2px;
-                right: 30px;
+                inset-block-start: 2px;
+                inset-inline-end: 30px;
+
                 a {
                     display: inline-block;
-                    margin-right: 8px;
-                    width: 16px;
-                    height: 16px;
+                    margin-inline-end: 8px;
+                    inline-size: 16px;
+                    block-size: 16px;
                     vertical-align: middle;
-                    margin-top: -2px;
-                    margin-left: 2px;
+                    margin-block-start: -2px;
+                    margin-inline-start: 2px
                 }
+
                 .role-group-actions {
-                    float: right;
-                    width: auto;
+                    float: inline-end;
+                    inline-size: auto
                 }
             }
         }
+
         .edit-group-popup {
             position: absolute;
-            left: 71px;
-            z-index: 999;
+            inset-inline-start: 71px;
+            z-index: 999
         }
+
         .search-filter {
-            float: left;
-            width: 100%;
-            > div {
+            float: inline-start;
+            inline-size: 100%;
+
+            >div {
                 display: block !important;
-                border-left: 1px solid @alto;
+                border-inline-start: 1px solid @alto;
+
                 input {
                     display: block;
-                    width: 100%;
+                    inline-size: 100%;
                     position: inherit !important;
                     border: none;
                     border-radius: none;
                     background-color: transparent;
                     outline: none;
-                    padding-right: 45px;
+                    padding-inline-end: 45px
                 }
             }
         }

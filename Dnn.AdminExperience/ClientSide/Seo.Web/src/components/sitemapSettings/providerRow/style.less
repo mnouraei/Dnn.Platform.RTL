@@ -1,81 +1,112 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .collapsible-component-providers {
     display: block;
-    float: left;
-    width: 100%;
+    float: inline-start;
+    inline-size: 100%;
     cursor: auto;
+
     &:not(:last-child) {
-        border-bottom: 1px solid @alto;
+        border-block-end: 1px solid @alto;
     }
+
     div.collapsible-providers {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         position: relative;
-        padding: 15px 0 10px 0;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 10px;
+        padding-inline-start: 0;
         box-sizing: border-box;
         cursor: auto;
+
         .row {
             .item-row-name {
-                width: 40%;
-                padding-left: 15px;
-                float: left;
+                inline-size: 40%;
+                padding-inline-start: 15px;
+                float: inline-start
             }
+
             .item-row-enabled {
-                width: 20%;
-                float: left;
+                inline-size: 20%;
+                float: inline-start;
                 text-align: center;
+
                 .item-row-enabled-display {
                     color: @mountainMist;
-                    margin: 0 0 0 -15px;
+                    margin-block-start: 0;
+                    margin-inline-end: 0;
+                    margin-block-end: 0;
+                    margin-inline-start: -15px;
                     display: table;
-                    margin: 0 auto;
+                    margin-block-start: 0;
+                    margin-inline-end: auto;
+                    margin-block-end: 0;
+                    margin-inline-start: auto;
+
                     .enabled-icon {
-                        > svg {
-                            padding: 0 15px 0 15px;
-                            width: 46px;
-                            float: left;
-                            height: 16px;
+                        >svg {
+                            padding-block-start: 0;
+                            padding-inline-end: 15px;
+                            padding-block-end: 0;
+                            padding-inline-start: 15px;
+                            inline-size: 46px;
+                            float: inline-start;
+                            block-size: 16px;
                             fill: @mountainMist;
                         }
                     }
                 }
             }
+
             .item-row-priority {
-                width: 30%;
-                float: left;
-                text-align: center;
+                inline-size: 30%;
+                float: inline-start;
+                text-align: center
             }
+
             .item-row-editButton {
-                width: 6%;
-                float: left;
+                inline-size: 6%;
+                float: inline-start;
+
                 .edit-icon {
                     cursor: pointer;
-                    > svg {
-                        width: 16px;
-                        float: right;
-                        height: 16px;
+
+                    >svg {
+                        inline-size: 16px;
+                        float: inline-end;
+                        block-size: 16px;
+
                         &:hover {
                             fill: @thunder;
                         }
+
                         fill: @alto;
                     }
                 }
+
                 .edit-icon-active {
-                    > svg {
-                        width: 16px;
-                        float: right;
-                        height: 16px;
+                    >svg {
+                        inline-size: 16px;
+                        float: inline-end;
+                        block-size: 16px;
                         fill: @curiousBlue;
                     }
                 }
             }
+
             .item-row-wrapper {
-                padding: 0 5px 0 5px;
+                padding-block-start: 0;
+                padding-inline-end: 5px;
+                padding-block-end: 0;
+                padding-inline-start: 5px
             }
         }
     }
+
     .collapsible-providers-body {
-        float: left;
-        overflow: inherit;
+        float: inline-start;
+        overflow: inherit
     }
 }

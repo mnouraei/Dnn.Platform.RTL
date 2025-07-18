@@ -1,48 +1,64 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .dnn-message-box {
-    width: 100%;
+    inline-size: 100%;
     box-sizing: border-box;
-    float: left;
+    float: inline-start;
     background-color: #0A2937;
+
     .top-bar {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
+
         .close-button {
-            width: 16px;
-            height: 16px;
-            float: right;
+            inline-size: 16px;
+            block-size: 16px;
+            float: inline-end;
             cursor: pointer;
             padding: 10px;
-            > svg {
-                fill: #FFFFFF;
+
+            >svg {
+                fill: #FFFFFF
             }
         }
     }
+
     .content {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         text-align: center;
-        padding: 0 50px 50px 50px;
+        padding-block-start: 0;
+        padding-inline-end: 50px;
+        padding-block-end: 50px;
+        padding-inline-start: 50px;
         box-sizing: border-box;
+
         .message-icon {
-            width: 35px;
-            height: 30px;
-            margin: 5px auto 20px auto;
-            > svg {
-                fill: #78C16B;
+            inline-size: 35px;
+            block-size: 30px;
+            margin-block-start: 5px;
+            margin-inline-end: auto;
+            margin-block-end: 20px;
+            margin-inline-start: auto;
+
+            >svg {
+                fill: #78C16B
             }
         }
+
         .message-text {
             font-size: 15px;
-            color: #FFFFFF;
+            color: #FFFFFF
         }
-        .message-link {            
-            margin-top: 20px;            
+
+        .message-link {
+            margin-block-start: 20px;
             word-break: break-all;
-            > a {
+
+            >a {
                 color: #21A3DA;
                 font-size: 15px;
-                text-decoration: none;
+                text-decoration: none
             }
         }
     }

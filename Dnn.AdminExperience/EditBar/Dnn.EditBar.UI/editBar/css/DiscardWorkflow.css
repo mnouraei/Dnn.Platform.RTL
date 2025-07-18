@@ -1,9 +1,9 @@
 ﻿#menu-DiscardWorkflow button {
-    width: auto;
+    inline-size: auto;
     -ms-border-radius: 3px;
     border-radius: 3px;
     background-color: transparent;
     border-style: solid;
     border-width: 1px;
-    text-indent: 0;
+    text-indent: 0
 }

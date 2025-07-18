@@ -1,8 +1,8 @@
 ﻿/* Example tokeninput style #1: Token vertical list*/
 ul.token-input-list {
     overflow: hidden;
-    height: auto;
-    width: 200px;
+    block-size: auto;
+    inline-size: 200px;
     border: 1px solid #ddd;
     cursor: text;
     font-size: 12px;
@@ -10,105 +10,110 @@ ul.token-input-list {
     z-index: 999;
     background-color: #fff;
     list-style-type: none;
-    float: right;
+    float: inline-end;
     margin: 15px;
-    border-radius: 3px;
+    border-radius: 3px
 }
+
 }
 
 ul.token-input-list li {
-    list-style-type: none;
+    list-style-type: none
 }
 
-ul.token-input-list li input {
-    border: 0;
-    width: 350px;
-    padding: 8px;
-    background-color: white;
-    -webkit-appearance: caret;
-}
+    ul.token-input-list li input {
+        border: 0;
+        inline-size: 350px;
+        padding: 8px;
+        background-color: white;
+        -webkit-appearance: caret
+    }
 
 li.token-input-token {
-    overflow: hidden; 
-    height: auto !important; 
-    height: 1%;
+    overflow: hidden;
+    block-size: auto !important;
+    block-size: 1%;
     margin: 3px;
-    padding: 3px 5px;
-    /*background-color: #d0efa0;*/
+    padding-block-start: 3px;
+    padding-inline-end: 5px;
+    padding-block-end: 3px;
+    padding-inline-start: 5px;
+    /*background-color: #d0efa0;
+    */
     color: #000;
     font-weight: bold;
     cursor: default;
-    display: block;
+    display: block
 }
 
-li.token-input-token p {
-    float: left;
-    padding: 0;
-    margin: 0;
-}
+    li.token-input-token p {
+        float: inline-start;
+        padding: 0;
+        margin: 0
+    }
 
-li.token-input-token span {
-    float: right;
-    color: #777;
-    cursor: pointer;
-}
+    li.token-input-token span {
+        float: inline-end;
+        color: #777;
+        cursor: pointer
+    }
 
 li.token-input-selected-token {
-    color: #000;
+    color: #000
 }
 
-li.token-input-selected-token span {
-    color: #bbb;
-}
+    li.token-input-selected-token span {
+        color: #bbb
+    }
 
 div.token-input-dropdown {
     position: absolute;
-    width: 200px;
+    inline-size: 200px;
     background-color: #fff;
     overflow: hidden;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-inline-start: 1px solid #ddd;
+    border-inline-end: 1px solid #ddd;
+    border-block-end: 1px solid #ddd;
     border-radius: 3px;
     cursor: default;
     font-size: 12px;
     font-family: sourcecodepro;
-    z-index: 9999;
+    z-index: 9999
 }
 
-div.token-input-dropdown p {
-    margin: 0;
-    padding: 5px;
-    font-weight: bold;
-    color: #777;
-}
+    div.token-input-dropdown p {
+        margin: 0;
+        padding: 5px;
+        font-weight: bold;
+        color: #777
+    }
 
-div.token-input-dropdown ul {
-    margin: 0;
-    padding: 0;
-}
+    div.token-input-dropdown ul {
+        margin: 0;
+        padding: 0
+    }
 
-div.token-input-dropdown ul li {
-    background-color: #fff;
-    padding: 3px;
-    list-style-type: none;
-}
+        div.token-input-dropdown ul li {
+            background-color: #fff;
+            padding: 3px;
+            list-style-type: none
+        }
 
-div.token-input-dropdown ul li.token-input-dropdown-item {
-    background-color: #fafafa;
-    font-family: sourcecodepro;
-}
+            div.token-input-dropdown ul li.token-input-dropdown-item {
+                background-color: #fafafa;
+                font-family: sourcecodepro
+            }
 
-div.token-input-dropdown ul li.token-input-dropdown-item2 {
-    background-color: #fff;
-}
+            div.token-input-dropdown ul li.token-input-dropdown-item2 {
+                background-color: #fff
+            }
 
-div.token-input-dropdown ul li em {
-    font-weight: bold;
-    font-style: normal;
-}
+            div.token-input-dropdown ul li em {
+                font-weight: bold;
+                font-style: normal
+            }
 
-div.token-input-dropdown ul li.token-input-selected-dropdown-item {
-    background-color: #33aaff;
-    color: white;
-}
+            div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+                background-color: #33aaff;
+                color: white
+            }

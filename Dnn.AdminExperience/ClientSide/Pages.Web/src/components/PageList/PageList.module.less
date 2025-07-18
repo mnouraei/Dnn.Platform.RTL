@@ -1,40 +1,50 @@
- @import "~@dnnsoftware/dnn-react-common/styles/index";
- :local(.pageListBody) {
+@import "~@dnnsoftware/dnn-react-common/styles/index";
+
+:local(.pageListBody) {
     padding: 0;
-    margin-top: 103px;
+    margin-block-start: 103px;
 
     .normalPanel {
         background-color: initial;
         border: none;
+
         .searchpanel {
             background-color: initial;
-            border: none;
+            border: none
         }
     }
 
     .search-container {
-        float: left;    
-        margin: 0 30px 15px 30px;
-        width: ~"calc(100% - 60px)";
-        border-bottom: 1px solid #c8c8c8;        
-        padding: 15px 0;
+        float: inline-start;
+        margin-block-start: 0;
+        margin-inline-end: 30px;
+        margin-block-end: 15px;
+        margin-inline-start: 30px;
+        inline-size: ~"calc(100% - 60px)";
+        border-block-end: 1px solid #c8c8c8;
+        padding-block-start: 15px;
+        padding-inline-end: 0;
+        padding-block-end: 15px;
+        padding-inline-start: 0
     }
 
     .search-filter {
-        float: left;
-        width: 100%;
-        > div {
+        float: inline-start;
+        inline-size: 100%;
+
+        >div {
             display: block !important;
-            border-left: 1px solid @alto;
+            border-inline-start: 1px solid @alto;
+
             input {
                 display: block;
-                width: 100%;
+                inline-size: 100%;
                 position: inherit !important;
                 border: none;
                 border-radius: none;
                 background-color: transparent;
                 outline: none;
-                padding-right: 45px;
+                padding-inline-end: 45px
             }
         }
     }

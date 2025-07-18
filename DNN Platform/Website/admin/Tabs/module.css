@@ -1,51 +1,71 @@
 .dnnTabImport {
-    width: 100%;
-    margin: 2em auto;
+    inline-size: 100%;
+    margin-block-start: 2em;
+    margin-inline-end: auto;
+    margin-block-end: 2em;
+    margin-inline-start: auto
 }
-.dnnTabImport textarea, .dnnTabExport textarea {
-    min-height: 120px;
-}
-.dnnTabImport .dnnFormItem textarea, .dnnTabExport .dnnFormItem textarea {
-    width: 45%;
-}
-.dnnTabImport .dnnFormItem input[type=checkbox], .dnnTabImport .dnnFormItem input[type=radio], .dnnTabExport .dnnFormItem input[type=checkbox] {
-    width: auto;
-}
-.dnnTabImport .dnnFormItem input[type=radio] {
-    margin-top: 4px;
-}
+
+    .dnnTabImport textarea, .dnnTabExport textarea {
+        min-block-size: 120px
+    }
+
+    .dnnTabImport .dnnFormItem textarea, .dnnTabExport .dnnFormItem textarea {
+        inline-size: 45%
+    }
+
+    .dnnTabImport .dnnFormItem input[type=checkbox], .dnnTabImport .dnnFormItem input[type=radio], .dnnTabExport .dnnFormItem input[type=checkbox] {
+        inline-size: auto
+    }
+
+    .dnnTabImport .dnnFormItem input[type=radio] {
+        margin-block-start: 4px
+    }
+
 .dnnFormItem .dnnTIRadioButtons label, .dnnFormItem .dnnTIRadioButtons input, .dnnFormItem .dnnTIRadioButtons label, .dnnFormItem .dnnTIRadioButtons input {
     padding: 0;
-    width: auto;
-    text-align: left;
+    inline-size: auto;
+    text-align: start
 }
+
 .dnnFormItem .dnnTIRadioButtons label, .dnnFormItem .dnnTIRadioButtons label {
-    width: auto;
-    padding: 0 15px 0 6px;
+    inline-size: auto;
+    padding-block-start: 0;
+    padding-inline-end: 15px;
+    padding-block-end: 0;
+    padding-inline-start: 6px;
     font-weight: normal;
-    margin-top: 0;
+    margin-block-start: 0
 }
+
 .dnnTabImport .dnnTIRadioButtons br {
     display: none !important;
     font-size: 0;
     line-height: 0;
-    border-collapse: collapse;
+    border-collapse: collapse
 }
+
 .dnnPositionInput {
-    margin-left: 36%;
+    margin-inline-start: 36%
 }
 
 /* adjust form item padding/spacing */
 .dnnFormItem input[type="checkbox"] + span, .dnnFormItem input[type="radio"] + span {
-    margin: 5px 5px 15px 5px;
+    margin-block-start: 5px;
+    margin-inline-end: 5px;
+    margin-block-end: 15px;
+    margin-inline-start: 5px
 }
-.dnnFormItem textarea + span.dnnFormError{
-    top: -30% !important;
+
+.dnnFormItem textarea + span.dnnFormError {
+    inset-block-start: -30% !important
 }
+
 .dnnFormItem span.dnnFormMessage.dnnFormError {
-    top: -110%;
+    inset-block-start: -110%
 }
-.dnnFormItem .labelTemplateDescription{
-     margin-left: 36%;
-     margin-bottom: 15px;
+
+.dnnFormItem .labelTemplateDescription {
+    margin-inline-start: 36%;
+    margin-block-end: 15px
 }

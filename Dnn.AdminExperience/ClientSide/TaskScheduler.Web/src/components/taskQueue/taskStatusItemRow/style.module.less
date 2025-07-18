@@ -1,12 +1,18 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 :local(.taskStatusItemRow) {
     border: solid 1px @alto;
-    margin: 15px 15px 0px 15px;
-    float: left;
+    margin-block-start: 15px;
+    margin-inline-end: 15px;
+    margin-block-end: 0px;
+    margin-inline-start: 15px;
+    float: inline-start;
+
     &:not(:first-child) {
-        margin-top: 15px;
+        margin-block-start: 15px
     }
+
     &:last-child {
-        margin-bottom: 15px;
+        margin-block-end: 15px
     }
 }

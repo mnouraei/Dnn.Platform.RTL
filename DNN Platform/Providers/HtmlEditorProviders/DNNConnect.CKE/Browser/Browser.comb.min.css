@@ -1,1 +1,861 @@
-﻿body{background-color:#fff;font-family:Arial,Verdana;color:#333;font-size:small;overflow:auto}a{color:#c00;text-decoration:none}a:hover{color:#900}.LinkDisabled,.LinkDisabled:hover{color:#999;zoom:1;-webkit-filter:alpha(opacity=30);-moz-filter:alpha(opacity=30);-o-filter:alpha(opacity=30);filter:alpha(opacity=30);-ms-opacity:.3;opacity:.3}.ui-widget-content{font-size:small!important}.ui-tabs li a{font-size:85%!important}hr{color:#d9d9d9;background-color:#d9d9d9;height:0;border:1px solid #d9d9d9}h1{font-weight:bold;margin:0;font-size:medium;font-family:Arial,Helvetica,sans-serif;color:#333}img{border:0}#BrowserContainer{margin-bottom:10px;-moz-min-width:800px;-ms-min-width:800px;-o-min-width:800px;-webkit-min-width:800px;min-width:800px;width:800px}#panelLoading,#panUploadDiv,#panCreate{margin:0 5px 0 5px;padding:3px}#panLinkMode,#panPageMode{margin:10px 0 10px 0}#panPageMode table td{vertical-align:top}.PanelSubDivs{margin-top:5px;margin-left:5px}#lblCurrentDir{margin-top:5px;display:block;width:783px;padding:3px}.LinkModeTable td,.LinkModeTable th{padding:2px;margin:2px}.LinkModeTable td{vertical-align:top}#BrowserMode label{display:block;width:10em;float:right;font-weight:bold;cursor:pointer;padding:2px}#BrowserMode input{display:block;float:left;cursor:pointer;margin:10px;position:absolute;left:-99px;top:-99px}#BrowserMode td:hover{cursor:pointer}.OverrideFile{margin:5px}.fileSpaceUsedLabel{font-style:italic;display:inline-block;padding-top:13px}.maximumFileUploadInfo{font-style:italic;padding:10px;-ms-word-break:break-all;-moz-word-break:break-all;-o-word-break:break-all;word-break:break-all}#FilesBox{border:1px solid #ccc;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em;height:285px;-moz-min-width:524px;-ms-min-width:524px;-o-min-width:524px;-webkit-min-width:524px;min-width:524px;width:524px;float:left;overflow:auto;padding:5px;margin-bottom:5px;margin-top:5px}#FilesBox ul{list-style:none;margin:0;padding:0}#FilesBox ul a{width:100%;display:block;color:#333}#FilesBox .FileName{font-weight:bold}.FilesDetailView .FilesListRow,.FilesDetailView .FilesListRowAlt{padding:4px 0 4px 0;margin:6px}.FilesDetailView .FilesListRowAlt{background-color:#efefef;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesDetailView .Selected{background-color:#999;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesDetailView li:hover{cursor:pointer;background-color:#d1d1d1!important;-moz-transition:color .15s linear,background-color .15s linear;-webkit-transition:color .15s linear,background-color .15s linear;-ms-transition:color .15s linear,background-color .15s linear;-o-transition:color .15s linear,background-color .15s linear;transition:color .15s linear,background-color .15s linear;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesDetailView .FilePreview{max-width:80px;padding-left:10px}.FilesDetailView .ItemInfo{display:inline-table;vertical-align:top;padding-left:10px}.FilesListView .FilesListRow,.FilesListView .FilesListRowAlt{padding:4px 0 4px 0;margin:6px}.FilesListView .FilesListRowAlt{background-color:#efefef;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesListView .Selected{background-color:#999;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesListView li:hover{cursor:pointer;background-color:#d1d1d1!important;-moz-transition:color .15s linear,background-color .15s linear;-webkit-transition:color .15s linear,background-color .15s linear;-ms-transition:color .15s linear,background-color .15s linear;-o-transition:color .15s linear,background-color .15s linear;transition:color .15s linear,background-color .15s linear;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesListView .FilePreview{padding-left:10px;max-width:16px}.FilesListView .ItemInfo{display:inline-table;vertical-align:top;padding-left:10px}.FilesListView .ItemInfo br{display:none}.FilesListView .FileInfo{padding-left:1px}.FilesListView .FileInfo::before{content:' - '}.FilesIconsView{margin:4px;padding:4px}.FilesIconsView .FilesListRow,.FilesIconsView .FilesListRowAlt{padding:0;margin:1px;width:80px;height:80px;float:left}.FilesIconsView .Selected{background-color:#999;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesIconsView .FilesListItem{display:block;margin:4px;padding:4px}.FilesIconsView li:hover{cursor:pointer;background-color:#d1d1d1!important;-moz-transition:color .15s linear,background-color .15s linear;-webkit-transition:color .15s linear,background-color .15s linear;-ms-transition:color .15s linear,background-color .15s linear;-o-transition:color .15s linear,background-color .15s linear;transition:color .15s linear,background-color .15s linear;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.FilesIconsView .FilesListItem .FilePreview{max-width:48px;max-height:48px;padding-left:10px}.FilesIconsView .ItemInfo{vertical-align:bottom;text-align:center;display:block;width:70px;font-size:10px;overflow:hidden;-moz-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;-moz-binding:url('assets/xml/ellipsis.xml#ellipsis')}.FilesIconsView .ItemInfo br,.FilesIconsView .FileInfo{display:none}.PagerTable{width:540px}.PagerTable .PagerFirstColumn{float:left;width:180px}.PagerTable .PagerNumbersColumn{width:180px;padding-top:4px}.PagerTable .PagerLastColumn{width:180px}.PagerTable .PagerLastColumn .FilesPager{float:right;padding-top:2px;width:150px}.FilesPager{border:0;margin:0;padding:0}.FilesPager li{border:0;margin:0;padding:0;font-size:11px;list-style:none;margin-right:2px}.FilesPager li a{margin-right:2px}.FilesPager a:link,.FilesPager a:visited{float:left;padding:3px 6px;color:#000;border:1px solid #999;background-color:#e4e4e4;background:-webkit-gradient(linear,left top,left bottom,from(#e4e4e4),to(#999));background:-moz-linear-gradient(top,#e4e4e4,#999);background:-o-linear-gradient(top,#e4e4e4,#999);-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;border-radius:5px;-moz-transition:color .15s linear,background-color .15s linear;-webkit-transition:color .15s linear,background-color .15s linear;-ms-transition:color .15s linear,background-color .15s linear;-o-transition:color .15s linear,background-color .15s linear;transition:color .15s linear,background-color .15s linear;cursor:pointer}.FilesPager a:hover{color:#fff;background:#e4e4e4;background:-webkit-gradient(linear,left top,left bottom,from(#757575),to(#4b4b4b));background:-moz-linear-gradient(top,#757575,#4b4b4b);background:-o-linear-gradient(top,#757575,#4b4b4b)}.FilesPager .ActivePage a{color:#fff;display:block;background:-webkit-gradient(linear,left top,left bottom,from(#757575),to(#4b4b4b));background:-moz-linear-gradient(top,#757575,#4b4b4b);background:-o-linear-gradient(top,#757575,#4b4b4b)}.FilesPager .ActivePage a:hover{color:#000;border:1px solid #000;background-color:#e4e4e4;background:-webkit-gradient(linear,left top,left bottom,from(#e4e4e4),to(#999));background:-moz-linear-gradient(top,#e4e4e4,#999);background:-o-linear-gradient(top,#e4e4e4,#999)}#FoldersBox{border:1px solid #ccc;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em;height:285px;-moz-min-width:248px;-ms-min-width:248px;-o-min-width:248px;-webkit-min-width:248px;min-width:248px;width:248px;float:left;overflow:auto;padding:5px;margin-top:8px}#FoldersBox a{color:#000}#TabsBox{border:1px solid #ccc;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em;height:300px;-moz-min-width:248px;-ms-min-width:248px;-o-min-width:248px;-webkit-min-width:248px;min-width:248px;padding:5px;float:left;overflow:auto}#TabsBox a{color:#000}#SliderWidth{width:385px;position:absolute;top:505px;left:25px;border:1px solid #666}#SliderHeight{height:248px;position:absolute;top:244px;left:13px;border:1px solid #666}.ui-slider-vertical .ui-slider-handle,.ui-slider-horizontal .ui-slider-handle{border:1px solid #666!important;background:#ccc!important}#ImageTable{width:100%}#ImageTable td{vertical-align:top;width:50%;padding:2px;margin:2px}#ImageOriginal{background-color:#fff;border:1px solid #ccc;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em;height:300px;width:400px;padding:5px;float:right}.ImagePreview{border:1px solid #ccc;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em;height:300px;width:360px;padding:5px;float:left}#lblCropInfo{width:230px;margin:75px auto 0 auto;display:block}#CropButtons{padding-top:25px}#PreviewCrop,#ClearCrop{color:#9eda29;font-weight:bold;text-decoration:underline;float:left;padding:5px;width:auto;cursor:pointer}.Toolbar{padding:15px 5px}.MessageBox{position:absolute;z-index:100;text-align:left;display:block;top:96px;left:220px}.MessageBox .modalHeader:hover{cursor:move}.ModalDialog .popup{position:relative;border:3px solid #000;border:3px solid rgba(0,0,0,0);-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;border-radius:5px;-webkit-box-shadow:0 0 18px #000;-moz-box-shadow:0 0 18px #000;-ms-box-shadow:0 0 18px #000;box-shadow:0 0 18px #000;box-shadow:0 0 18px rgba(0,0,0,.4);width:390px}.ModalDialog .DialogContent{display:table;width:370px;padding:10px;background:#fff;-webkit-border-radius:4px;-moz-border-radius:4px;-ms-border-radius:4px;border-radius:4px}.ModalDialog .modalHeader{text-align:center;font-size:12.5pt}.ModalDialog input[type="file"]{width:100%}* html .ModalDialog .modalInner{padding-top:10px}*:first-child+html .ModalDialog .modalInner{padding-top:10px}.ModalDialog_overlayBG{position:absolute;top:0;left:0;height:100%;width:100%;z-index:99}.MessageBox input[type="text"]{border:1px solid #ccc;background:#e4e4e4!important;margin-top:5px;-moz-border-radius:.4em;-webkit-border-radius:.4em;-ms-border-radius:.4em;border-radius:.4em}.ModalFooter{float:right}.LoadingContent h3{background:url(../images/loading.gif) no-repeat 102px 5px;height:20px}.LoadingMessage{text-align:center}#cmdCreate img,#Syncronize img,#cmdUpload img,#cmdDownload img,#cmdDelete img,#cmdResizer img,.ButtonNormal img,.ButtonSelected img,#SwitchDetailView img,#SwitchListView img,#SwitchIconsView img{vertical-align:middle}.ButtonSelected img{border:1px solid #c00;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;-ms-border-radius:5px;border-radius:5px;padding:2px}.ButtonNormal{border:none}#UploadFilesBox{-moz-min-width:480px;-ms-min-width:480px;-o-min-width:480px;-webkit-min-width:480px;min-width:480px;width:480px;float:left;overflow:auto;padding:5px;margin-bottom:5px;margin-top:5px;height:275px;border-top:1px dotted grey;border-bottom:1px dotted grey}#dropzone{width:auto;padding:10px 0;text-align:center;margin:20px auto}.UploadFiles .progress{height:5px}#panUploadDiv .ModalDialog .DialogContent{width:460px}#panUploadDiv .ModalDialog .popup{width:510px}#panUploadDiv .MessageBox{left:150px;top:56px}.UploadFiles .preview{-moz-min-width:80px;-ms-min-width:80px;-o-min-width:80px;-webkit-min-width:80px;min-width:80px;display:block}.UploadFiles .name{width:288px;-ms-word-break:break-all;-moz-word-break:break-all;-o-word-break:break-all;word-break:break-all;font-weight:bold}.UploadFiles .size{font-style:italic}.UploadFiles .error{color:red}@charset "UTF-8";.fileinput-button{position:relative;overflow:hidden}.fileinput-button input{position:absolute;top:0;right:0;margin:0;opacity:0;-ms-filter:'alpha(opacity=0)';font-size:200px;direction:ltr;cursor:pointer}@media screen\9{.fileinput-button input{filter:alpha(opacity=0);font-size:100%;height:100%}}@charset "UTF-8";.fileupload-buttonbar .btn,.fileupload-buttonbar .toggle{margin-bottom:5px}.progress-animated .progress-bar,.progress-animated .bar{background:url("Images/progressbar.gif") !important;filter:none}.fileupload-process{float:right;display:none}.fileupload-processing .fileupload-process,.files .processing .preview{display:block;width:32px;height:32px;background:url("../images/loading.gif") center no-repeat;background-size:contain}.files audio,.files video{max-width:300px}@media(max-width:767px){.fileupload-buttonbar .toggle,.files .toggle,.files .btn span{display:none}.files .name{width:80px;word-wrap:break-word}.files audio,.files video{max-width:80px}.files img,.files canvas{max-width:100%}}
+﻿body {
+    background-color: #fff;
+    font-family: Arial, Verdana;
+    color: #333;
+    font-size: small;
+    overflow: auto
+}
+
+a {
+    color: #c00;
+    text-decoration: none
+}
+
+a:hover {
+    color: #900
+}
+
+.LinkDisabled,
+.LinkDisabled:hover {
+    color: #999;
+    zoom: 1;
+    -webkit-filter: alpha(opacity=30);
+    -moz-filter: alpha(opacity=30);
+    -o-filter: alpha(opacity=30);
+    filter: alpha(opacity=30);
+    -ms-opacity: .3;
+    opacity: .3
+}
+
+.ui-widget-content {
+    font-size: small !important
+}
+
+.ui-tabs li a {
+    font-size: 85% !important
+}
+
+hr {
+    color: #d9d9d9;
+    background-color: #d9d9d9;
+    block-size: 0;
+    border: 1px solid #d9d9d9
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+img {
+    border: 0
+}
+
+#BrowserContainer {
+    margin-block-end: 10px;
+    -moz-min-width: 800px;
+    -ms-min-width: 800px;
+    -o-min-width: 800px;
+    -webkit-min-width: 800px;
+    min-inline-size: 800px;
+    inline-size: 800px
+}
+
+#panelLoading,
+#panUploadDiv,
+#panCreate {
+    margin-block-start: 0;
+    margin-inline-end: 5px;
+    margin-block-end: 0;
+    margin-inline-start: 5px;
+    padding: 3px
+}
+
+#panLinkMode,
+#panPageMode {
+    margin-block-start: 10px;
+    margin-inline-end: 0;
+    margin-block-end: 10px;
+    margin-inline-start: 0
+}
+
+#panPageMode table td {
+    vertical-align: top
+}
+
+.PanelSubDivs {
+    margin-block-start: 5px;
+    margin-inline-start: 5px
+}
+
+#lblCurrentDir {
+    margin-block-start: 5px;
+    display: block;
+    inline-size: 783px;
+    padding: 3px
+}
+
+.LinkModeTable td,
+.LinkModeTable th {
+    padding: 2px;
+    margin: 2px
+}
+
+.LinkModeTable td {
+    vertical-align: top
+}
+
+#BrowserMode label {
+    display: block;
+    inline-size: 10em;
+    float: inline-end;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 2px
+}
+
+#BrowserMode input {
+    display: block;
+    float: inline-start;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    inset-inline-start: -99px;
+    inset-block-start: -99px
+}
+
+#BrowserMode td:hover {
+    cursor: pointer
+}
+
+.OverrideFile {
+    margin: 5px
+}
+
+.fileSpaceUsedLabel {
+    font-style: italic;
+    display: inline-block;
+    padding-block-start: 13px
+}
+
+.maximumFileUploadInfo {
+    font-style: italic;
+    padding: 10px;
+    -ms-word-break: break-all;
+    -moz-word-break: break-all;
+    -o-word-break: break-all;
+    word-break: break-all
+}
+
+#FilesBox {
+    border: 1px solid #ccc;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em;
+    block-size: 285px;
+    -moz-min-width: 524px;
+    -ms-min-width: 524px;
+    -o-min-width: 524px;
+    -webkit-min-width: 524px;
+    min-inline-size: 524px;
+    inline-size: 524px;
+    float: inline-start;
+    overflow: auto;
+    padding: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px
+}
+
+#FilesBox ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#FilesBox ul a {
+    inline-size: 100%;
+    display: block;
+    color: #333
+}
+
+#FilesBox .FileName {
+    font-weight: bold
+}
+
+.FilesDetailView .FilesListRow,
+.FilesDetailView .FilesListRowAlt {
+    padding-block-start: 4px;
+    padding-inline-end: 0;
+    padding-block-end: 4px;
+    padding-inline-start: 0;
+    margin: 6px
+}
+
+.FilesDetailView .FilesListRowAlt {
+    background-color: #efefef;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesDetailView .Selected {
+    background-color: #999;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesDetailView li:hover {
+    cursor: pointer;
+    background-color: #d1d1d1 !important;
+    -moz-transition: color .15s linear, background-color .15s linear;
+    -webkit-transition: color .15s linear, background-color .15s linear;
+    -ms-transition: color .15s linear, background-color .15s linear;
+    -o-transition: color .15s linear, background-color .15s linear;
+    transition: color .15s linear, background-color .15s linear;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesDetailView .FilePreview {
+    max-inline-size: 80px;
+    padding-inline-start: 10px
+}
+
+.FilesDetailView .ItemInfo {
+    display: inline-table;
+    vertical-align: top;
+    padding-inline-start: 10px
+}
+
+.FilesListView .FilesListRow,
+.FilesListView .FilesListRowAlt {
+    padding-block-start: 4px;
+    padding-inline-end: 0;
+    padding-block-end: 4px;
+    padding-inline-start: 0;
+    margin: 6px
+}
+
+.FilesListView .FilesListRowAlt {
+    background-color: #efefef;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesListView .Selected {
+    background-color: #999;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesListView li:hover {
+    cursor: pointer;
+    background-color: #d1d1d1 !important;
+    -moz-transition: color .15s linear, background-color .15s linear;
+    -webkit-transition: color .15s linear, background-color .15s linear;
+    -ms-transition: color .15s linear, background-color .15s linear;
+    -o-transition: color .15s linear, background-color .15s linear;
+    transition: color .15s linear, background-color .15s linear;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesListView .FilePreview {
+    padding-inline-start: 10px;
+    max-inline-size: 16px
+}
+
+.FilesListView .ItemInfo {
+    display: inline-table;
+    vertical-align: top;
+    padding-inline-start: 10px
+}
+
+.FilesListView .ItemInfo br {
+    display: none
+}
+
+.FilesListView .FileInfo {
+    padding-inline-start: 1px
+}
+
+.FilesListView .FileInfo::before {
+    content: ' - '
+}
+
+.FilesIconsView {
+    margin: 4px;
+    padding: 4px
+}
+
+.FilesIconsView .FilesListRow,
+.FilesIconsView .FilesListRowAlt {
+    padding: 0;
+    margin: 1px;
+    inline-size: 80px;
+    block-size: 80px;
+    float: inline-start
+}
+
+.FilesIconsView .Selected {
+    background-color: #999;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesIconsView .FilesListItem {
+    display: block;
+    margin: 4px;
+    padding: 4px
+}
+
+.FilesIconsView li:hover {
+    cursor: pointer;
+    background-color: #d1d1d1 !important;
+    -moz-transition: color .15s linear, background-color .15s linear;
+    -webkit-transition: color .15s linear, background-color .15s linear;
+    -ms-transition: color .15s linear, background-color .15s linear;
+    -o-transition: color .15s linear, background-color .15s linear;
+    transition: color .15s linear, background-color .15s linear;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.FilesIconsView .FilesListItem .FilePreview {
+    max-inline-size: 48px;
+    max-block-size: 48px;
+    padding-inline-start: 10px
+}
+
+.FilesIconsView .ItemInfo {
+    vertical-align: bottom;
+    text-align: center;
+    display: block;
+    inline-size: 70px;
+    font-size: 10px;
+    overflow: hidden;
+    -moz-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -moz-binding: url('assets/xml/ellipsis.xml#ellipsis')
+}
+
+.FilesIconsView .ItemInfo br,
+.FilesIconsView .FileInfo {
+    display: none
+}
+
+.PagerTable {
+    inline-size: 540px
+}
+
+.PagerTable .PagerFirstColumn {
+    float: inline-start;
+    inline-size: 180px
+}
+
+.PagerTable .PagerNumbersColumn {
+    inline-size: 180px;
+    padding-block-start: 4px
+}
+
+.PagerTable .PagerLastColumn {
+    inline-size: 180px
+}
+
+.PagerTable .PagerLastColumn .FilesPager {
+    float: inline-end;
+    padding-block-start: 2px;
+    inline-size: 150px
+}
+
+.FilesPager {
+    border: 0;
+    margin: 0;
+    padding: 0
+}
+
+.FilesPager li {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    list-style: none;
+    margin-inline-end: 2px
+}
+
+.FilesPager li a {
+    margin-inline-end: 2px
+}
+
+.FilesPager a:link,
+.FilesPager a:visited {
+    float: inline-start;
+    padding-block-start: 3px;
+    padding-inline-end: 6px;
+    padding-block-end: 3px;
+    padding-inline-start: 6px;
+    color: #000;
+    border: 1px solid #999;
+    background-color: #e4e4e4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#999));
+    background: -moz-linear-gradient(top, #e4e4e4, #999);
+    background: -o-linear-gradient(top, #e4e4e4, #999);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -moz-transition: color .15s linear, background-color .15s linear;
+    -webkit-transition: color .15s linear, background-color .15s linear;
+    -ms-transition: color .15s linear, background-color .15s linear;
+    -o-transition: color .15s linear, background-color .15s linear;
+    transition: color .15s linear, background-color .15s linear;
+    cursor: pointer
+}
+
+.FilesPager a:hover {
+    color: #fff;
+    background: #e4e4e4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+    background: -moz-linear-gradient(top, #757575, #4b4b4b);
+    background: -o-linear-gradient(top, #757575, #4b4b4b)
+}
+
+.FilesPager .ActivePage a {
+    color: #fff;
+    display: block;
+    background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+    background: -moz-linear-gradient(top, #757575, #4b4b4b);
+    background: -o-linear-gradient(top, #757575, #4b4b4b)
+}
+
+.FilesPager .ActivePage a:hover {
+    color: #000;
+    border: 1px solid #000;
+    background-color: #e4e4e4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#999));
+    background: -moz-linear-gradient(top, #e4e4e4, #999);
+    background: -o-linear-gradient(top, #e4e4e4, #999)
+}
+
+#FoldersBox {
+    border: 1px solid #ccc;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em;
+    block-size: 285px;
+    -moz-min-width: 248px;
+    -ms-min-width: 248px;
+    -o-min-width: 248px;
+    -webkit-min-width: 248px;
+    min-inline-size: 248px;
+    inline-size: 248px;
+    float: inline-start;
+    overflow: auto;
+    padding: 5px;
+    margin-block-start: 8px
+}
+
+#FoldersBox a {
+    color: #000
+}
+
+#TabsBox {
+    border: 1px solid #ccc;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em;
+    block-size: 300px;
+    -moz-min-width: 248px;
+    -ms-min-width: 248px;
+    -o-min-width: 248px;
+    -webkit-min-width: 248px;
+    min-inline-size: 248px;
+    padding: 5px;
+    float: inline-start;
+    overflow: auto
+}
+
+#TabsBox a {
+    color: #000
+}
+
+#SliderWidth {
+    inline-size: 385px;
+    position: absolute;
+    inset-block-start: 505px;
+    inset-inline-start: 25px;
+    border: 1px solid #666
+}
+
+#SliderHeight {
+    block-size: 248px;
+    position: absolute;
+    inset-block-start: 244px;
+    inset-inline-start: 13px;
+    border: 1px solid #666
+}
+
+.ui-slider-vertical .ui-slider-handle,
+.ui-slider-horizontal .ui-slider-handle {
+    border: 1px solid #666 !important;
+    background: #ccc !important
+}
+
+#ImageTable {
+    inline-size: 100%
+}
+
+#ImageTable td {
+    vertical-align: top;
+    inline-size: 50%;
+    padding: 2px;
+    margin: 2px
+}
+
+#ImageOriginal {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em;
+    block-size: 300px;
+    inline-size: 400px;
+    padding: 5px;
+    float: inline-end
+}
+
+.ImagePreview {
+    border: 1px solid #ccc;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em;
+    block-size: 300px;
+    inline-size: 360px;
+    padding: 5px;
+    float: inline-start
+}
+
+#lblCropInfo {
+    inline-size: 230px;
+    margin-block-start: 75px;
+    margin-inline-end: auto;
+    margin-block-end: 0;
+    margin-inline-start: auto;
+    display: block
+}
+
+#CropButtons {
+    padding-block-start: 25px
+}
+
+#PreviewCrop,
+#ClearCrop {
+    color: #9eda29;
+    font-weight: bold;
+    text-decoration: underline;
+    float: inline-start;
+    padding: 5px;
+    inline-size: auto;
+    cursor: pointer
+}
+
+.Toolbar {
+    padding-block-start: 15px;
+    padding-inline-end: 5px;
+    padding-block-end: 15px;
+    padding-inline-start: 5px
+}
+
+.MessageBox {
+    position: absolute;
+    z-index: 100;
+    text-align: start;
+    display: block;
+    inset-block-start: 96px;
+    inset-inline-start: 220px
+}
+
+.MessageBox .modalHeader:hover {
+    cursor: move
+}
+
+.ModalDialog .popup {
+    position: relative;
+    border: 3px solid #000;
+    border: 3px solid rgba(0, 0, 0, 0);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 18px #000;
+    -moz-box-shadow: 0 0 18px #000;
+    -ms-box-shadow: 0 0 18px #000;
+    box-shadow: 0 0 18px #000;
+    box-shadow: 0 0 18px rgba(0, 0, 0, .4);
+    inline-size: 390px
+}
+
+.ModalDialog .DialogContent {
+    display: table;
+    inline-size: 370px;
+    padding: 10px;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px
+}
+
+.ModalDialog .modalHeader {
+    text-align: center;
+    font-size: 12.5pt
+}
+
+.ModalDialog input[type="file"] {
+    inline-size: 100%
+}
+
+* html .ModalDialog .modalInner {
+    padding-block-start: 10px
+}
+
+*:first-child+html .ModalDialog .modalInner {
+    padding-block-start: 10px
+}
+
+.ModalDialog_overlayBG {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    block-size: 100%;
+    inline-size: 100%;
+    z-index: 99
+}
+
+.MessageBox input[type="text"] {
+    border: 1px solid #ccc;
+    background: #e4e4e4 !important;
+    margin-block-start: 5px;
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    -ms-border-radius: .4em;
+    border-radius: .4em
+}
+
+.ModalFooter {
+    float: inline-end
+}
+
+.LoadingContent h3 {
+    background: url(../images/loading.gif) no-repeat 102px 5px;
+    block-size: 20px
+}
+
+.LoadingMessage {
+    text-align: center
+}
+
+#cmdCreate img,
+#Syncronize img,
+#cmdUpload img,
+#cmdDownload img,
+#cmdDelete img,
+#cmdResizer img,
+.ButtonNormal img,
+.ButtonSelected img,
+#SwitchDetailView img,
+#SwitchListView img,
+#SwitchIconsView img {
+    vertical-align: middle
+}
+
+.ButtonSelected img {
+    border: 1px solid #c00;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px
+}
+
+.ButtonNormal {
+    border: none
+}
+
+#UploadFilesBox {
+    -moz-min-width: 480px;
+    -ms-min-width: 480px;
+    -o-min-width: 480px;
+    -webkit-min-width: 480px;
+    min-inline-size: 480px;
+    inline-size: 480px;
+    float: inline-start;
+    overflow: auto;
+    padding: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    block-size: 275px;
+    border-block-start: 1px dotted grey;
+    border-block-end: 1px dotted grey
+}
+
+#dropzone {
+    inline-size: auto;
+    padding-block-start: 10px;
+    padding-inline-end: 0;
+    padding-block-end: 10px;
+    padding-inline-start: 0;
+    text-align: center;
+    margin-block-start: 20px;
+    margin-inline-end: auto;
+    margin-block-end: 20px;
+    margin-inline-start: auto
+}
+
+.UploadFiles .progress {
+    block-size: 5px
+}
+
+#panUploadDiv .ModalDialog .DialogContent {
+    inline-size: 460px
+}
+
+#panUploadDiv .ModalDialog .popup {
+    inline-size: 510px
+}
+
+#panUploadDiv .MessageBox {
+    inset-inline-start: 150px;
+    inset-block-start: 56px
+}
+
+.UploadFiles .preview {
+    -moz-min-width: 80px;
+    -ms-min-width: 80px;
+    -o-min-width: 80px;
+    -webkit-min-width: 80px;
+    min-inline-size: 80px;
+    display: block
+}
+
+.UploadFiles .name {
+    inline-size: 288px;
+    -ms-word-break: break-all;
+    -moz-word-break: break-all;
+    -o-word-break: break-all;
+    word-break: break-all;
+    font-weight: bold
+}
+
+.UploadFiles .size {
+    font-style: italic
+}
+
+.UploadFiles .error {
+    color: red
+}
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden
+}
+
+.fileinput-button input {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer
+}
+
+@media screen\9 {
+    .fileinput-button input {
+        filter: alpha(opacity=0);
+        font-size: 100%;
+        block-size: 100%
+    }
+}
+
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+    margin-block-end: 5px
+}
+
+.progress-animated .progress-bar,
+.progress-animated .bar {
+    background: url("Images/progressbar.gif") !important;
+    filter: none
+}
+
+.fileupload-process {
+    float: inline-end;
+    display: none
+}
+
+.fileupload-processing .fileupload-process,
+.files .processing .preview {
+    display: block;
+    inline-size: 32px;
+    block-size: 32px;
+    background: url("../images/loading.gif") center no-repeat;
+    background-size: contain
+}
+
+.files audio,
+.files video {
+    max-inline-size: 300px
+}
+
+@media(max-width:767px) {
+
+    .fileupload-buttonbar .toggle,
+    .files .toggle,
+    .files .btn span {
+        display: none
+    }
+
+    .files .name {
+        inline-size: 80px;
+        word-wrap: break-word
+    }
+
+    .files audio,
+    .files video {
+        max-inline-size: 80px
+    }
+
+    .files img,
+    .files canvas {
+        max-inline-size: 100%
+    }
+}

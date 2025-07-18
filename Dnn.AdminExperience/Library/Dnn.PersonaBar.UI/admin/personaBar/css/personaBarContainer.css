@@ -1,37 +1,40 @@
 ﻿/* Person Bar iFrame */
-.dnnEditState iframe#personaBar-iframe{
-	width: 85px;
+.dnnEditState iframe#personaBar-iframe {
+    inline-size: 85px
 }
-iframe#personaBar-iframe{
-	width: 0; 
-	position: fixed; 
-	left: 0; top: 0; 
-	height: 100%; 
-	z-index: 9999999;
+
+iframe#personaBar-iframe {
+    inline-size: 0;
+    position: fixed;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    block-size: 100%;
+    z-index: 9999999
 }
 
 .pb-scroll-wrapper {
     position: absolute;
-    top: 0;
-    left:0;
-    height: 100%;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    block-size: 100%;
     -webkit-overflow-scrolling: touch;
-    overflow-y: visible;
-}
-.pb-scroll-wrapper iframe#personaBar-iframe.ipad {
-    position: relative !important;
+    overflow-block: visible
 }
 
+    .pb-scroll-wrapper iframe#personaBar-iframe.ipad {
+        position: relative !important
+    }
+
 .personabar-visible {
-    margin-left: 80px;
+    margin-inline-start: 80px
 }
 
 .personabar-placeholder {
-    width: 80px;
+    inline-size: 80px;
     background-color: #0e2936;
-    height: 100%;
+    block-size: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: 1000
 }

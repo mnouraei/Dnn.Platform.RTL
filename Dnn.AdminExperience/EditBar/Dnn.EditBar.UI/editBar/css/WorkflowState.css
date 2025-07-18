@@ -1,6 +1,6 @@
 ﻿#menu-WorkflowState button {
-    width: auto;
+    inline-size: auto;
     background-color: transparent;
     text-indent: 0;
-    cursor: default;
+    cursor: default
 }

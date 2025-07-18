@@ -1,43 +1,53 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index.less";
+
 .dnn-user-change-password {
     background-color: @white;
     position: absolute;
-    width: 47%;
-    left: 30px;
+    inline-size: 47%;
+    inset-inline-start: 30px;
     z-index: 100;
     box-sizing: border-box;
-    float: left;
+    float: inline-start;
     border: 1px solid @alto;
     box-shadow: 0px 0px 17px 2px rgba(0, 0, 0, .2);
+
     .dnn-grid-cell {
         padding: 15px;
         margin: 0px;
-        float: left;
-        text-align: left;
+        float: inline-start;
+        text-align: start;
+
         .title {
             text-transform: uppercase;
             font-weight: bold;
-            margin-bottom: 20px;
-            float: left;
+            margin-block-end: 20px;
+            float: inline-start
         }
     }
+
     .dnn-grid-system {
         .dnn-grid-cell {
-            padding: 0px 15px;
+            padding-block-start: 0px;
+            padding-inline-end: 15px;
+            padding-block-end: 0px;
+            padding-inline-start: 15px;
             margin: 0px;
+
             .right {
-                float: right;
+                float: inline-end
             }
         }
     }
+
     .buttons {
         .dnn-grid-cell {
             &.leftBtn {
-                padding-right: 0px;
-                text-align: right;
+                padding-inline-end: 0px;
+                text-align: end
             }
+
             &.rightBtn {
-                padding-left: 30px;
+                padding-inline-start: 30px
             }
         }
     }

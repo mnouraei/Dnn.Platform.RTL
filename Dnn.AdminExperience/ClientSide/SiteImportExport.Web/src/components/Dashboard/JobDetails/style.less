@@ -1,106 +1,142 @@
 @import "~@dnnsoftware/dnn-react-common/styles/index";
+
 .job-details {
-    margin: 10px 0;
-    width: 100%;
+    margin-block-start: 10px;
+    margin-inline-end: 0;
+    margin-block-end: 10px;
+    margin-inline-start: 0;
+    inline-size: 100%;
+
     .summary-title {
-        width: 100%;
-        float: left;
+        inline-size: 100%;
+        float: inline-start;
         font-weight: bold;
         text-transform: uppercase;
-        padding-left: 4%;
+        padding-inline-start: 4%;
     }
+
     .export-summary {
-        float: left;
-        width: 100%;
-        padding: 0 30px 20px 30px;
+        float: inline-start;
+        inline-size: 100%;
+        padding-block-start: 0;
+        padding-inline-end: 30px;
+        padding-block-end: 20px;
+        padding-inline-start: 30px;
+
         .export-site-container {
             font-weight: 700;
+
             .left-column {
-                width: 50%;
-                float: left;
-                border-right: 1px solid @alto;
-                padding: 10px 20px 10px 0;
+                inline-size: 50%;
+                float: inline-start;
+                border-inline-end: 1px solid @alto;
+                padding-block-start: 10px;
+                padding-inline-end: 20px;
+                padding-block-end: 10px;
+                padding-inline-start: 0;
             }
+
             .right-column {
-                width: 50%;
-                float: left;
-                padding: 10px 0 10px 30px;
+                inline-size: 50%;
+                float: inline-start;
+                padding-block-start: 10px;
+                padding-inline-end: 0;
+                padding-block-end: 10px;
+                padding-inline-start: 30px;
+
                 .dnn-switch-container {
-                    float: right;
+                    float: inline-end
                 }
+
                 .summary-note {
-                    float: left;
-                    width: 100%;
+                    float: inline-start;
+                    inline-size: 100%;
                     color: @thunder;
                     font-weight: 500;
-                    padding-top: 30px;
-                    padding-right: 29px;
+                    padding-block-start: 30px;
+                    padding-inline-end: 29px;
+
                     .note-title {
-                        float: left;
-                        width: 15%;
+                        float: inline-start;
+                        inline-size: 15%
                     }
+
                     .note-description {
-                        float: left;
-                        width: 85%;
+                        float: inline-start;
+                        inline-size: 85%
                     }
                 }
             }
+
             .import-summary-item {
-                padding-top: 7px;
-                float: right;
+                padding-block-start: 7px;
+                float: inline-end;
                 color: @thunder;
-                width: 130px;
-                text-align: right;
-                margin-right: 29px;
+                inline-size: 130px;
+                text-align: end;
+                margin-inline-end: 29px;
                 font-weight: 100;
+
                 &.users,
                 &.pagers {
-                    width: 180px;
+                    inline-size: 180px;
                 }
+
                 >div {
-                    margin-right: -29px;
+                    margin-inline-end: -29px;
                 }
+
                 @-ms-keyframes spin {
                     from {
                         -ms-transform: rotate(360deg);
                     }
+
                     to {
                         -ms-transform: rotate(0deg);
                     }
                 }
+
                 @-moz-keyframes spin {
                     from {
                         -moz-transform: rotate(360deg);
                     }
+
                     to {
                         -moz-transform: rotate(0deg);
                     }
                 }
+
                 @-webkit-keyframes spin {
                     from {
                         -webkit-transform: rotate(360deg);
                     }
+
                     to {
                         -webkit-transform: rotate(0deg);
                     }
                 }
+
                 @keyframes spin {
                     from {
                         transform: rotate(360deg);
                     }
+
                     to {
                         transform: rotate(0deg);
                     }
                 }
+
                 .cycle-icon {
-                    width: 24px;
-                    height: 24px;
-                    float: right;
-                    margin-top: -5px;
-                    margin-left: 5px;
-                    > svg {
+                    inline-size: 24px;
+                    block-size: 24px;
+                    float: inline-end;
+                    margin-block-start: -5px;
+                    margin-inline-start: 5px;
+
+                    >svg {
                         fill: @mantis;
                     }
+
                     -webkit-animation-name: spin;
                     -webkit-animation-duration: 4000ms;
                     -webkit-animation-iteration-count: infinite;
@@ -119,12 +155,18 @@
                     animation-timing-function: linear;
                 }
             }
+
             .dnn-grid-cell {
-                padding-bottom: 10px;
+                padding-block-end: 10px;
             }
+
             .action-buttons {
                 text-align: center;
-                padding: 30px 0 0 0;
+                padding-block-start: 30px;
+                padding-inline-end: 0;
+                padding-block-end: 0;
+                padding-inline-start: 0;
+
                 button {
                     margin: 5px;
                 }
